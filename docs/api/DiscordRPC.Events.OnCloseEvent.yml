@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Events.OnCloseEvent
+  commentId: T:DiscordRPC.Events.OnCloseEvent
+  id: OnCloseEvent
+  parent: DiscordRPC.Events
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnCloseEvent
+  nameWithType: OnCloseEvent
+  fullName: DiscordRPC.Events.OnCloseEvent
+  type: Delegate
+  source:
+    id: OnCloseEvent
+    path: ''
+    startLine: 955
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Events
+  summary: "\nCalled when connection to the Discord Client is lost. The connection will remain close and unready to accept messages until the Ready event is called again.\n"
+  example: []
+  syntax:
+    content: public delegate void OnCloseEvent(object sender, CloseMessage args);
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The Discord client handler that sent this event
+    - id: args
+      type: CloseMessage
+      description: The arguments supplied with the event
+    content.vb: Public Delegate Sub OnCloseEvent(sender As Object, args As CloseMessage)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: DiscordRPC.Events
+  commentId: N:DiscordRPC.Events
+  name: DiscordRPC.Events
+  nameWithType: DiscordRPC.Events
+  fullName: DiscordRPC.Events
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: CloseMessage
+  commentId: '!:CloseMessage'
+  isExternal: true
+  name: CloseMessage
+  nameWithType: CloseMessage
+  fullName: CloseMessage
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

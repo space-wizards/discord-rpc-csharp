@@ -1,0 +1,279 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Logging.ILogger
+  commentId: T:DiscordRPC.Logging.ILogger
+  id: ILogger
+  parent: DiscordRPC.Logging
+  children:
+  - DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+  - DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+  - DiscordRPC.Logging.ILogger.Level
+  - DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+  - DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: ILogger
+  nameWithType: ILogger
+  fullName: DiscordRPC.Logging.ILogger
+  type: Interface
+  source:
+    id: ILogger
+    path: ''
+    startLine: 3554
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nLogging interface to log the internal states of the pipe. Logs are sent in a NON thread safe way. They can come from multiple threads and it is upto the ILogger to account for it.\n"
+  example: []
+  syntax:
+    content: public interface ILogger
+    content.vb: Public Interface ILogger
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: DiscordRPC.Logging.ILogger.Level
+  commentId: P:DiscordRPC.Logging.ILogger.Level
+  id: Level
+  parent: DiscordRPC.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: ILogger.Level
+  fullName: DiscordRPC.Logging.ILogger.Level
+  type: Property
+  source:
+    id: Level
+    path: ''
+    startLine: 3559
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nThe level of logging to apply to this logger.\n"
+  example: []
+  syntax:
+    content: LogLevel Level { get; set; }
+    parameters: []
+    return:
+      type: DiscordRPC.Logging.LogLevel
+    content.vb: Property Level As LogLevel
+  overload: DiscordRPC.Logging.ILogger.Level*
+  modifiers.csharp:
+  - get
+  - set
+- uid: DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+  id: Trace(System.String,System.Object[])
+  parent: DiscordRPC.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Trace(String, Object[])
+  nameWithType: ILogger.Trace(String, Object[])
+  fullName: DiscordRPC.Logging.ILogger.Trace(System.String, System.Object[])
+  type: Method
+  source:
+    id: Trace
+    path: ''
+    startLine: 3566
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nDebug trace messeages used for debugging internal elements.\n"
+  example: []
+  syntax:
+    content: void Trace(string message, params object[] args)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Sub Trace(message As String, ParamArray args As Object())
+  overload: DiscordRPC.Logging.ILogger.Trace*
+  nameWithType.vb: ILogger.Trace(String, Object())
+  fullName.vb: DiscordRPC.Logging.ILogger.Trace(System.String, System.Object())
+  name.vb: Trace(String, Object())
+- uid: DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+  id: Info(System.String,System.Object[])
+  parent: DiscordRPC.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Info(String, Object[])
+  nameWithType: ILogger.Info(String, Object[])
+  fullName: DiscordRPC.Logging.ILogger.Info(System.String, System.Object[])
+  type: Method
+  source:
+    id: Info
+    path: ''
+    startLine: 3573
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nInformative log messages\n"
+  example: []
+  syntax:
+    content: void Info(string message, params object[] args)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Sub Info(message As String, ParamArray args As Object())
+  overload: DiscordRPC.Logging.ILogger.Info*
+  nameWithType.vb: ILogger.Info(String, Object())
+  fullName.vb: DiscordRPC.Logging.ILogger.Info(System.String, System.Object())
+  name.vb: Info(String, Object())
+- uid: DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+  id: Warning(System.String,System.Object[])
+  parent: DiscordRPC.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Warning(String, Object[])
+  nameWithType: ILogger.Warning(String, Object[])
+  fullName: DiscordRPC.Logging.ILogger.Warning(System.String, System.Object[])
+  type: Method
+  source:
+    id: Warning
+    path: ''
+    startLine: 3580
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nWarning log messages\n"
+  example: []
+  syntax:
+    content: void Warning(string message, params object[] args)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Sub Warning(message As String, ParamArray args As Object())
+  overload: DiscordRPC.Logging.ILogger.Warning*
+  nameWithType.vb: ILogger.Warning(String, Object())
+  fullName.vb: DiscordRPC.Logging.ILogger.Warning(System.String, System.Object())
+  name.vb: Warning(String, Object())
+- uid: DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+  id: Error(System.String,System.Object[])
+  parent: DiscordRPC.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Error(String, Object[])
+  nameWithType: ILogger.Error(String, Object[])
+  fullName: DiscordRPC.Logging.ILogger.Error(System.String, System.Object[])
+  type: Method
+  source:
+    id: Error
+    path: ''
+    startLine: 3587
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nError log messsages\n"
+  example: []
+  syntax:
+    content: void Error(string message, params object[] args)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Sub Error(message As String, ParamArray args As Object())
+  overload: DiscordRPC.Logging.ILogger.Error*
+  nameWithType.vb: ILogger.Error(String, Object())
+  fullName.vb: DiscordRPC.Logging.ILogger.Error(System.String, System.Object())
+  name.vb: Error(String, Object())
+references:
+- uid: DiscordRPC.Logging
+  commentId: N:DiscordRPC.Logging
+  name: DiscordRPC.Logging
+  nameWithType: DiscordRPC.Logging
+  fullName: DiscordRPC.Logging
+- uid: DiscordRPC.Logging.ILogger.Level*
+  commentId: Overload:DiscordRPC.Logging.ILogger.Level
+  name: Level
+  nameWithType: ILogger.Level
+  fullName: DiscordRPC.Logging.ILogger.Level
+- uid: DiscordRPC.Logging.LogLevel
+  commentId: T:DiscordRPC.Logging.LogLevel
+  parent: DiscordRPC.Logging
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: DiscordRPC.Logging.LogLevel
+- uid: DiscordRPC.Logging.ILogger.Trace*
+  commentId: Overload:DiscordRPC.Logging.ILogger.Trace
+  name: Trace
+  nameWithType: ILogger.Trace
+  fullName: DiscordRPC.Logging.ILogger.Trace
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.Logging.ILogger.Info*
+  commentId: Overload:DiscordRPC.Logging.ILogger.Info
+  name: Info
+  nameWithType: ILogger.Info
+  fullName: DiscordRPC.Logging.ILogger.Info
+- uid: DiscordRPC.Logging.ILogger.Warning*
+  commentId: Overload:DiscordRPC.Logging.ILogger.Warning
+  name: Warning
+  nameWithType: ILogger.Warning
+  fullName: DiscordRPC.Logging.ILogger.Warning
+- uid: DiscordRPC.Logging.ILogger.Error*
+  commentId: Overload:DiscordRPC.Logging.ILogger.Error
+  name: Error
+  nameWithType: ILogger.Error
+  fullName: DiscordRPC.Logging.ILogger.Error

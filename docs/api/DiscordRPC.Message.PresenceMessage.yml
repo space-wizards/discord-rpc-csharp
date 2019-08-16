@@ -1,0 +1,545 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Message.PresenceMessage
+  commentId: T:DiscordRPC.Message.PresenceMessage
+  id: PresenceMessage
+  parent: DiscordRPC.Message
+  children:
+  - DiscordRPC.Message.PresenceMessage.ApplicationID
+  - DiscordRPC.Message.PresenceMessage.Name
+  - DiscordRPC.Message.PresenceMessage.Presence
+  - DiscordRPC.Message.PresenceMessage.Type
+  langs:
+  - csharp
+  - vb
+  name: PresenceMessage
+  nameWithType: PresenceMessage
+  fullName: DiscordRPC.Message.PresenceMessage
+  type: Class
+  source:
+    id: PresenceMessage
+    path: ''
+    startLine: 3997
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nRepresentation of the message received by discord when the presence has been updated.\n"
+  example: []
+  syntax:
+    content: 'public class PresenceMessage : IMessage'
+    content.vb: >-
+      Public Class PresenceMessage
+          Inherits IMessage
+  inheritance:
+  - System.Object
+  - DiscordRPC.Message.IMessage
+  inheritedMembers:
+  - DiscordRPC.Message.IMessage.TimeCreated
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DiscordRPC.Message.PresenceMessage.Type
+  commentId: P:DiscordRPC.Message.PresenceMessage.Type
+  id: Type
+  parent: DiscordRPC.Message.PresenceMessage
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: PresenceMessage.Type
+  fullName: DiscordRPC.Message.PresenceMessage.Type
+  type: Property
+  source:
+    id: Type
+    path: ''
+    startLine: 4002
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe type of message received from discord\n"
+  example: []
+  syntax:
+    content: public override MessageType Type { get; }
+    parameters: []
+    return:
+      type: DiscordRPC.Message.MessageType
+    content.vb: Public Overrides ReadOnly Property Type As MessageType
+  overridden: DiscordRPC.Message.IMessage.Type
+  overload: DiscordRPC.Message.PresenceMessage.Type*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: DiscordRPC.Message.PresenceMessage.Presence
+  commentId: P:DiscordRPC.Message.PresenceMessage.Presence
+  id: Presence
+  parent: DiscordRPC.Message.PresenceMessage
+  langs:
+  - csharp
+  - vb
+  name: Presence
+  nameWithType: PresenceMessage.Presence
+  fullName: DiscordRPC.Message.PresenceMessage.Presence
+  type: Property
+  source:
+    id: Presence
+    path: ''
+    startLine: 4024
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe rich presence Discord has set\n"
+  example: []
+  syntax:
+    content: public RichPresence Presence { get; }
+    parameters: []
+    return:
+      type: DiscordRPC.RichPresence
+    content.vb: Public ReadOnly Property Presence As RichPresence
+  overload: DiscordRPC.Message.PresenceMessage.Presence*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.Message.PresenceMessage.Name
+  commentId: P:DiscordRPC.Message.PresenceMessage.Name
+  id: Name
+  parent: DiscordRPC.Message.PresenceMessage
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: PresenceMessage.Name
+  fullName: DiscordRPC.Message.PresenceMessage.Name
+  type: Property
+  source:
+    id: Name
+    path: ''
+    startLine: 4029
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe name of the application Discord has set it for\n"
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: DiscordRPC.Message.PresenceMessage.Name*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.Message.PresenceMessage.ApplicationID
+  commentId: P:DiscordRPC.Message.PresenceMessage.ApplicationID
+  id: ApplicationID
+  parent: DiscordRPC.Message.PresenceMessage
+  langs:
+  - csharp
+  - vb
+  name: ApplicationID
+  nameWithType: PresenceMessage.ApplicationID
+  fullName: DiscordRPC.Message.PresenceMessage.ApplicationID
+  type: Property
+  source:
+    id: ApplicationID
+    path: ''
+    startLine: 4034
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe ID of the application discord has set it for\n"
+  example: []
+  syntax:
+    content: public string ApplicationID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ApplicationID As String
+  overload: DiscordRPC.Message.PresenceMessage.ApplicationID*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: DiscordRPC.Message
+  commentId: N:DiscordRPC.Message
+  name: DiscordRPC.Message
+  nameWithType: DiscordRPC.Message
+  fullName: DiscordRPC.Message
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DiscordRPC.Message.IMessage
+  commentId: T:DiscordRPC.Message.IMessage
+  parent: DiscordRPC.Message
+  name: IMessage
+  nameWithType: IMessage
+  fullName: DiscordRPC.Message.IMessage
+- uid: DiscordRPC.Message.IMessage.TimeCreated
+  commentId: P:DiscordRPC.Message.IMessage.TimeCreated
+  parent: DiscordRPC.Message.IMessage
+  name: TimeCreated
+  nameWithType: IMessage.TimeCreated
+  fullName: DiscordRPC.Message.IMessage.TimeCreated
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.Message.IMessage.Type
+  commentId: P:DiscordRPC.Message.IMessage.Type
+  parent: DiscordRPC.Message.IMessage
+  name: Type
+  nameWithType: IMessage.Type
+  fullName: DiscordRPC.Message.IMessage.Type
+- uid: DiscordRPC.Message.PresenceMessage.Type*
+  commentId: Overload:DiscordRPC.Message.PresenceMessage.Type
+  name: Type
+  nameWithType: PresenceMessage.Type
+  fullName: DiscordRPC.Message.PresenceMessage.Type
+- uid: DiscordRPC.Message.MessageType
+  commentId: T:DiscordRPC.Message.MessageType
+  parent: DiscordRPC.Message
+  name: MessageType
+  nameWithType: MessageType
+  fullName: DiscordRPC.Message.MessageType
+- uid: DiscordRPC.Message.PresenceMessage.Presence*
+  commentId: Overload:DiscordRPC.Message.PresenceMessage.Presence
+  name: Presence
+  nameWithType: PresenceMessage.Presence
+  fullName: DiscordRPC.Message.PresenceMessage.Presence
+- uid: DiscordRPC.RichPresence
+  commentId: T:DiscordRPC.RichPresence
+  parent: DiscordRPC
+  name: RichPresence
+  nameWithType: RichPresence
+  fullName: DiscordRPC.RichPresence
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC
+- uid: DiscordRPC.Message.PresenceMessage.Name*
+  commentId: Overload:DiscordRPC.Message.PresenceMessage.Name
+  name: Name
+  nameWithType: PresenceMessage.Name
+  fullName: DiscordRPC.Message.PresenceMessage.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DiscordRPC.Message.PresenceMessage.ApplicationID*
+  commentId: Overload:DiscordRPC.Message.PresenceMessage.ApplicationID
+  name: ApplicationID
+  nameWithType: PresenceMessage.ApplicationID
+  fullName: DiscordRPC.Message.PresenceMessage.ApplicationID

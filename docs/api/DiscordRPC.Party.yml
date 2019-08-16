@@ -1,0 +1,484 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Party
+  commentId: T:DiscordRPC.Party
+  id: Party
+  parent: DiscordRPC
+  children:
+  - DiscordRPC.Party.ID
+  - DiscordRPC.Party.Max
+  - DiscordRPC.Party.Size
+  langs:
+  - csharp
+  - vb
+  name: Party
+  nameWithType: Party
+  fullName: DiscordRPC.Party
+  type: Class
+  source:
+    id: Party
+    path: ''
+    startLine: 1831
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nStructure representing the part the player is in.\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Party
+    content.vb: >-
+      <Serializable>
+
+      Public Class Party
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DiscordRPC.Party.ID
+  commentId: P:DiscordRPC.Party.ID
+  id: ID
+  parent: DiscordRPC.Party
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: Party.ID
+  fullName: DiscordRPC.Party.ID
+  type: Property
+  source:
+    id: ID
+    path: ''
+    startLine: 1838
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nA unique ID for the player&apos;s current party / lobby / group. If this is not supplied, they player will not be in a party and the rest of the information will not be sent. \n<p>Max 128 Bytes</p>\n"
+  example: []
+  syntax:
+    content: public string ID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ID As String
+  overload: DiscordRPC.Party.ID*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Party.Size
+  commentId: P:DiscordRPC.Party.Size
+  id: Size
+  parent: DiscordRPC.Party
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Party.Size
+  fullName: DiscordRPC.Party.Size
+  type: Property
+  source:
+    id: Size
+    path: ''
+    startLine: 1845
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe current size of the players party / lobby / group.\n"
+  example: []
+  syntax:
+    content: public int Size { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Size As Integer
+  overload: DiscordRPC.Party.Size*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Party.Max
+  commentId: P:DiscordRPC.Party.Max
+  id: Max
+  parent: DiscordRPC.Party
+  langs:
+  - csharp
+  - vb
+  name: Max
+  nameWithType: Party.Max
+  fullName: DiscordRPC.Party.Max
+  type: Property
+  source:
+    id: Max
+    path: ''
+    startLine: 1851
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe maxium size of the party / lobby / group. This is required to be larger than <xref href=\"DiscordRPC.Party.Size\" data-throw-if-not-resolved=\"false\"></xref>. If it is smaller than the current party size, it will automatically be set too <xref href=\"DiscordRPC.Party.Size\" data-throw-if-not-resolved=\"false\"></xref> when the presence is sent.\n"
+  example: []
+  syntax:
+    content: public int Max { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Max As Integer
+  overload: DiscordRPC.Party.Max*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.Party.ID*
+  commentId: Overload:DiscordRPC.Party.ID
+  name: ID
+  nameWithType: Party.ID
+  fullName: DiscordRPC.Party.ID
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DiscordRPC.Party.Size*
+  commentId: Overload:DiscordRPC.Party.Size
+  name: Size
+  nameWithType: Party.Size
+  fullName: DiscordRPC.Party.Size
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DiscordRPC.Party.Size
+  commentId: P:DiscordRPC.Party.Size
+  isExternal: true
+- uid: DiscordRPC.Party.Max*
+  commentId: Overload:DiscordRPC.Party.Max
+  name: Max
+  nameWithType: Party.Max
+  fullName: DiscordRPC.Party.Max

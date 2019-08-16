@@ -1,0 +1,876 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Logging.NullLogger
+  commentId: T:DiscordRPC.Logging.NullLogger
+  id: NullLogger
+  parent: DiscordRPC.Logging
+  children:
+  - DiscordRPC.Logging.NullLogger.Error(System.String,System.Object[])
+  - DiscordRPC.Logging.NullLogger.Info(System.String,System.Object[])
+  - DiscordRPC.Logging.NullLogger.Level
+  - DiscordRPC.Logging.NullLogger.Trace(System.String,System.Object[])
+  - DiscordRPC.Logging.NullLogger.Warning(System.String,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: NullLogger
+  nameWithType: NullLogger
+  fullName: DiscordRPC.Logging.NullLogger
+  type: Class
+  source:
+    id: NullLogger
+    path: ''
+    startLine: 3640
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nIgnores all log events\n"
+  example: []
+  syntax:
+    content: 'public class NullLogger : ILogger'
+    content.vb: >-
+      Public Class NullLogger
+          Implements ILogger
+  inheritance:
+  - System.Object
+  implements:
+  - DiscordRPC.Logging.ILogger
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DiscordRPC.Logging.NullLogger.Level
+  commentId: P:DiscordRPC.Logging.NullLogger.Level
+  id: Level
+  parent: DiscordRPC.Logging.NullLogger
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: NullLogger.Level
+  fullName: DiscordRPC.Logging.NullLogger.Level
+  type: Property
+  source:
+    id: Level
+    path: ''
+    startLine: 3645
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nThe level of logging to apply to this logger.\n"
+  example: []
+  syntax:
+    content: public LogLevel Level { get; set; }
+    parameters: []
+    return:
+      type: DiscordRPC.Logging.LogLevel
+    content.vb: Public Property Level As LogLevel
+  overload: DiscordRPC.Logging.NullLogger.Level*
+  implements:
+  - DiscordRPC.Logging.ILogger.Level
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Logging.NullLogger.Trace(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.NullLogger.Trace(System.String,System.Object[])
+  id: Trace(System.String,System.Object[])
+  parent: DiscordRPC.Logging.NullLogger
+  langs:
+  - csharp
+  - vb
+  name: Trace(String, Object[])
+  nameWithType: NullLogger.Trace(String, Object[])
+  fullName: DiscordRPC.Logging.NullLogger.Trace(System.String, System.Object[])
+  type: Method
+  source:
+    id: Trace
+    path: ''
+    startLine: 3652
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nInformative log messages\n"
+  example: []
+  syntax:
+    content: public void Trace(string message, params object[] args)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Public Sub Trace(message As String, ParamArray args As Object())
+  overload: DiscordRPC.Logging.NullLogger.Trace*
+  implements:
+  - DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+  nameWithType.vb: NullLogger.Trace(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DiscordRPC.Logging.NullLogger.Trace(System.String, System.Object())
+  name.vb: Trace(String, Object())
+- uid: DiscordRPC.Logging.NullLogger.Info(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.NullLogger.Info(System.String,System.Object[])
+  id: Info(System.String,System.Object[])
+  parent: DiscordRPC.Logging.NullLogger
+  langs:
+  - csharp
+  - vb
+  name: Info(String, Object[])
+  nameWithType: NullLogger.Info(String, Object[])
+  fullName: DiscordRPC.Logging.NullLogger.Info(System.String, System.Object[])
+  type: Method
+  source:
+    id: Info
+    path: ''
+    startLine: 3662
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nInformative log messages\n"
+  example: []
+  syntax:
+    content: public void Info(string message, params object[] args)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Public Sub Info(message As String, ParamArray args As Object())
+  overload: DiscordRPC.Logging.NullLogger.Info*
+  implements:
+  - DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+  nameWithType.vb: NullLogger.Info(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DiscordRPC.Logging.NullLogger.Info(System.String, System.Object())
+  name.vb: Info(String, Object())
+- uid: DiscordRPC.Logging.NullLogger.Warning(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.NullLogger.Warning(System.String,System.Object[])
+  id: Warning(System.String,System.Object[])
+  parent: DiscordRPC.Logging.NullLogger
+  langs:
+  - csharp
+  - vb
+  name: Warning(String, Object[])
+  nameWithType: NullLogger.Warning(String, Object[])
+  fullName: DiscordRPC.Logging.NullLogger.Warning(System.String, System.Object[])
+  type: Method
+  source:
+    id: Warning
+    path: ''
+    startLine: 3672
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nWarning log messages\n"
+  example: []
+  syntax:
+    content: public void Warning(string message, params object[] args)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Public Sub Warning(message As String, ParamArray args As Object())
+  overload: DiscordRPC.Logging.NullLogger.Warning*
+  implements:
+  - DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+  nameWithType.vb: NullLogger.Warning(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DiscordRPC.Logging.NullLogger.Warning(System.String, System.Object())
+  name.vb: Warning(String, Object())
+- uid: DiscordRPC.Logging.NullLogger.Error(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.NullLogger.Error(System.String,System.Object[])
+  id: Error(System.String,System.Object[])
+  parent: DiscordRPC.Logging.NullLogger
+  langs:
+  - csharp
+  - vb
+  name: Error(String, Object[])
+  nameWithType: NullLogger.Error(String, Object[])
+  fullName: DiscordRPC.Logging.NullLogger.Error(System.String, System.Object[])
+  type: Method
+  source:
+    id: Error
+    path: ''
+    startLine: 3682
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nError log messsages\n"
+  example: []
+  syntax:
+    content: public void Error(string message, params object[] args)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Public Sub Error(message As String, ParamArray args As Object())
+  overload: DiscordRPC.Logging.NullLogger.Error*
+  implements:
+  - DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+  nameWithType.vb: NullLogger.Error(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DiscordRPC.Logging.NullLogger.Error(System.String, System.Object())
+  name.vb: Error(String, Object())
+references:
+- uid: DiscordRPC.Logging
+  commentId: N:DiscordRPC.Logging
+  name: DiscordRPC.Logging
+  nameWithType: DiscordRPC.Logging
+  fullName: DiscordRPC.Logging
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DiscordRPC.Logging.ILogger
+  commentId: T:DiscordRPC.Logging.ILogger
+  parent: DiscordRPC.Logging
+  name: ILogger
+  nameWithType: ILogger
+  fullName: DiscordRPC.Logging.ILogger
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.Logging.NullLogger.Level*
+  commentId: Overload:DiscordRPC.Logging.NullLogger.Level
+  name: Level
+  nameWithType: NullLogger.Level
+  fullName: DiscordRPC.Logging.NullLogger.Level
+- uid: DiscordRPC.Logging.ILogger.Level
+  commentId: P:DiscordRPC.Logging.ILogger.Level
+  parent: DiscordRPC.Logging.ILogger
+  name: Level
+  nameWithType: ILogger.Level
+  fullName: DiscordRPC.Logging.ILogger.Level
+- uid: DiscordRPC.Logging.LogLevel
+  commentId: T:DiscordRPC.Logging.LogLevel
+  parent: DiscordRPC.Logging
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: DiscordRPC.Logging.LogLevel
+- uid: DiscordRPC.Logging.NullLogger.Trace*
+  commentId: Overload:DiscordRPC.Logging.NullLogger.Trace
+  name: Trace
+  nameWithType: NullLogger.Trace
+  fullName: DiscordRPC.Logging.NullLogger.Trace
+- uid: DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+  parent: DiscordRPC.Logging.ILogger
+  isExternal: true
+  name: Trace(String, Object[])
+  nameWithType: ILogger.Trace(String, Object[])
+  fullName: DiscordRPC.Logging.ILogger.Trace(System.String, System.Object[])
+  nameWithType.vb: ILogger.Trace(String, Object())
+  fullName.vb: DiscordRPC.Logging.ILogger.Trace(System.String, System.Object())
+  name.vb: Trace(String, Object())
+  spec.csharp:
+  - uid: DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+    name: Trace
+    nameWithType: ILogger.Trace
+    fullName: DiscordRPC.Logging.ILogger.Trace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+    name: Trace
+    nameWithType: ILogger.Trace
+    fullName: DiscordRPC.Logging.ILogger.Trace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DiscordRPC.Logging.NullLogger.Info*
+  commentId: Overload:DiscordRPC.Logging.NullLogger.Info
+  name: Info
+  nameWithType: NullLogger.Info
+  fullName: DiscordRPC.Logging.NullLogger.Info
+- uid: DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+  parent: DiscordRPC.Logging.ILogger
+  isExternal: true
+  name: Info(String, Object[])
+  nameWithType: ILogger.Info(String, Object[])
+  fullName: DiscordRPC.Logging.ILogger.Info(System.String, System.Object[])
+  nameWithType.vb: ILogger.Info(String, Object())
+  fullName.vb: DiscordRPC.Logging.ILogger.Info(System.String, System.Object())
+  name.vb: Info(String, Object())
+  spec.csharp:
+  - uid: DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+    name: Info
+    nameWithType: ILogger.Info
+    fullName: DiscordRPC.Logging.ILogger.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+    name: Info
+    nameWithType: ILogger.Info
+    fullName: DiscordRPC.Logging.ILogger.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.Logging.NullLogger.Warning*
+  commentId: Overload:DiscordRPC.Logging.NullLogger.Warning
+  name: Warning
+  nameWithType: NullLogger.Warning
+  fullName: DiscordRPC.Logging.NullLogger.Warning
+- uid: DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+  parent: DiscordRPC.Logging.ILogger
+  isExternal: true
+  name: Warning(String, Object[])
+  nameWithType: ILogger.Warning(String, Object[])
+  fullName: DiscordRPC.Logging.ILogger.Warning(System.String, System.Object[])
+  nameWithType.vb: ILogger.Warning(String, Object())
+  fullName.vb: DiscordRPC.Logging.ILogger.Warning(System.String, System.Object())
+  name.vb: Warning(String, Object())
+  spec.csharp:
+  - uid: DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+    name: Warning
+    nameWithType: ILogger.Warning
+    fullName: DiscordRPC.Logging.ILogger.Warning
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+    name: Warning
+    nameWithType: ILogger.Warning
+    fullName: DiscordRPC.Logging.ILogger.Warning
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.Logging.NullLogger.Error*
+  commentId: Overload:DiscordRPC.Logging.NullLogger.Error
+  name: Error
+  nameWithType: NullLogger.Error
+  fullName: DiscordRPC.Logging.NullLogger.Error
+- uid: DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+  parent: DiscordRPC.Logging.ILogger
+  isExternal: true
+  name: Error(String, Object[])
+  nameWithType: ILogger.Error(String, Object[])
+  fullName: DiscordRPC.Logging.ILogger.Error(System.String, System.Object[])
+  nameWithType.vb: ILogger.Error(String, Object())
+  fullName.vb: DiscordRPC.Logging.ILogger.Error(System.String, System.Object())
+  name.vb: Error(String, Object())
+  spec.csharp:
+  - uid: DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+    name: Error
+    nameWithType: ILogger.Error
+    fullName: DiscordRPC.Logging.ILogger.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+    name: Error
+    nameWithType: ILogger.Error
+    fullName: DiscordRPC.Logging.ILogger.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )

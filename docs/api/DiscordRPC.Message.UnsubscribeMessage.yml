@@ -1,0 +1,460 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Message.UnsubscribeMessage
+  commentId: T:DiscordRPC.Message.UnsubscribeMessage
+  id: UnsubscribeMessage
+  parent: DiscordRPC.Message
+  children:
+  - DiscordRPC.Message.UnsubscribeMessage.Event
+  - DiscordRPC.Message.UnsubscribeMessage.Type
+  langs:
+  - csharp
+  - vb
+  name: UnsubscribeMessage
+  nameWithType: UnsubscribeMessage
+  fullName: DiscordRPC.Message.UnsubscribeMessage
+  type: Class
+  source:
+    id: UnsubscribeMessage
+    path: ''
+    startLine: 4142
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nCalled as validation of a subscribe\n"
+  example: []
+  syntax:
+    content: 'public class UnsubscribeMessage : IMessage'
+    content.vb: >-
+      Public Class UnsubscribeMessage
+          Inherits IMessage
+  inheritance:
+  - System.Object
+  - DiscordRPC.Message.IMessage
+  inheritedMembers:
+  - DiscordRPC.Message.IMessage.TimeCreated
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DiscordRPC.Message.UnsubscribeMessage.Type
+  commentId: P:DiscordRPC.Message.UnsubscribeMessage.Type
+  id: Type
+  parent: DiscordRPC.Message.UnsubscribeMessage
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: UnsubscribeMessage.Type
+  fullName: DiscordRPC.Message.UnsubscribeMessage.Type
+  type: Property
+  source:
+    id: Type
+    path: ''
+    startLine: 4147
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe type of message received from discord\n"
+  example: []
+  syntax:
+    content: public override MessageType Type { get; }
+    parameters: []
+    return:
+      type: DiscordRPC.Message.MessageType
+    content.vb: Public Overrides ReadOnly Property Type As MessageType
+  overridden: DiscordRPC.Message.IMessage.Type
+  overload: DiscordRPC.Message.UnsubscribeMessage.Type*
+  modifiers.csharp:
+  - public
+  - override
+  - get
+  modifiers.vb:
+  - Public
+  - Overrides
+  - ReadOnly
+- uid: DiscordRPC.Message.UnsubscribeMessage.Event
+  commentId: P:DiscordRPC.Message.UnsubscribeMessage.Event
+  id: Event
+  parent: DiscordRPC.Message.UnsubscribeMessage
+  langs:
+  - csharp
+  - vb
+  name: Event
+  nameWithType: UnsubscribeMessage.Event
+  fullName: DiscordRPC.Message.UnsubscribeMessage.Event
+  type: Property
+  source:
+    id: Event
+    path: ''
+    startLine: 4152
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe event that was subscribed too.\n"
+  example: []
+  syntax:
+    content: public EventType Event { get; }
+    parameters: []
+    return:
+      type: DiscordRPC.EventType
+    content.vb: Public ReadOnly Property Event As EventType
+  overload: DiscordRPC.Message.UnsubscribeMessage.Event*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: DiscordRPC.Message
+  commentId: N:DiscordRPC.Message
+  name: DiscordRPC.Message
+  nameWithType: DiscordRPC.Message
+  fullName: DiscordRPC.Message
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DiscordRPC.Message.IMessage
+  commentId: T:DiscordRPC.Message.IMessage
+  parent: DiscordRPC.Message
+  name: IMessage
+  nameWithType: IMessage
+  fullName: DiscordRPC.Message.IMessage
+- uid: DiscordRPC.Message.IMessage.TimeCreated
+  commentId: P:DiscordRPC.Message.IMessage.TimeCreated
+  parent: DiscordRPC.Message.IMessage
+  name: TimeCreated
+  nameWithType: IMessage.TimeCreated
+  fullName: DiscordRPC.Message.IMessage.TimeCreated
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.Message.IMessage.Type
+  commentId: P:DiscordRPC.Message.IMessage.Type
+  parent: DiscordRPC.Message.IMessage
+  name: Type
+  nameWithType: IMessage.Type
+  fullName: DiscordRPC.Message.IMessage.Type
+- uid: DiscordRPC.Message.UnsubscribeMessage.Type*
+  commentId: Overload:DiscordRPC.Message.UnsubscribeMessage.Type
+  name: Type
+  nameWithType: UnsubscribeMessage.Type
+  fullName: DiscordRPC.Message.UnsubscribeMessage.Type
+- uid: DiscordRPC.Message.MessageType
+  commentId: T:DiscordRPC.Message.MessageType
+  parent: DiscordRPC.Message
+  name: MessageType
+  nameWithType: MessageType
+  fullName: DiscordRPC.Message.MessageType
+- uid: DiscordRPC.Message.UnsubscribeMessage.Event*
+  commentId: Overload:DiscordRPC.Message.UnsubscribeMessage.Event
+  name: Event
+  nameWithType: UnsubscribeMessage.Event
+  fullName: DiscordRPC.Message.UnsubscribeMessage.Event
+- uid: DiscordRPC.EventType
+  commentId: T:DiscordRPC.EventType
+  parent: DiscordRPC
+  name: EventType
+  nameWithType: EventType
+  fullName: DiscordRPC.EventType
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC

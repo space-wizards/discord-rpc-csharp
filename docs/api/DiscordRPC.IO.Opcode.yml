@@ -1,0 +1,210 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.IO.Opcode
+  commentId: T:DiscordRPC.IO.Opcode
+  id: Opcode
+  parent: DiscordRPC.IO
+  children:
+  - DiscordRPC.IO.Opcode.Close
+  - DiscordRPC.IO.Opcode.Frame
+  - DiscordRPC.IO.Opcode.Handshake
+  - DiscordRPC.IO.Opcode.Ping
+  - DiscordRPC.IO.Opcode.Pong
+  langs:
+  - csharp
+  - vb
+  name: Opcode
+  nameWithType: Opcode
+  fullName: DiscordRPC.IO.Opcode
+  type: Enum
+  source:
+    id: Opcode
+    path: ''
+    startLine: 3115
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nThe operation code that the <xref href=\"DiscordRPC.IO.PipeFrame\" data-throw-if-not-resolved=\"false\"></xref> was sent under. This defines the type of frame and the data to expect.\n"
+  example: []
+  syntax:
+    content: 'public enum Opcode : uint'
+    content.vb: Public Enum Opcode As UInteger
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DiscordRPC.IO.Opcode.Handshake
+  commentId: F:DiscordRPC.IO.Opcode.Handshake
+  id: Handshake
+  parent: DiscordRPC.IO.Opcode
+  langs:
+  - csharp
+  - vb
+  name: Handshake
+  nameWithType: Opcode.Handshake
+  fullName: DiscordRPC.IO.Opcode.Handshake
+  type: Field
+  source:
+    id: Handshake
+    path: ''
+    startLine: 3120
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nInitial handshake frame\n"
+  example: []
+  syntax:
+    content: Handshake = 0U
+    return:
+      type: DiscordRPC.IO.Opcode
+    content.vb: Handshake = 0UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.IO.Opcode.Frame
+  commentId: F:DiscordRPC.IO.Opcode.Frame
+  id: Frame
+  parent: DiscordRPC.IO.Opcode
+  langs:
+  - csharp
+  - vb
+  name: Frame
+  nameWithType: Opcode.Frame
+  fullName: DiscordRPC.IO.Opcode.Frame
+  type: Field
+  source:
+    id: Frame
+    path: ''
+    startLine: 3125
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nGeneric message frame\n"
+  example: []
+  syntax:
+    content: Frame = 1U
+    return:
+      type: DiscordRPC.IO.Opcode
+    content.vb: Frame = 1UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.IO.Opcode.Close
+  commentId: F:DiscordRPC.IO.Opcode.Close
+  id: Close
+  parent: DiscordRPC.IO.Opcode
+  langs:
+  - csharp
+  - vb
+  name: Close
+  nameWithType: Opcode.Close
+  fullName: DiscordRPC.IO.Opcode.Close
+  type: Field
+  source:
+    id: Close
+    path: ''
+    startLine: 3130
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nDiscord has closed the connection\n"
+  example: []
+  syntax:
+    content: Close = 2U
+    return:
+      type: DiscordRPC.IO.Opcode
+    content.vb: Close = 2UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.IO.Opcode.Ping
+  commentId: F:DiscordRPC.IO.Opcode.Ping
+  id: Ping
+  parent: DiscordRPC.IO.Opcode
+  langs:
+  - csharp
+  - vb
+  name: Ping
+  nameWithType: Opcode.Ping
+  fullName: DiscordRPC.IO.Opcode.Ping
+  type: Field
+  source:
+    id: Ping
+    path: ''
+    startLine: 3135
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nPing frame (not used?)\n"
+  example: []
+  syntax:
+    content: Ping = 3U
+    return:
+      type: DiscordRPC.IO.Opcode
+    content.vb: Ping = 3UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.IO.Opcode.Pong
+  commentId: F:DiscordRPC.IO.Opcode.Pong
+  id: Pong
+  parent: DiscordRPC.IO.Opcode
+  langs:
+  - csharp
+  - vb
+  name: Pong
+  nameWithType: Opcode.Pong
+  fullName: DiscordRPC.IO.Opcode.Pong
+  type: Field
+  source:
+    id: Pong
+    path: ''
+    startLine: 3140
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nPong frame (not used?)\n"
+  example: []
+  syntax:
+    content: Pong = 4U
+    return:
+      type: DiscordRPC.IO.Opcode
+    content.vb: Pong = 4UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DiscordRPC.IO.PipeFrame
+  commentId: T:DiscordRPC.IO.PipeFrame
+  parent: DiscordRPC.IO
+  name: PipeFrame
+  nameWithType: PipeFrame
+  fullName: DiscordRPC.IO.PipeFrame
+- uid: DiscordRPC.IO
+  commentId: N:DiscordRPC.IO
+  name: DiscordRPC.IO
+  nameWithType: DiscordRPC.IO
+  fullName: DiscordRPC.IO
+- uid: DiscordRPC.IO.Opcode
+  commentId: T:DiscordRPC.IO.Opcode
+  parent: DiscordRPC.IO
+  name: Opcode
+  nameWithType: Opcode
+  fullName: DiscordRPC.IO.Opcode

@@ -1,0 +1,63 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Events.OnJoinRequestedEvent
+  commentId: T:DiscordRPC.Events.OnJoinRequestedEvent
+  id: OnJoinRequestedEvent
+  parent: DiscordRPC.Events
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnJoinRequestedEvent
+  nameWithType: OnJoinRequestedEvent
+  fullName: DiscordRPC.Events.OnJoinRequestedEvent
+  type: Delegate
+  source:
+    id: OnJoinRequestedEvent
+    path: ''
+    startLine: 1004
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Events
+  summary: "\nCalled when another discord user requests permission to join this game.\n"
+  example: []
+  syntax:
+    content: public delegate void OnJoinRequestedEvent(object sender, JoinRequestMessage args);
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The Discord client handler that sent this event
+    - id: args
+      type: JoinRequestMessage
+      description: The arguments supplied with the event
+    content.vb: Public Delegate Sub OnJoinRequestedEvent(sender As Object, args As JoinRequestMessage)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: DiscordRPC.Events
+  commentId: N:DiscordRPC.Events
+  name: DiscordRPC.Events
+  nameWithType: DiscordRPC.Events
+  fullName: DiscordRPC.Events
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: JoinRequestMessage
+  isExternal: true
+  name: JoinRequestMessage
+  nameWithType: JoinRequestMessage
+  fullName: JoinRequestMessage
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

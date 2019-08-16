@@ -1,0 +1,199 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Logging.LogLevel
+  commentId: T:DiscordRPC.Logging.LogLevel
+  id: LogLevel
+  parent: DiscordRPC.Logging
+  children:
+  - DiscordRPC.Logging.LogLevel.Error
+  - DiscordRPC.Logging.LogLevel.Info
+  - DiscordRPC.Logging.LogLevel.None
+  - DiscordRPC.Logging.LogLevel.Trace
+  - DiscordRPC.Logging.LogLevel.Warning
+  langs:
+  - csharp
+  - vb
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: DiscordRPC.Logging.LogLevel
+  type: Enum
+  source:
+    id: LogLevel
+    path: ''
+    startLine: 3601
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nLevel of logging to use.\n"
+  example: []
+  syntax:
+    content: public enum LogLevel
+    content.vb: Public Enum LogLevel
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DiscordRPC.Logging.LogLevel.Trace
+  commentId: F:DiscordRPC.Logging.LogLevel.Trace
+  id: Trace
+  parent: DiscordRPC.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Trace
+  nameWithType: LogLevel.Trace
+  fullName: DiscordRPC.Logging.LogLevel.Trace
+  type: Field
+  source:
+    id: Trace
+    path: ''
+    startLine: 3606
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nTrace, Info, Warning and Errors are logged\n"
+  example: []
+  syntax:
+    content: Trace = 1
+    return:
+      type: DiscordRPC.Logging.LogLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Logging.LogLevel.Info
+  commentId: F:DiscordRPC.Logging.LogLevel.Info
+  id: Info
+  parent: DiscordRPC.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: LogLevel.Info
+  fullName: DiscordRPC.Logging.LogLevel.Info
+  type: Field
+  source:
+    id: Info
+    path: ''
+    startLine: 3611
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nInfo, Warning and Errors are logged\n"
+  example: []
+  syntax:
+    content: Info = 2
+    return:
+      type: DiscordRPC.Logging.LogLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Logging.LogLevel.Warning
+  commentId: F:DiscordRPC.Logging.LogLevel.Warning
+  id: Warning
+  parent: DiscordRPC.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: LogLevel.Warning
+  fullName: DiscordRPC.Logging.LogLevel.Warning
+  type: Field
+  source:
+    id: Warning
+    path: ''
+    startLine: 3616
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nWarning and Errors are logged\n"
+  example: []
+  syntax:
+    content: Warning = 3
+    return:
+      type: DiscordRPC.Logging.LogLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Logging.LogLevel.Error
+  commentId: F:DiscordRPC.Logging.LogLevel.Error
+  id: Error
+  parent: DiscordRPC.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: LogLevel.Error
+  fullName: DiscordRPC.Logging.LogLevel.Error
+  type: Field
+  source:
+    id: Error
+    path: ''
+    startLine: 3621
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nOnly Errors are logged\n"
+  example: []
+  syntax:
+    content: Error = 4
+    return:
+      type: DiscordRPC.Logging.LogLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Logging.LogLevel.None
+  commentId: F:DiscordRPC.Logging.LogLevel.None
+  id: None
+  parent: DiscordRPC.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: LogLevel.None
+  fullName: DiscordRPC.Logging.LogLevel.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 3626
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nNothing is logged\n"
+  example: []
+  syntax:
+    content: None = 256
+    return:
+      type: DiscordRPC.Logging.LogLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DiscordRPC.Logging
+  commentId: N:DiscordRPC.Logging
+  name: DiscordRPC.Logging
+  nameWithType: DiscordRPC.Logging
+  fullName: DiscordRPC.Logging
+- uid: DiscordRPC.Logging.LogLevel
+  commentId: T:DiscordRPC.Logging.LogLevel
+  parent: DiscordRPC.Logging
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: DiscordRPC.Logging.LogLevel

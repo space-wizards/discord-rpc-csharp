@@ -1,0 +1,135 @@
+### YamlMime:TableOfContent
+- uid: DiscordRPC
+  name: DiscordRPC
+  items:
+  - uid: DiscordRPC.Assets
+    name: Assets
+  - uid: DiscordRPC.Configuration
+    name: Configuration
+  - uid: DiscordRPC.DiscordRpcClient
+    name: DiscordRpcClient
+  - uid: DiscordRPC.EventType
+    name: EventType
+  - uid: DiscordRPC.Party
+    name: Party
+  - uid: DiscordRPC.RichPresence
+    name: RichPresence
+  - uid: DiscordRPC.Secrets
+    name: Secrets
+  - uid: DiscordRPC.Timestamps
+    name: Timestamps
+  - uid: DiscordRPC.User
+    name: User
+  - uid: DiscordRPC.User.AvatarFormat
+    name: User.AvatarFormat
+  - uid: DiscordRPC.User.AvatarSize
+    name: User.AvatarSize
+  - uid: DiscordRPC.User.Flag
+    name: User.Flag
+  - uid: DiscordRPC.User.PremiumType
+    name: User.PremiumType
+- uid: DiscordRPC.Events
+  name: DiscordRPC.Events
+  items:
+  - uid: DiscordRPC.Events.OnCloseEvent
+    name: OnCloseEvent
+  - uid: DiscordRPC.Events.OnConnectionEstablishedEvent
+    name: OnConnectionEstablishedEvent
+  - uid: DiscordRPC.Events.OnConnectionFailedEvent
+    name: OnConnectionFailedEvent
+  - uid: DiscordRPC.Events.OnErrorEvent
+    name: OnErrorEvent
+  - uid: DiscordRPC.Events.OnJoinEvent
+    name: OnJoinEvent
+  - uid: DiscordRPC.Events.OnJoinRequestedEvent
+    name: OnJoinRequestedEvent
+  - uid: DiscordRPC.Events.OnPresenceUpdateEvent
+    name: OnPresenceUpdateEvent
+  - uid: DiscordRPC.Events.OnReadyEvent
+    name: OnReadyEvent
+  - uid: DiscordRPC.Events.OnRpcMessageEvent
+    name: OnRpcMessageEvent
+  - uid: DiscordRPC.Events.OnSpectateEvent
+    name: OnSpectateEvent
+  - uid: DiscordRPC.Events.OnSubscribeEvent
+    name: OnSubscribeEvent
+  - uid: DiscordRPC.Events.OnUnsubscribeEvent
+    name: OnUnsubscribeEvent
+- uid: DiscordRPC.Exceptions
+  name: DiscordRPC.Exceptions
+  items:
+  - uid: DiscordRPC.Exceptions.BadPresenceException
+    name: BadPresenceException
+  - uid: DiscordRPC.Exceptions.InvalidConfigurationException
+    name: InvalidConfigurationException
+  - uid: DiscordRPC.Exceptions.InvalidPipeException
+    name: InvalidPipeException
+  - uid: DiscordRPC.Exceptions.StringOutOfRangeException
+    name: StringOutOfRangeException
+  - uid: DiscordRPC.Exceptions.UninitializedException
+    name: UninitializedException
+- uid: DiscordRPC.Helper
+  name: DiscordRPC.Helper
+  items:
+  - uid: DiscordRPC.Helper.StringTools
+    name: StringTools
+- uid: DiscordRPC.IO
+  name: DiscordRPC.IO
+  items:
+  - uid: DiscordRPC.IO.INamedPipeClient
+    name: INamedPipeClient
+  - uid: DiscordRPC.IO.ManagedNamedPipeClient
+    name: ManagedNamedPipeClient
+  - uid: DiscordRPC.IO.Opcode
+    name: Opcode
+  - uid: DiscordRPC.IO.PipeFrame
+    name: PipeFrame
+- uid: DiscordRPC.Logging
+  name: DiscordRPC.Logging
+  items:
+  - uid: DiscordRPC.Logging.ConsoleLogger
+    name: ConsoleLogger
+  - uid: DiscordRPC.Logging.FileLogger
+    name: FileLogger
+  - uid: DiscordRPC.Logging.ILogger
+    name: ILogger
+  - uid: DiscordRPC.Logging.LogLevel
+    name: LogLevel
+  - uid: DiscordRPC.Logging.NullLogger
+    name: NullLogger
+- uid: DiscordRPC.Message
+  name: DiscordRPC.Message
+  items:
+  - uid: DiscordRPC.Message.CloseMessage
+    name: CloseMessage
+  - uid: DiscordRPC.Message.ConnectionEstablishedMessage
+    name: ConnectionEstablishedMessage
+  - uid: DiscordRPC.Message.ConnectionFailedMessage
+    name: ConnectionFailedMessage
+  - uid: DiscordRPC.Message.ErrorCode
+    name: ErrorCode
+  - uid: DiscordRPC.Message.ErrorMessage
+    name: ErrorMessage
+  - uid: DiscordRPC.Message.IMessage
+    name: IMessage
+  - uid: DiscordRPC.Message.JoinMessage
+    name: JoinMessage
+  - uid: DiscordRPC.Message.JoinRequestMessage
+    name: JoinRequestMessage
+  - uid: DiscordRPC.Message.MessageType
+    name: MessageType
+  - uid: DiscordRPC.Message.PresenceMessage
+    name: PresenceMessage
+  - uid: DiscordRPC.Message.ReadyMessage
+    name: ReadyMessage
+  - uid: DiscordRPC.Message.SpectateMessage
+    name: SpectateMessage
+  - uid: DiscordRPC.Message.SubscribeMessage
+    name: SubscribeMessage
+  - uid: DiscordRPC.Message.UnsubscribeMessage
+    name: UnsubscribeMessage
+- uid: UnityPackageExporter
+  name: UnityPackageExporter
+  items:
+  - uid: UnityPackageExporter.TarOutputExtensions
+    name: TarOutputExtensions

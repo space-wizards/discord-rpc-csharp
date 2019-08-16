@@ -1,0 +1,1065 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.IO.ManagedNamedPipeClient
+  commentId: T:DiscordRPC.IO.ManagedNamedPipeClient
+  id: ManagedNamedPipeClient
+  parent: DiscordRPC.IO
+  children:
+  - DiscordRPC.IO.ManagedNamedPipeClient.#ctor
+  - DiscordRPC.IO.ManagedNamedPipeClient.Close
+  - DiscordRPC.IO.ManagedNamedPipeClient.Connect(System.Int32)
+  - DiscordRPC.IO.ManagedNamedPipeClient.ConnectedPipe
+  - DiscordRPC.IO.ManagedNamedPipeClient.Dispose
+  - DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName(System.Int32,System.String)
+  - DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox
+  - DiscordRPC.IO.ManagedNamedPipeClient.IsConnected
+  - DiscordRPC.IO.ManagedNamedPipeClient.IsUnix
+  - DiscordRPC.IO.ManagedNamedPipeClient.Logger
+  - DiscordRPC.IO.ManagedNamedPipeClient.ReadFrame(DiscordRPC.IO.PipeFrame@)
+  - DiscordRPC.IO.ManagedNamedPipeClient.WriteFrame(DiscordRPC.IO.PipeFrame)
+  langs:
+  - csharp
+  - vb
+  name: ManagedNamedPipeClient
+  nameWithType: ManagedNamedPipeClient
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient
+  type: Class
+  source:
+    id: ManagedNamedPipeClient
+    path: ''
+    startLine: 2614
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nA named pipe client using the .NET framework <see cref=\"!:NamedPipeClientStream\"></see>\n"
+  example: []
+  syntax:
+    content: 'public sealed class ManagedNamedPipeClient : INamedPipeClient, IDisposable'
+    content.vb: >-
+      Public NotInheritable Class ManagedNamedPipeClient
+          Implements INamedPipeClient, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - DiscordRPC.IO.INamedPipeClient
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.Logger
+  commentId: P:DiscordRPC.IO.ManagedNamedPipeClient.Logger
+  id: Logger
+  parent: DiscordRPC.IO.ManagedNamedPipeClient
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: ManagedNamedPipeClient.Logger
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.Logger
+  type: Property
+  source:
+    id: Logger
+    path: ''
+    startLine: 2624
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nThe logger for the Pipe client to use\n"
+  example: []
+  syntax:
+    content: public ILogger Logger { get; set; }
+    parameters: []
+    return:
+      type: ILogger
+    content.vb: Public Property Logger As ILogger
+  overload: DiscordRPC.IO.ManagedNamedPipeClient.Logger*
+  implements:
+  - DiscordRPC.IO.INamedPipeClient.Logger
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.IsConnected
+  commentId: P:DiscordRPC.IO.ManagedNamedPipeClient.IsConnected
+  id: IsConnected
+  parent: DiscordRPC.IO.ManagedNamedPipeClient
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: ManagedNamedPipeClient.IsConnected
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.IsConnected
+  type: Property
+  source:
+    id: IsConnected
+    path: ''
+    startLine: 2629
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nChecks if the client is connected\n"
+  example: []
+  syntax:
+    content: public bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsConnected As Boolean
+  overload: DiscordRPC.IO.ManagedNamedPipeClient.IsConnected*
+  implements:
+  - DiscordRPC.IO.INamedPipeClient.IsConnected
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.ConnectedPipe
+  commentId: P:DiscordRPC.IO.ManagedNamedPipeClient.ConnectedPipe
+  id: ConnectedPipe
+  parent: DiscordRPC.IO.ManagedNamedPipeClient
+  langs:
+  - csharp
+  - vb
+  name: ConnectedPipe
+  nameWithType: ManagedNamedPipeClient.ConnectedPipe
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.ConnectedPipe
+  type: Property
+  source:
+    id: ConnectedPipe
+    path: ''
+    startLine: 2646
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nThe pipe we are currently connected too.\n"
+  example: []
+  syntax:
+    content: public int ConnectedPipe { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ConnectedPipe As Integer
+  overload: DiscordRPC.IO.ManagedNamedPipeClient.ConnectedPipe*
+  implements:
+  - DiscordRPC.IO.INamedPipeClient.ConnectedPipe
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.#ctor
+  commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.#ctor
+  id: '#ctor'
+  parent: DiscordRPC.IO.ManagedNamedPipeClient
+  langs:
+  - csharp
+  - vb
+  name: ManagedNamedPipeClient()
+  nameWithType: ManagedNamedPipeClient.ManagedNamedPipeClient()
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.ManagedNamedPipeClient()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 2664
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nCreates a new instance of a Managed NamedPipe client. Doesn&apos;t connect to anything yet, just setups the values.\n"
+  example: []
+  syntax:
+    content: public ManagedNamedPipeClient()
+    content.vb: Public Sub New
+  overload: DiscordRPC.IO.ManagedNamedPipeClient.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.Connect(System.Int32)
+  commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.Connect(System.Int32)
+  id: Connect(System.Int32)
+  parent: DiscordRPC.IO.ManagedNamedPipeClient
+  langs:
+  - csharp
+  - vb
+  name: Connect(Int32)
+  nameWithType: ManagedNamedPipeClient.Connect(Int32)
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.Connect(System.Int32)
+  type: Method
+  source:
+    id: Connect
+    path: ''
+    startLine: 2676
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nConnects to the pipe\n"
+  example: []
+  syntax:
+    content: public bool Connect(int pipe)
+    parameters:
+    - id: pipe
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function Connect(pipe As Integer) As Boolean
+  overload: DiscordRPC.IO.ManagedNamedPipeClient.Connect*
+  implements:
+  - DiscordRPC.IO.INamedPipeClient.Connect(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.ReadFrame(DiscordRPC.IO.PipeFrame@)
+  commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.ReadFrame(DiscordRPC.IO.PipeFrame@)
+  id: ReadFrame(DiscordRPC.IO.PipeFrame@)
+  parent: DiscordRPC.IO.ManagedNamedPipeClient
+  langs:
+  - csharp
+  - vb
+  name: ReadFrame(out PipeFrame)
+  nameWithType: ManagedNamedPipeClient.ReadFrame(out PipeFrame)
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.ReadFrame(out DiscordRPC.IO.PipeFrame)
+  type: Method
+  source:
+    id: ReadFrame
+    path: ''
+    startLine: 2906
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nReads a frame, returning false if none are available\n"
+  example: []
+  syntax:
+    content: public bool ReadFrame(out PipeFrame frame)
+    parameters:
+    - id: frame
+      type: DiscordRPC.IO.PipeFrame
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function ReadFrame(ByRef frame As PipeFrame) As Boolean
+  overload: DiscordRPC.IO.ManagedNamedPipeClient.ReadFrame*
+  implements:
+  - DiscordRPC.IO.INamedPipeClient.ReadFrame(DiscordRPC.IO.PipeFrame@)
+  nameWithType.vb: ManagedNamedPipeClient.ReadFrame(ByRef PipeFrame)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DiscordRPC.IO.ManagedNamedPipeClient.ReadFrame(ByRef DiscordRPC.IO.PipeFrame)
+  name.vb: ReadFrame(ByRef PipeFrame)
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.WriteFrame(DiscordRPC.IO.PipeFrame)
+  commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.WriteFrame(DiscordRPC.IO.PipeFrame)
+  id: WriteFrame(DiscordRPC.IO.PipeFrame)
+  parent: DiscordRPC.IO.ManagedNamedPipeClient
+  langs:
+  - csharp
+  - vb
+  name: WriteFrame(PipeFrame)
+  nameWithType: ManagedNamedPipeClient.WriteFrame(PipeFrame)
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.WriteFrame(DiscordRPC.IO.PipeFrame)
+  type: Method
+  source:
+    id: WriteFrame
+    path: ''
+    startLine: 2932
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nWrites a frame to the pipe\n"
+  example: []
+  syntax:
+    content: public bool WriteFrame(PipeFrame frame)
+    parameters:
+    - id: frame
+      type: DiscordRPC.IO.PipeFrame
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function WriteFrame(frame As PipeFrame) As Boolean
+  overload: DiscordRPC.IO.ManagedNamedPipeClient.WriteFrame*
+  implements:
+  - DiscordRPC.IO.INamedPipeClient.WriteFrame(DiscordRPC.IO.PipeFrame)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.Close
+  commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.Close
+  id: Close
+  parent: DiscordRPC.IO.ManagedNamedPipeClient
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: ManagedNamedPipeClient.Close()
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.Close()
+  type: Method
+  source:
+    id: Close
+    path: ''
+    startLine: 2971
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nCloses the pipe\n"
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close
+  overload: DiscordRPC.IO.ManagedNamedPipeClient.Close*
+  implements:
+  - DiscordRPC.IO.INamedPipeClient.Close
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.Dispose
+  commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.Dispose
+  id: Dispose
+  parent: DiscordRPC.IO.ManagedNamedPipeClient
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: ManagedNamedPipeClient.Dispose()
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: ''
+    startLine: 3027
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nDisposes of the stream\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: DiscordRPC.IO.ManagedNamedPipeClient.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName(System.Int32,System.String)
+  commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName(System.Int32,System.String)
+  id: GetPipeName(System.Int32,System.String)
+  parent: DiscordRPC.IO.ManagedNamedPipeClient
+  langs:
+  - csharp
+  - vb
+  name: GetPipeName(Int32, String)
+  nameWithType: ManagedNamedPipeClient.GetPipeName(Int32, String)
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName(System.Int32, System.String)
+  type: Method
+  source:
+    id: GetPipeName
+    path: ''
+    startLine: 3055
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nReturns a platform specific path that Discord is hosting the IPC on.\n"
+  example: []
+  syntax:
+    content: public static string GetPipeName(int pipe, string sandbox = "")
+    parameters:
+    - id: pipe
+      type: System.Int32
+      description: The pipe number.
+    - id: sandbox
+      type: System.String
+      description: The sandbox the pipe is in. Leave blank for no sandbox.
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function GetPipeName(pipe As Integer, sandbox As String = "") As String
+  overload: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox
+  commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox
+  id: GetPipeSandbox
+  parent: DiscordRPC.IO.ManagedNamedPipeClient
+  langs:
+  - csharp
+  - vb
+  name: GetPipeSandbox()
+  nameWithType: ManagedNamedPipeClient.GetPipeSandbox()
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox()
+  type: Method
+  source:
+    id: GetPipeSandbox
+    path: ''
+    startLine: 3065
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nGets the name of the possible sandbox enviroment the pipe might be located within. If the platform doesn&apos;t support sandboxed Discord, then it will return null.\n"
+  example: []
+  syntax:
+    content: public static string GetPipeSandbox()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function GetPipeSandbox As String
+  overload: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.IsUnix
+  commentId: M:DiscordRPC.IO.ManagedNamedPipeClient.IsUnix
+  id: IsUnix
+  parent: DiscordRPC.IO.ManagedNamedPipeClient
+  langs:
+  - csharp
+  - vb
+  name: IsUnix()
+  nameWithType: ManagedNamedPipeClient.IsUnix()
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.IsUnix()
+  type: Method
+  source:
+    id: IsUnix
+    path: ''
+    startLine: 3095
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.IO
+  summary: "\nReturns true if the current OS platform is Unix based (Unix or MacOSX).\n"
+  example: []
+  syntax:
+    content: public static bool IsUnix()
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Shared Function IsUnix As Boolean
+  overload: DiscordRPC.IO.ManagedNamedPipeClient.IsUnix*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DiscordRPC.IO
+  commentId: N:DiscordRPC.IO
+  name: DiscordRPC.IO
+  nameWithType: DiscordRPC.IO
+  fullName: DiscordRPC.IO
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DiscordRPC.IO.INamedPipeClient
+  commentId: T:DiscordRPC.IO.INamedPipeClient
+  parent: DiscordRPC.IO
+  name: INamedPipeClient
+  nameWithType: INamedPipeClient
+  fullName: DiscordRPC.IO.INamedPipeClient
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.Logger*
+  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.Logger
+  name: Logger
+  nameWithType: ManagedNamedPipeClient.Logger
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.Logger
+- uid: DiscordRPC.IO.INamedPipeClient.Logger
+  commentId: P:DiscordRPC.IO.INamedPipeClient.Logger
+  parent: DiscordRPC.IO.INamedPipeClient
+  name: Logger
+  nameWithType: INamedPipeClient.Logger
+  fullName: DiscordRPC.IO.INamedPipeClient.Logger
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.IsConnected*
+  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.IsConnected
+  name: IsConnected
+  nameWithType: ManagedNamedPipeClient.IsConnected
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.IsConnected
+- uid: DiscordRPC.IO.INamedPipeClient.IsConnected
+  commentId: P:DiscordRPC.IO.INamedPipeClient.IsConnected
+  parent: DiscordRPC.IO.INamedPipeClient
+  name: IsConnected
+  nameWithType: INamedPipeClient.IsConnected
+  fullName: DiscordRPC.IO.INamedPipeClient.IsConnected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.ConnectedPipe*
+  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.ConnectedPipe
+  name: ConnectedPipe
+  nameWithType: ManagedNamedPipeClient.ConnectedPipe
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.ConnectedPipe
+- uid: DiscordRPC.IO.INamedPipeClient.ConnectedPipe
+  commentId: P:DiscordRPC.IO.INamedPipeClient.ConnectedPipe
+  parent: DiscordRPC.IO.INamedPipeClient
+  name: ConnectedPipe
+  nameWithType: INamedPipeClient.ConnectedPipe
+  fullName: DiscordRPC.IO.INamedPipeClient.ConnectedPipe
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.#ctor*
+  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.#ctor
+  name: ManagedNamedPipeClient
+  nameWithType: ManagedNamedPipeClient.ManagedNamedPipeClient
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.ManagedNamedPipeClient
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.Connect*
+  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.Connect
+  name: Connect
+  nameWithType: ManagedNamedPipeClient.Connect
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.Connect
+- uid: DiscordRPC.IO.INamedPipeClient.Connect(System.Int32)
+  commentId: M:DiscordRPC.IO.INamedPipeClient.Connect(System.Int32)
+  parent: DiscordRPC.IO.INamedPipeClient
+  isExternal: true
+  name: Connect(Int32)
+  nameWithType: INamedPipeClient.Connect(Int32)
+  fullName: DiscordRPC.IO.INamedPipeClient.Connect(System.Int32)
+  spec.csharp:
+  - uid: DiscordRPC.IO.INamedPipeClient.Connect(System.Int32)
+    name: Connect
+    nameWithType: INamedPipeClient.Connect
+    fullName: DiscordRPC.IO.INamedPipeClient.Connect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DiscordRPC.IO.INamedPipeClient.Connect(System.Int32)
+    name: Connect
+    nameWithType: INamedPipeClient.Connect
+    fullName: DiscordRPC.IO.INamedPipeClient.Connect
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.ReadFrame*
+  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.ReadFrame
+  name: ReadFrame
+  nameWithType: ManagedNamedPipeClient.ReadFrame
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.ReadFrame
+- uid: DiscordRPC.IO.INamedPipeClient.ReadFrame(DiscordRPC.IO.PipeFrame@)
+  commentId: M:DiscordRPC.IO.INamedPipeClient.ReadFrame(DiscordRPC.IO.PipeFrame@)
+  parent: DiscordRPC.IO.INamedPipeClient
+  name: ReadFrame(PipeFrame)
+  nameWithType: INamedPipeClient.ReadFrame(PipeFrame)
+  fullName: DiscordRPC.IO.INamedPipeClient.ReadFrame(DiscordRPC.IO.PipeFrame)
+  spec.csharp:
+  - uid: DiscordRPC.IO.INamedPipeClient.ReadFrame(DiscordRPC.IO.PipeFrame@)
+    name: ReadFrame
+    nameWithType: INamedPipeClient.ReadFrame
+    fullName: DiscordRPC.IO.INamedPipeClient.ReadFrame
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: DiscordRPC.IO.PipeFrame
+    name: PipeFrame
+    nameWithType: PipeFrame
+    fullName: DiscordRPC.IO.PipeFrame
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DiscordRPC.IO.INamedPipeClient.ReadFrame(DiscordRPC.IO.PipeFrame@)
+    name: ReadFrame
+    nameWithType: INamedPipeClient.ReadFrame
+    fullName: DiscordRPC.IO.INamedPipeClient.ReadFrame
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: DiscordRPC.IO.PipeFrame
+    name: PipeFrame
+    nameWithType: PipeFrame
+    fullName: DiscordRPC.IO.PipeFrame
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.IO.PipeFrame
+  commentId: T:DiscordRPC.IO.PipeFrame
+  parent: DiscordRPC.IO
+  name: PipeFrame
+  nameWithType: PipeFrame
+  fullName: DiscordRPC.IO.PipeFrame
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.WriteFrame*
+  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.WriteFrame
+  name: WriteFrame
+  nameWithType: ManagedNamedPipeClient.WriteFrame
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.WriteFrame
+- uid: DiscordRPC.IO.INamedPipeClient.WriteFrame(DiscordRPC.IO.PipeFrame)
+  commentId: M:DiscordRPC.IO.INamedPipeClient.WriteFrame(DiscordRPC.IO.PipeFrame)
+  parent: DiscordRPC.IO.INamedPipeClient
+  name: WriteFrame(PipeFrame)
+  nameWithType: INamedPipeClient.WriteFrame(PipeFrame)
+  fullName: DiscordRPC.IO.INamedPipeClient.WriteFrame(DiscordRPC.IO.PipeFrame)
+  spec.csharp:
+  - uid: DiscordRPC.IO.INamedPipeClient.WriteFrame(DiscordRPC.IO.PipeFrame)
+    name: WriteFrame
+    nameWithType: INamedPipeClient.WriteFrame
+    fullName: DiscordRPC.IO.INamedPipeClient.WriteFrame
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: DiscordRPC.IO.PipeFrame
+    name: PipeFrame
+    nameWithType: PipeFrame
+    fullName: DiscordRPC.IO.PipeFrame
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DiscordRPC.IO.INamedPipeClient.WriteFrame(DiscordRPC.IO.PipeFrame)
+    name: WriteFrame
+    nameWithType: INamedPipeClient.WriteFrame
+    fullName: DiscordRPC.IO.INamedPipeClient.WriteFrame
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: DiscordRPC.IO.PipeFrame
+    name: PipeFrame
+    nameWithType: PipeFrame
+    fullName: DiscordRPC.IO.PipeFrame
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.Close*
+  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.Close
+  name: Close
+  nameWithType: ManagedNamedPipeClient.Close
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.Close
+- uid: DiscordRPC.IO.INamedPipeClient.Close
+  commentId: M:DiscordRPC.IO.INamedPipeClient.Close
+  parent: DiscordRPC.IO.INamedPipeClient
+  name: Close()
+  nameWithType: INamedPipeClient.Close()
+  fullName: DiscordRPC.IO.INamedPipeClient.Close()
+  spec.csharp:
+  - uid: DiscordRPC.IO.INamedPipeClient.Close
+    name: Close
+    nameWithType: INamedPipeClient.Close
+    fullName: DiscordRPC.IO.INamedPipeClient.Close
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DiscordRPC.IO.INamedPipeClient.Close
+    name: Close
+    nameWithType: INamedPipeClient.Close
+    fullName: DiscordRPC.IO.INamedPipeClient.Close
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.Dispose*
+  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.Dispose
+  name: Dispose
+  nameWithType: ManagedNamedPipeClient.Dispose
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName*
+  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName
+  name: GetPipeName
+  nameWithType: ManagedNamedPipeClient.GetPipeName
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox*
+  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox
+  name: GetPipeSandbox
+  nameWithType: ManagedNamedPipeClient.GetPipeSandbox
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.GetPipeSandbox
+- uid: DiscordRPC.IO.ManagedNamedPipeClient.IsUnix*
+  commentId: Overload:DiscordRPC.IO.ManagedNamedPipeClient.IsUnix
+  name: IsUnix
+  nameWithType: ManagedNamedPipeClient.IsUnix
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient.IsUnix

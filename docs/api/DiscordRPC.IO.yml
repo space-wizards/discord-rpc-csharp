@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.IO
+  commentId: N:DiscordRPC.IO
+  id: DiscordRPC.IO
+  children:
+  - DiscordRPC.IO.INamedPipeClient
+  - DiscordRPC.IO.ManagedNamedPipeClient
+  - DiscordRPC.IO.Opcode
+  - DiscordRPC.IO.PipeFrame
+  langs:
+  - csharp
+  - vb
+  name: DiscordRPC.IO
+  nameWithType: DiscordRPC.IO
+  fullName: DiscordRPC.IO
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: DiscordRPC.IO.INamedPipeClient
+  commentId: T:DiscordRPC.IO.INamedPipeClient
+  parent: DiscordRPC.IO
+  name: INamedPipeClient
+  nameWithType: INamedPipeClient
+  fullName: DiscordRPC.IO.INamedPipeClient
+- uid: DiscordRPC.IO.ManagedNamedPipeClient
+  commentId: T:DiscordRPC.IO.ManagedNamedPipeClient
+  name: ManagedNamedPipeClient
+  nameWithType: ManagedNamedPipeClient
+  fullName: DiscordRPC.IO.ManagedNamedPipeClient
+- uid: DiscordRPC.IO.Opcode
+  commentId: T:DiscordRPC.IO.Opcode
+  parent: DiscordRPC.IO
+  name: Opcode
+  nameWithType: Opcode
+  fullName: DiscordRPC.IO.Opcode
+- uid: DiscordRPC.IO.PipeFrame
+  commentId: T:DiscordRPC.IO.PipeFrame
+  parent: DiscordRPC.IO
+  name: PipeFrame
+  nameWithType: PipeFrame
+  fullName: DiscordRPC.IO.PipeFrame
+- uid: DiscordRPC.IO
+  commentId: N:DiscordRPC.IO
+  name: DiscordRPC.IO
+  nameWithType: DiscordRPC.IO
+  fullName: DiscordRPC.IO

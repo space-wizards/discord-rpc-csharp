@@ -1,0 +1,367 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.User.Flag
+  commentId: T:DiscordRPC.User.Flag
+  id: User.Flag
+  parent: DiscordRPC
+  children:
+  - DiscordRPC.User.Flag.BugHunter
+  - DiscordRPC.User.Flag.EarlySupporter
+  - DiscordRPC.User.Flag.Employee
+  - DiscordRPC.User.Flag.HouseBalance
+  - DiscordRPC.User.Flag.HouseBravery
+  - DiscordRPC.User.Flag.HouseBrilliance
+  - DiscordRPC.User.Flag.HypeSquad
+  - DiscordRPC.User.Flag.None
+  - DiscordRPC.User.Flag.Partner
+  - DiscordRPC.User.Flag.TeamUser
+  langs:
+  - csharp
+  - vb
+  name: User.Flag
+  nameWithType: User.Flag
+  fullName: DiscordRPC.User.Flag
+  type: Enum
+  source:
+    id: Flag
+    path: ''
+    startLine: 2001
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nA flag on the user account\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum Flag
+    content.vb: >-
+      <Flags>
+
+      Public Enum Flag
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DiscordRPC.User.Flag.None
+  commentId: F:DiscordRPC.User.Flag.None
+  id: None
+  parent: DiscordRPC.User.Flag
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: User.Flag.None
+  fullName: DiscordRPC.User.Flag.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 2005
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: No flag
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: DiscordRPC.User.Flag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.Flag.Employee
+  commentId: F:DiscordRPC.User.Flag.Employee
+  id: Employee
+  parent: DiscordRPC.User.Flag
+  langs:
+  - csharp
+  - vb
+  name: Employee
+  nameWithType: User.Flag.Employee
+  fullName: DiscordRPC.User.Flag.Employee
+  type: Field
+  source:
+    id: Employee
+    path: ''
+    startLine: 2008
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: Staff of Discord.
+  example: []
+  syntax:
+    content: Employee = 1
+    return:
+      type: DiscordRPC.User.Flag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.Flag.Partner
+  commentId: F:DiscordRPC.User.Flag.Partner
+  id: Partner
+  parent: DiscordRPC.User.Flag
+  langs:
+  - csharp
+  - vb
+  name: Partner
+  nameWithType: User.Flag.Partner
+  fullName: DiscordRPC.User.Flag.Partner
+  type: Field
+  source:
+    id: Partner
+    path: ''
+    startLine: 2011
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: Partners of Discord.
+  example: []
+  syntax:
+    content: Partner = 2
+    return:
+      type: DiscordRPC.User.Flag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.Flag.HypeSquad
+  commentId: F:DiscordRPC.User.Flag.HypeSquad
+  id: HypeSquad
+  parent: DiscordRPC.User.Flag
+  langs:
+  - csharp
+  - vb
+  name: HypeSquad
+  nameWithType: User.Flag.HypeSquad
+  fullName: DiscordRPC.User.Flag.HypeSquad
+  type: Field
+  source:
+    id: HypeSquad
+    path: ''
+    startLine: 2014
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: Original HypeSquad which organise events.
+  example: []
+  syntax:
+    content: HypeSquad = 4
+    return:
+      type: DiscordRPC.User.Flag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.Flag.BugHunter
+  commentId: F:DiscordRPC.User.Flag.BugHunter
+  id: BugHunter
+  parent: DiscordRPC.User.Flag
+  langs:
+  - csharp
+  - vb
+  name: BugHunter
+  nameWithType: User.Flag.BugHunter
+  fullName: DiscordRPC.User.Flag.BugHunter
+  type: Field
+  source:
+    id: BugHunter
+    path: ''
+    startLine: 2017
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: Bug Hunters that found and reported bugs in Discord.
+  example: []
+  syntax:
+    content: BugHunter = 8
+    return:
+      type: DiscordRPC.User.Flag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.Flag.HouseBravery
+  commentId: F:DiscordRPC.User.Flag.HouseBravery
+  id: HouseBravery
+  parent: DiscordRPC.User.Flag
+  langs:
+  - csharp
+  - vb
+  name: HouseBravery
+  nameWithType: User.Flag.HouseBravery
+  fullName: DiscordRPC.User.Flag.HouseBravery
+  type: Field
+  source:
+    id: HouseBravery
+    path: ''
+    startLine: 2024
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: The HypeSquad House of Bravery.
+  example: []
+  syntax:
+    content: HouseBravery = 64
+    return:
+      type: DiscordRPC.User.Flag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.Flag.HouseBrilliance
+  commentId: F:DiscordRPC.User.Flag.HouseBrilliance
+  id: HouseBrilliance
+  parent: DiscordRPC.User.Flag
+  langs:
+  - csharp
+  - vb
+  name: HouseBrilliance
+  nameWithType: User.Flag.HouseBrilliance
+  fullName: DiscordRPC.User.Flag.HouseBrilliance
+  type: Field
+  source:
+    id: HouseBrilliance
+    path: ''
+    startLine: 2027
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: The HypeSquad House of Brilliance.
+  example: []
+  syntax:
+    content: HouseBrilliance = 128
+    return:
+      type: DiscordRPC.User.Flag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.Flag.HouseBalance
+  commentId: F:DiscordRPC.User.Flag.HouseBalance
+  id: HouseBalance
+  parent: DiscordRPC.User.Flag
+  langs:
+  - csharp
+  - vb
+  name: HouseBalance
+  nameWithType: User.Flag.HouseBalance
+  fullName: DiscordRPC.User.Flag.HouseBalance
+  type: Field
+  source:
+    id: HouseBalance
+    path: ''
+    startLine: 2030
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: The HypeSquad House of Balance (the best one).
+  example: []
+  syntax:
+    content: HouseBalance = 256
+    return:
+      type: DiscordRPC.User.Flag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.Flag.EarlySupporter
+  commentId: F:DiscordRPC.User.Flag.EarlySupporter
+  id: EarlySupporter
+  parent: DiscordRPC.User.Flag
+  langs:
+  - csharp
+  - vb
+  name: EarlySupporter
+  nameWithType: User.Flag.EarlySupporter
+  fullName: DiscordRPC.User.Flag.EarlySupporter
+  type: Field
+  source:
+    id: EarlySupporter
+    path: ''
+    startLine: 2033
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: Early Supporter of Discord and had Nitro before the store was released.
+  example: []
+  syntax:
+    content: EarlySupporter = 512
+    return:
+      type: DiscordRPC.User.Flag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.Flag.TeamUser
+  commentId: F:DiscordRPC.User.Flag.TeamUser
+  id: TeamUser
+  parent: DiscordRPC.User.Flag
+  langs:
+  - csharp
+  - vb
+  name: TeamUser
+  nameWithType: User.Flag.TeamUser
+  fullName: DiscordRPC.User.Flag.TeamUser
+  type: Field
+  source:
+    id: TeamUser
+    path: ''
+    startLine: 2038
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: >
+    Apart of a team.
+
+    <p>Unclear if it is reserved for members that share a team with the current application.</p>
+  example: []
+  syntax:
+    content: TeamUser = 1024
+    return:
+      type: DiscordRPC.User.Flag
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC
+- uid: DiscordRPC.User.Flag
+  commentId: T:DiscordRPC.User.Flag
+  parent: DiscordRPC
+  name: User.Flag
+  nameWithType: User.Flag
+  fullName: DiscordRPC.User.Flag

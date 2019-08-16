@@ -1,0 +1,504 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityPackageExporter.TarOutputExtensions
+  commentId: T:UnityPackageExporter.TarOutputExtensions
+  id: TarOutputExtensions
+  parent: UnityPackageExporter
+  children:
+  - UnityPackageExporter.TarOutputExtensions.ReadNextFile(TarInputStream,Stream)
+  - UnityPackageExporter.TarOutputExtensions.WriteAllText(TarOutputStream,System.String,System.String)
+  - UnityPackageExporter.TarOutputExtensions.WriteFile(TarOutputStream,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: TarOutputExtensions
+  nameWithType: TarOutputExtensions
+  fullName: UnityPackageExporter.TarOutputExtensions
+  type: Class
+  source:
+    id: TarOutputExtensions
+    path: ''
+    startLine: 6459
+  assemblies:
+  - cs.temp.dll
+  namespace: UnityPackageExporter
+  syntax:
+    content: public static class TarOutputExtensions
+    content.vb: Public Module TarOutputExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: UnityPackageExporter.TarOutputExtensions.WriteFile(TarOutputStream,System.String,System.String)
+  commentId: M:UnityPackageExporter.TarOutputExtensions.WriteFile(TarOutputStream,System.String,System.String)
+  id: WriteFile(TarOutputStream,System.String,System.String)
+  isExtensionMethod: true
+  parent: UnityPackageExporter.TarOutputExtensions
+  langs:
+  - csharp
+  - vb
+  name: WriteFile(TarOutputStream, String, String)
+  nameWithType: TarOutputExtensions.WriteFile(TarOutputStream, String, String)
+  fullName: UnityPackageExporter.TarOutputExtensions.WriteFile(TarOutputStream, System.String, System.String)
+  type: Method
+  source:
+    id: WriteFile
+    path: ''
+    startLine: 6461
+  assemblies:
+  - cs.temp.dll
+  namespace: UnityPackageExporter
+  syntax:
+    content: public static void WriteFile(this TarOutputStream stream, string source, string dest)
+    parameters:
+    - id: stream
+      type: TarOutputStream
+    - id: source
+      type: System.String
+    - id: dest
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub WriteFile(stream As TarOutputStream, source As String, dest As String)
+  overload: UnityPackageExporter.TarOutputExtensions.WriteFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: UnityPackageExporter.TarOutputExtensions.WriteAllText(TarOutputStream,System.String,System.String)
+  commentId: M:UnityPackageExporter.TarOutputExtensions.WriteAllText(TarOutputStream,System.String,System.String)
+  id: WriteAllText(TarOutputStream,System.String,System.String)
+  isExtensionMethod: true
+  parent: UnityPackageExporter.TarOutputExtensions
+  langs:
+  - csharp
+  - vb
+  name: WriteAllText(TarOutputStream, String, String)
+  nameWithType: TarOutputExtensions.WriteAllText(TarOutputStream, String, String)
+  fullName: UnityPackageExporter.TarOutputExtensions.WriteAllText(TarOutputStream, System.String, System.String)
+  type: Method
+  source:
+    id: WriteAllText
+    path: ''
+    startLine: 6493
+  assemblies:
+  - cs.temp.dll
+  namespace: UnityPackageExporter
+  syntax:
+    content: public static void WriteAllText(this TarOutputStream stream, string dest, string content)
+    parameters:
+    - id: stream
+      type: TarOutputStream
+    - id: dest
+      type: System.String
+    - id: content
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub WriteAllText(stream As TarOutputStream, dest As String, content As String)
+  overload: UnityPackageExporter.TarOutputExtensions.WriteAllText*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: UnityPackageExporter.TarOutputExtensions.ReadNextFile(TarInputStream,Stream)
+  commentId: M:UnityPackageExporter.TarOutputExtensions.ReadNextFile(TarInputStream,Stream)
+  id: ReadNextFile(TarInputStream,Stream)
+  isExtensionMethod: true
+  parent: UnityPackageExporter.TarOutputExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadNextFile(TarInputStream, Stream)
+  nameWithType: TarOutputExtensions.ReadNextFile(TarInputStream, Stream)
+  fullName: UnityPackageExporter.TarOutputExtensions.ReadNextFile(TarInputStream, Stream)
+  type: Method
+  source:
+    id: ReadNextFile
+    path: ''
+    startLine: 6510
+  assemblies:
+  - cs.temp.dll
+  namespace: UnityPackageExporter
+  syntax:
+    content: public static long ReadNextFile(this TarInputStream tarIn, Stream outStream)
+    parameters:
+    - id: tarIn
+      type: TarInputStream
+    - id: outStream
+      type: Stream
+    return:
+      type: System.Int64
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadNextFile(tarIn As TarInputStream, outStream As Stream) As Long
+  overload: UnityPackageExporter.TarOutputExtensions.ReadNextFile*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: UnityPackageExporter
+  commentId: N:UnityPackageExporter
+  name: UnityPackageExporter
+  nameWithType: UnityPackageExporter
+  fullName: UnityPackageExporter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityPackageExporter.TarOutputExtensions.WriteFile*
+  commentId: Overload:UnityPackageExporter.TarOutputExtensions.WriteFile
+  name: WriteFile
+  nameWithType: TarOutputExtensions.WriteFile
+  fullName: UnityPackageExporter.TarOutputExtensions.WriteFile
+- uid: TarOutputStream
+  isExternal: true
+  name: TarOutputStream
+  nameWithType: TarOutputStream
+  fullName: TarOutputStream
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: UnityPackageExporter.TarOutputExtensions.WriteAllText*
+  commentId: Overload:UnityPackageExporter.TarOutputExtensions.WriteAllText
+  name: WriteAllText
+  nameWithType: TarOutputExtensions.WriteAllText
+  fullName: UnityPackageExporter.TarOutputExtensions.WriteAllText
+- uid: UnityPackageExporter.TarOutputExtensions.ReadNextFile*
+  commentId: Overload:UnityPackageExporter.TarOutputExtensions.ReadNextFile
+  name: ReadNextFile
+  nameWithType: TarOutputExtensions.ReadNextFile
+  fullName: UnityPackageExporter.TarOutputExtensions.ReadNextFile
+- uid: TarInputStream
+  commentId: '!:TarInputStream'
+  isExternal: true
+  name: TarInputStream
+  nameWithType: TarInputStream
+  fullName: TarInputStream
+- uid: Stream
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: Stream
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64

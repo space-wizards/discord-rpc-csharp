@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Events.OnUnsubscribeEvent
+  commentId: T:DiscordRPC.Events.OnUnsubscribeEvent
+  id: OnUnsubscribeEvent
+  parent: DiscordRPC.Events
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnUnsubscribeEvent
+  nameWithType: OnUnsubscribeEvent
+  fullName: DiscordRPC.Events.OnUnsubscribeEvent
+  type: Delegate
+  source:
+    id: OnUnsubscribeEvent
+    path: ''
+    startLine: 983
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Events
+  summary: "\nCalled when the Discord Client has unsubscribed from an event.\n"
+  example: []
+  syntax:
+    content: public delegate void OnUnsubscribeEvent(object sender, UnsubscribeMessage args);
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The Discord client handler that sent this event
+    - id: args
+      type: UnsubscribeMessage
+      description: The arguments supplied with the event
+    content.vb: Public Delegate Sub OnUnsubscribeEvent(sender As Object, args As UnsubscribeMessage)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: DiscordRPC.Events
+  commentId: N:DiscordRPC.Events
+  name: DiscordRPC.Events
+  nameWithType: DiscordRPC.Events
+  fullName: DiscordRPC.Events
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnsubscribeMessage
+  commentId: '!:UnsubscribeMessage'
+  isExternal: true
+  name: UnsubscribeMessage
+  nameWithType: UnsubscribeMessage
+  fullName: UnsubscribeMessage
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

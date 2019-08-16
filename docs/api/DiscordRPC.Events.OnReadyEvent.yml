@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Events.OnReadyEvent
+  commentId: T:DiscordRPC.Events.OnReadyEvent
+  id: OnReadyEvent
+  parent: DiscordRPC.Events
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnReadyEvent
+  nameWithType: OnReadyEvent
+  fullName: DiscordRPC.Events.OnReadyEvent
+  type: Delegate
+  source:
+    id: OnReadyEvent
+    path: ''
+    startLine: 948
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Events
+  summary: "\nCalled when the Discord Client is ready to send and receive messages.\n"
+  example: []
+  syntax:
+    content: public delegate void OnReadyEvent(object sender, ReadyMessage args);
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The Discord client handler that sent this event
+    - id: args
+      type: ReadyMessage
+      description: The arguments supplied with the event
+    content.vb: Public Delegate Sub OnReadyEvent(sender As Object, args As ReadyMessage)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: DiscordRPC.Events
+  commentId: N:DiscordRPC.Events
+  name: DiscordRPC.Events
+  nameWithType: DiscordRPC.Events
+  fullName: DiscordRPC.Events
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ReadyMessage
+  commentId: '!:ReadyMessage'
+  isExternal: true
+  name: ReadyMessage
+  nameWithType: ReadyMessage
+  fullName: ReadyMessage
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

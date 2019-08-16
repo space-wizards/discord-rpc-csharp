@@ -1,0 +1,388 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Message.MessageType
+  commentId: T:DiscordRPC.Message.MessageType
+  id: MessageType
+  parent: DiscordRPC.Message
+  children:
+  - DiscordRPC.Message.MessageType.Close
+  - DiscordRPC.Message.MessageType.ConnectionEstablished
+  - DiscordRPC.Message.MessageType.ConnectionFailed
+  - DiscordRPC.Message.MessageType.Error
+  - DiscordRPC.Message.MessageType.Join
+  - DiscordRPC.Message.MessageType.JoinRequest
+  - DiscordRPC.Message.MessageType.PresenceUpdate
+  - DiscordRPC.Message.MessageType.Ready
+  - DiscordRPC.Message.MessageType.Spectate
+  - DiscordRPC.Message.MessageType.Subscribe
+  - DiscordRPC.Message.MessageType.Unsubscribe
+  langs:
+  - csharp
+  - vb
+  name: MessageType
+  nameWithType: MessageType
+  fullName: DiscordRPC.Message.MessageType
+  type: Enum
+  source:
+    id: MessageType
+    path: ''
+    startLine: 3931
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nType of message.\n"
+  example: []
+  syntax:
+    content: public enum MessageType
+    content.vb: Public Enum MessageType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DiscordRPC.Message.MessageType.Ready
+  commentId: F:DiscordRPC.Message.MessageType.Ready
+  id: Ready
+  parent: DiscordRPC.Message.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Ready
+  nameWithType: MessageType.Ready
+  fullName: DiscordRPC.Message.MessageType.Ready
+  type: Field
+  source:
+    id: Ready
+    path: ''
+    startLine: 3936
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe Discord Client is ready to send and receive messages.\n"
+  example: []
+  syntax:
+    content: Ready = 0
+    return:
+      type: DiscordRPC.Message.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.MessageType.Close
+  commentId: F:DiscordRPC.Message.MessageType.Close
+  id: Close
+  parent: DiscordRPC.Message.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Close
+  nameWithType: MessageType.Close
+  fullName: DiscordRPC.Message.MessageType.Close
+  type: Field
+  source:
+    id: Close
+    path: ''
+    startLine: 3941
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe connection to the Discord Client is lost. The connection will remain close and unready to accept messages until the Ready event is called again.\n"
+  example: []
+  syntax:
+    content: Close = 1
+    return:
+      type: DiscordRPC.Message.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.MessageType.Error
+  commentId: F:DiscordRPC.Message.MessageType.Error
+  id: Error
+  parent: DiscordRPC.Message.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: MessageType.Error
+  fullName: DiscordRPC.Message.MessageType.Error
+  type: Field
+  source:
+    id: Error
+    path: ''
+    startLine: 3946
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nA error has occured during the transmission of a message. For example, if a bad Rich Presence payload is sent, this event will be called explaining what went wrong.\n"
+  example: []
+  syntax:
+    content: Error = 2
+    return:
+      type: DiscordRPC.Message.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.MessageType.PresenceUpdate
+  commentId: F:DiscordRPC.Message.MessageType.PresenceUpdate
+  id: PresenceUpdate
+  parent: DiscordRPC.Message.MessageType
+  langs:
+  - csharp
+  - vb
+  name: PresenceUpdate
+  nameWithType: MessageType.PresenceUpdate
+  fullName: DiscordRPC.Message.MessageType.PresenceUpdate
+  type: Field
+  source:
+    id: PresenceUpdate
+    path: ''
+    startLine: 3951
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe Discord Client has updated the presence.\n"
+  example: []
+  syntax:
+    content: PresenceUpdate = 3
+    return:
+      type: DiscordRPC.Message.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.MessageType.Subscribe
+  commentId: F:DiscordRPC.Message.MessageType.Subscribe
+  id: Subscribe
+  parent: DiscordRPC.Message.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Subscribe
+  nameWithType: MessageType.Subscribe
+  fullName: DiscordRPC.Message.MessageType.Subscribe
+  type: Field
+  source:
+    id: Subscribe
+    path: ''
+    startLine: 3956
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe Discord Client has subscribed to an event.\n"
+  example: []
+  syntax:
+    content: Subscribe = 4
+    return:
+      type: DiscordRPC.Message.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.MessageType.Unsubscribe
+  commentId: F:DiscordRPC.Message.MessageType.Unsubscribe
+  id: Unsubscribe
+  parent: DiscordRPC.Message.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe
+  nameWithType: MessageType.Unsubscribe
+  fullName: DiscordRPC.Message.MessageType.Unsubscribe
+  type: Field
+  source:
+    id: Unsubscribe
+    path: ''
+    startLine: 3961
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe Discord Client has unsubscribed from an event.\n"
+  example: []
+  syntax:
+    content: Unsubscribe = 5
+    return:
+      type: DiscordRPC.Message.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.MessageType.Join
+  commentId: F:DiscordRPC.Message.MessageType.Join
+  id: Join
+  parent: DiscordRPC.Message.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Join
+  nameWithType: MessageType.Join
+  fullName: DiscordRPC.Message.MessageType.Join
+  type: Field
+  source:
+    id: Join
+    path: ''
+    startLine: 3966
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe Discord Client wishes for this process to join a game.\n"
+  example: []
+  syntax:
+    content: Join = 6
+    return:
+      type: DiscordRPC.Message.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.MessageType.Spectate
+  commentId: F:DiscordRPC.Message.MessageType.Spectate
+  id: Spectate
+  parent: DiscordRPC.Message.MessageType
+  langs:
+  - csharp
+  - vb
+  name: Spectate
+  nameWithType: MessageType.Spectate
+  fullName: DiscordRPC.Message.MessageType.Spectate
+  type: Field
+  source:
+    id: Spectate
+    path: ''
+    startLine: 3971
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe Discord Client wishes for this process to spectate a game. \n"
+  example: []
+  syntax:
+    content: Spectate = 7
+    return:
+      type: DiscordRPC.Message.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.MessageType.JoinRequest
+  commentId: F:DiscordRPC.Message.MessageType.JoinRequest
+  id: JoinRequest
+  parent: DiscordRPC.Message.MessageType
+  langs:
+  - csharp
+  - vb
+  name: JoinRequest
+  nameWithType: MessageType.JoinRequest
+  fullName: DiscordRPC.Message.MessageType.JoinRequest
+  type: Field
+  source:
+    id: JoinRequest
+    path: ''
+    startLine: 3976
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nAnother discord user requests permission to join this game.\n"
+  example: []
+  syntax:
+    content: JoinRequest = 8
+    return:
+      type: DiscordRPC.Message.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.MessageType.ConnectionEstablished
+  commentId: F:DiscordRPC.Message.MessageType.ConnectionEstablished
+  id: ConnectionEstablished
+  parent: DiscordRPC.Message.MessageType
+  langs:
+  - csharp
+  - vb
+  name: ConnectionEstablished
+  nameWithType: MessageType.ConnectionEstablished
+  fullName: DiscordRPC.Message.MessageType.ConnectionEstablished
+  type: Field
+  source:
+    id: ConnectionEstablished
+    path: ''
+    startLine: 3981
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe connection to the discord client was succesfull. This is called before <xref href=\"DiscordRPC.Message.MessageType.Ready\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: ConnectionEstablished = 9
+    return:
+      type: DiscordRPC.Message.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.MessageType.ConnectionFailed
+  commentId: F:DiscordRPC.Message.MessageType.ConnectionFailed
+  id: ConnectionFailed
+  parent: DiscordRPC.Message.MessageType
+  langs:
+  - csharp
+  - vb
+  name: ConnectionFailed
+  nameWithType: MessageType.ConnectionFailed
+  fullName: DiscordRPC.Message.MessageType.ConnectionFailed
+  type: Field
+  source:
+    id: ConnectionFailed
+    path: ''
+    startLine: 3986
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nFailed to establish any connection with discord. Discord is potentially not running?\n"
+  example: []
+  syntax:
+    content: ConnectionFailed = 10
+    return:
+      type: DiscordRPC.Message.MessageType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DiscordRPC.Message
+  commentId: N:DiscordRPC.Message
+  name: DiscordRPC.Message
+  nameWithType: DiscordRPC.Message
+  fullName: DiscordRPC.Message
+- uid: DiscordRPC.Message.MessageType
+  commentId: T:DiscordRPC.Message.MessageType
+  parent: DiscordRPC.Message
+  name: MessageType
+  nameWithType: MessageType
+  fullName: DiscordRPC.Message.MessageType
+- uid: DiscordRPC.Message.MessageType.Ready
+  commentId: F:DiscordRPC.Message.MessageType.Ready
+  isExternal: true

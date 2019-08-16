@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityPackageExporter
+  commentId: N:UnityPackageExporter
+  id: UnityPackageExporter
+  children:
+  - UnityPackageExporter.TarOutputExtensions
+  langs:
+  - csharp
+  - vb
+  name: UnityPackageExporter
+  nameWithType: UnityPackageExporter
+  fullName: UnityPackageExporter
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: UnityPackageExporter.TarOutputExtensions
+  commentId: T:UnityPackageExporter.TarOutputExtensions
+  name: TarOutputExtensions
+  nameWithType: TarOutputExtensions
+  fullName: UnityPackageExporter.TarOutputExtensions

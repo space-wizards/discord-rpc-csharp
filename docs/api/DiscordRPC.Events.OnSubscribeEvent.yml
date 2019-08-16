@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Events.OnSubscribeEvent
+  commentId: T:DiscordRPC.Events.OnSubscribeEvent
+  id: OnSubscribeEvent
+  parent: DiscordRPC.Events
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnSubscribeEvent
+  nameWithType: OnSubscribeEvent
+  fullName: DiscordRPC.Events.OnSubscribeEvent
+  type: Delegate
+  source:
+    id: OnSubscribeEvent
+    path: ''
+    startLine: 976
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Events
+  summary: "\nCalled when the Discord Client has subscribed to an event.\n"
+  example: []
+  syntax:
+    content: public delegate void OnSubscribeEvent(object sender, SubscribeMessage args);
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The Discord client handler that sent this event
+    - id: args
+      type: SubscribeMessage
+      description: The arguments supplied with the event
+    content.vb: Public Delegate Sub OnSubscribeEvent(sender As Object, args As SubscribeMessage)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: DiscordRPC.Events
+  commentId: N:DiscordRPC.Events
+  name: DiscordRPC.Events
+  nameWithType: DiscordRPC.Events
+  fullName: DiscordRPC.Events
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SubscribeMessage
+  commentId: '!:SubscribeMessage'
+  isExternal: true
+  name: SubscribeMessage
+  nameWithType: SubscribeMessage
+  fullName: SubscribeMessage
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

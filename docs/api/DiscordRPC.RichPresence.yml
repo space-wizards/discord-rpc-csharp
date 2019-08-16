@@ -1,0 +1,1128 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.RichPresence
+  commentId: T:DiscordRPC.RichPresence
+  id: RichPresence
+  parent: DiscordRPC
+  children:
+  - DiscordRPC.RichPresence.Assets
+  - DiscordRPC.RichPresence.Clone
+  - DiscordRPC.RichPresence.Details
+  - DiscordRPC.RichPresence.HasAssets
+  - DiscordRPC.RichPresence.HasParty
+  - DiscordRPC.RichPresence.HasSecrets
+  - DiscordRPC.RichPresence.HasTimestamps
+  - DiscordRPC.RichPresence.op_Implicit(DiscordRPC.RichPresence)~System.Boolean
+  - DiscordRPC.RichPresence.Party
+  - DiscordRPC.RichPresence.Secrets
+  - DiscordRPC.RichPresence.State
+  - DiscordRPC.RichPresence.Timestamps
+  - DiscordRPC.RichPresence.WithAssets(DiscordRPC.Assets)
+  - DiscordRPC.RichPresence.WithDetails(System.String)
+  - DiscordRPC.RichPresence.WithParty(DiscordRPC.Party)
+  - DiscordRPC.RichPresence.WithSecrets(DiscordRPC.Secrets)
+  - DiscordRPC.RichPresence.WithState(System.String)
+  - DiscordRPC.RichPresence.WithTimestamps(DiscordRPC.Timestamps)
+  langs:
+  - csharp
+  - vb
+  name: RichPresence
+  nameWithType: RichPresence
+  fullName: DiscordRPC.RichPresence
+  type: Class
+  source:
+    id: RichPresence
+    path: ''
+    startLine: 1076
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe Rich Presence structure that will be sent and received by Discord. Use this class to build your presence and update it appropriately.\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class RichPresence
+    content.vb: >-
+      <Serializable>
+
+      Public Class RichPresence
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DiscordRPC.RichPresence.State
+  commentId: P:DiscordRPC.RichPresence.State
+  id: State
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: RichPresence.State
+  fullName: DiscordRPC.RichPresence.State
+  type: Property
+  source:
+    id: State
+    path: ''
+    startLine: 1084
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe user&apos;s current <xref href=\"DiscordRPC.RichPresence.Party\" data-throw-if-not-resolved=\"false\"></xref> status. For example, &quot;Playing Solo&quot; or &quot;With Friends&quot;.\n<p>Max 128 bytes</p>\n"
+  example: []
+  syntax:
+    content: public string State { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property State As String
+  overload: DiscordRPC.RichPresence.State*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.Details
+  commentId: P:DiscordRPC.RichPresence.Details
+  id: Details
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: Details
+  nameWithType: RichPresence.Details
+  fullName: DiscordRPC.RichPresence.Details
+  type: Property
+  source:
+    id: Details
+    path: ''
+    startLine: 1100
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nWhat the user is currently doing. For example, &quot;Competitive - Total Mayhem&quot;.\n<p>Max 128 bytes</p>\n"
+  example: []
+  syntax:
+    content: public string Details { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Details As String
+  overload: DiscordRPC.RichPresence.Details*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.Timestamps
+  commentId: P:DiscordRPC.RichPresence.Timestamps
+  id: Timestamps
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: Timestamps
+  nameWithType: RichPresence.Timestamps
+  fullName: DiscordRPC.RichPresence.Timestamps
+  type: Property
+  source:
+    id: Timestamps
+    path: ''
+    startLine: 1115
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe time elapsed / remaining time data.\n"
+  example: []
+  syntax:
+    content: public Timestamps Timestamps { get; set; }
+    parameters: []
+    return:
+      type: DiscordRPC.Timestamps
+    content.vb: Public Property Timestamps As Timestamps
+  overload: DiscordRPC.RichPresence.Timestamps*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.Assets
+  commentId: P:DiscordRPC.RichPresence.Assets
+  id: Assets
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: Assets
+  nameWithType: RichPresence.Assets
+  fullName: DiscordRPC.RichPresence.Assets
+  type: Property
+  source:
+    id: Assets
+    path: ''
+    startLine: 1121
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe names of the images to use and the tooltips to give those images.\n"
+  example: []
+  syntax:
+    content: public Assets Assets { get; set; }
+    parameters: []
+    return:
+      type: DiscordRPC.Assets
+    content.vb: Public Property Assets As Assets
+  overload: DiscordRPC.RichPresence.Assets*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.Party
+  commentId: P:DiscordRPC.RichPresence.Party
+  id: Party
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: Party
+  nameWithType: RichPresence.Party
+  fullName: DiscordRPC.RichPresence.Party
+  type: Property
+  source:
+    id: Party
+    path: ''
+    startLine: 1127
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe party the player is currently in. The <xref href=\"DiscordRPC.Party.ID\" data-throw-if-not-resolved=\"false\"></xref> must be set for this to be included in the RichPresence update.\n"
+  example: []
+  syntax:
+    content: public Party Party { get; set; }
+    parameters: []
+    return:
+      type: DiscordRPC.Party
+    content.vb: Public Property Party As Party
+  overload: DiscordRPC.RichPresence.Party*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.Secrets
+  commentId: P:DiscordRPC.RichPresence.Secrets
+  id: Secrets
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: Secrets
+  nameWithType: RichPresence.Secrets
+  fullName: DiscordRPC.RichPresence.Secrets
+  type: Property
+  source:
+    id: Secrets
+    path: ''
+    startLine: 1135
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe secrets used for Join / Spectate. Secrets are obfuscated data of your choosing. They could be match ids, player ids, lobby ids, etc. Make this object null if you do not wish too / unable too implement the Join / Request feature.\n<p>To keep security on the up and up, Discord requires that you properly hash/encode/encrypt/put-a-padlock-on-and-swallow-the-key-but-wait-then-how-would-you-open-it your secrets.</p>\n<p>Visit the <a href=\"https://discordapp.com/developers/docs/rich-presence/how-to#secrets\">Rich Presence How-To</a> for more information.</p>\n"
+  example: []
+  syntax:
+    content: public Secrets Secrets { get; set; }
+    parameters: []
+    return:
+      type: DiscordRPC.Secrets
+    content.vb: Public Property Secrets As Secrets
+  overload: DiscordRPC.RichPresence.Secrets*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.Clone
+  commentId: M:DiscordRPC.RichPresence.Clone
+  id: Clone
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: RichPresence.Clone()
+  fullName: DiscordRPC.RichPresence.Clone()
+  type: Method
+  source:
+    id: Clone
+    path: ''
+    startLine: 1152
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nClones the presence into a new instance. Used for thread safe writing and reading. This function will ignore properties if they are in a invalid state.\n"
+  example: []
+  syntax:
+    content: public RichPresence Clone()
+    return:
+      type: DiscordRPC.RichPresence
+      description: ''
+    content.vb: Public Function Clone As RichPresence
+  overload: DiscordRPC.RichPresence.Clone*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.HasTimestamps
+  commentId: M:DiscordRPC.RichPresence.HasTimestamps
+  id: HasTimestamps
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: HasTimestamps()
+  nameWithType: RichPresence.HasTimestamps()
+  fullName: DiscordRPC.RichPresence.HasTimestamps()
+  type: Method
+  source:
+    id: HasTimestamps
+    path: ''
+    startLine: 1255
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nDoes the Rich Presence have valid timestamps?\n"
+  example: []
+  syntax:
+    content: public bool HasTimestamps()
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function HasTimestamps As Boolean
+  overload: DiscordRPC.RichPresence.HasTimestamps*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.HasAssets
+  commentId: M:DiscordRPC.RichPresence.HasAssets
+  id: HasAssets
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: HasAssets()
+  nameWithType: RichPresence.HasAssets()
+  fullName: DiscordRPC.RichPresence.HasAssets()
+  type: Method
+  source:
+    id: HasAssets
+    path: ''
+    startLine: 1264
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nDoes the Rich Presence have valid assets?\n"
+  example: []
+  syntax:
+    content: public bool HasAssets()
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function HasAssets As Boolean
+  overload: DiscordRPC.RichPresence.HasAssets*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.HasParty
+  commentId: M:DiscordRPC.RichPresence.HasParty
+  id: HasParty
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: HasParty()
+  nameWithType: RichPresence.HasParty()
+  fullName: DiscordRPC.RichPresence.HasParty()
+  type: Method
+  source:
+    id: HasParty
+    path: ''
+    startLine: 1273
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nDoes the Rich Presence have a valid party?\n"
+  example: []
+  syntax:
+    content: public bool HasParty()
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function HasParty As Boolean
+  overload: DiscordRPC.RichPresence.HasParty*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.HasSecrets
+  commentId: M:DiscordRPC.RichPresence.HasSecrets
+  id: HasSecrets
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: HasSecrets()
+  nameWithType: RichPresence.HasSecrets()
+  fullName: DiscordRPC.RichPresence.HasSecrets()
+  type: Method
+  source:
+    id: HasSecrets
+    path: ''
+    startLine: 1282
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nDoes the Rich Presence have valid secrets?\n"
+  example: []
+  syntax:
+    content: public bool HasSecrets()
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function HasSecrets As Boolean
+  overload: DiscordRPC.RichPresence.HasSecrets*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.WithState(System.String)
+  commentId: M:DiscordRPC.RichPresence.WithState(System.String)
+  id: WithState(System.String)
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: WithState(String)
+  nameWithType: RichPresence.WithState(String)
+  fullName: DiscordRPC.RichPresence.WithState(System.String)
+  type: Method
+  source:
+    id: WithState
+    path: ''
+    startLine: 1294
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the state of the Rich Presence. See also <xref href=\"DiscordRPC.RichPresence.State\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public RichPresence WithState(string state)
+    parameters:
+    - id: state
+      type: System.String
+      description: The user&apos;s current <xref href="DiscordRPC.RichPresence.Party" data-throw-if-not-resolved="false"></xref> status.
+    return:
+      type: DiscordRPC.RichPresence
+      description: The modified Rich Presence.
+    content.vb: Public Function WithState(state As String) As RichPresence
+  overload: DiscordRPC.RichPresence.WithState*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.WithDetails(System.String)
+  commentId: M:DiscordRPC.RichPresence.WithDetails(System.String)
+  id: WithDetails(System.String)
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: WithDetails(String)
+  nameWithType: RichPresence.WithDetails(String)
+  fullName: DiscordRPC.RichPresence.WithDetails(System.String)
+  type: Method
+  source:
+    id: WithDetails
+    path: ''
+    startLine: 1305
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the details of the Rich Presence. See also <xref href=\"DiscordRPC.RichPresence.Details\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public RichPresence WithDetails(string details)
+    parameters:
+    - id: details
+      type: System.String
+      description: What the user is currently doing.
+    return:
+      type: DiscordRPC.RichPresence
+      description: The modified Rich Presence.
+    content.vb: Public Function WithDetails(details As String) As RichPresence
+  overload: DiscordRPC.RichPresence.WithDetails*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.WithTimestamps(DiscordRPC.Timestamps)
+  commentId: M:DiscordRPC.RichPresence.WithTimestamps(DiscordRPC.Timestamps)
+  id: WithTimestamps(DiscordRPC.Timestamps)
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: WithTimestamps(Timestamps)
+  nameWithType: RichPresence.WithTimestamps(Timestamps)
+  fullName: DiscordRPC.RichPresence.WithTimestamps(DiscordRPC.Timestamps)
+  type: Method
+  source:
+    id: WithTimestamps
+    path: ''
+    startLine: 1316
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the timestamp of the Rich Presence. See also <xref href=\"DiscordRPC.RichPresence.Timestamps\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public RichPresence WithTimestamps(Timestamps timestamps)
+    parameters:
+    - id: timestamps
+      type: DiscordRPC.Timestamps
+      description: The time elapsed / remaining time data.
+    return:
+      type: DiscordRPC.RichPresence
+      description: The modified Rich Presence.
+    content.vb: Public Function WithTimestamps(timestamps As Timestamps) As RichPresence
+  overload: DiscordRPC.RichPresence.WithTimestamps*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.WithAssets(DiscordRPC.Assets)
+  commentId: M:DiscordRPC.RichPresence.WithAssets(DiscordRPC.Assets)
+  id: WithAssets(DiscordRPC.Assets)
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: WithAssets(Assets)
+  nameWithType: RichPresence.WithAssets(Assets)
+  fullName: DiscordRPC.RichPresence.WithAssets(DiscordRPC.Assets)
+  type: Method
+  source:
+    id: WithAssets
+    path: ''
+    startLine: 1327
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the assets of the Rich Presence. See also <xref href=\"DiscordRPC.RichPresence.Assets\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public RichPresence WithAssets(Assets assets)
+    parameters:
+    - id: assets
+      type: DiscordRPC.Assets
+      description: The names of the images to use and the tooltips to give those images.
+    return:
+      type: DiscordRPC.RichPresence
+      description: The modified Rich Presence.
+    content.vb: Public Function WithAssets(assets As Assets) As RichPresence
+  overload: DiscordRPC.RichPresence.WithAssets*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.WithParty(DiscordRPC.Party)
+  commentId: M:DiscordRPC.RichPresence.WithParty(DiscordRPC.Party)
+  id: WithParty(DiscordRPC.Party)
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: WithParty(Party)
+  nameWithType: RichPresence.WithParty(Party)
+  fullName: DiscordRPC.RichPresence.WithParty(DiscordRPC.Party)
+  type: Method
+  source:
+    id: WithParty
+    path: ''
+    startLine: 1338
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the Rich Presence&apos;s party. See also <xref href=\"DiscordRPC.RichPresence.Party\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public RichPresence WithParty(Party party)
+    parameters:
+    - id: party
+      type: DiscordRPC.Party
+      description: The party the player is currently in.
+    return:
+      type: DiscordRPC.RichPresence
+      description: The modified Rich Presence.
+    content.vb: Public Function WithParty(party As Party) As RichPresence
+  overload: DiscordRPC.RichPresence.WithParty*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.WithSecrets(DiscordRPC.Secrets)
+  commentId: M:DiscordRPC.RichPresence.WithSecrets(DiscordRPC.Secrets)
+  id: WithSecrets(DiscordRPC.Secrets)
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: WithSecrets(Secrets)
+  nameWithType: RichPresence.WithSecrets(Secrets)
+  fullName: DiscordRPC.RichPresence.WithSecrets(DiscordRPC.Secrets)
+  type: Method
+  source:
+    id: WithSecrets
+    path: ''
+    startLine: 1349
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the Rich Presence&apos;s secrets. See also <xref href=\"DiscordRPC.RichPresence.Secrets\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public RichPresence WithSecrets(Secrets secrets)
+    parameters:
+    - id: secrets
+      type: DiscordRPC.Secrets
+      description: The secrets used for Join / Spectate.
+    return:
+      type: DiscordRPC.RichPresence
+      description: The modified Rich Presence.
+    content.vb: Public Function WithSecrets(secrets As Secrets) As RichPresence
+  overload: DiscordRPC.RichPresence.WithSecrets*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.RichPresence.op_Implicit(DiscordRPC.RichPresence)~System.Boolean
+  commentId: M:DiscordRPC.RichPresence.op_Implicit(DiscordRPC.RichPresence)~System.Boolean
+  id: op_Implicit(DiscordRPC.RichPresence)~System.Boolean
+  parent: DiscordRPC.RichPresence
+  langs:
+  - csharp
+  - vb
+  name: Implicit(RichPresence to Boolean)
+  nameWithType: RichPresence.Implicit(RichPresence to Boolean)
+  fullName: DiscordRPC.RichPresence.Implicit(DiscordRPC.RichPresence to System.Boolean)
+  type: Operator
+  source:
+    id: op_Implicit
+    path: ''
+    startLine: 1386
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nOperator that converts a presence into a boolean for null checks.\n"
+  example: []
+  syntax:
+    content: public static implicit operator bool (RichPresence presesnce)
+    parameters:
+    - id: presesnce
+      type: DiscordRPC.RichPresence
+      description: ''
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Widening Operator CType(presesnce As RichPresence) As Boolean
+  overload: DiscordRPC.RichPresence.op_Implicit*
+  nameWithType.vb: RichPresence.Widening(RichPresence to Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: DiscordRPC.RichPresence.Widening(DiscordRPC.RichPresence to System.Boolean)
+  name.vb: Widening(RichPresence to Boolean)
+references:
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.RichPresence.Party
+  commentId: P:DiscordRPC.RichPresence.Party
+  isExternal: true
+- uid: DiscordRPC.RichPresence.State*
+  commentId: Overload:DiscordRPC.RichPresence.State
+  name: State
+  nameWithType: RichPresence.State
+  fullName: DiscordRPC.RichPresence.State
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DiscordRPC.RichPresence.Details*
+  commentId: Overload:DiscordRPC.RichPresence.Details
+  name: Details
+  nameWithType: RichPresence.Details
+  fullName: DiscordRPC.RichPresence.Details
+- uid: DiscordRPC.RichPresence.Timestamps*
+  commentId: Overload:DiscordRPC.RichPresence.Timestamps
+  name: Timestamps
+  nameWithType: RichPresence.Timestamps
+  fullName: DiscordRPC.RichPresence.Timestamps
+- uid: DiscordRPC.Timestamps
+  commentId: T:DiscordRPC.Timestamps
+  parent: DiscordRPC
+  name: Timestamps
+  nameWithType: Timestamps
+  fullName: DiscordRPC.Timestamps
+- uid: DiscordRPC.RichPresence.Assets*
+  commentId: Overload:DiscordRPC.RichPresence.Assets
+  name: Assets
+  nameWithType: RichPresence.Assets
+  fullName: DiscordRPC.RichPresence.Assets
+- uid: DiscordRPC.Assets
+  commentId: T:DiscordRPC.Assets
+  parent: DiscordRPC
+  name: Assets
+  nameWithType: Assets
+  fullName: DiscordRPC.Assets
+- uid: DiscordRPC.Party.ID
+  commentId: P:DiscordRPC.Party.ID
+  isExternal: true
+- uid: DiscordRPC.RichPresence.Party*
+  commentId: Overload:DiscordRPC.RichPresence.Party
+  name: Party
+  nameWithType: RichPresence.Party
+  fullName: DiscordRPC.RichPresence.Party
+- uid: DiscordRPC.Party
+  commentId: T:DiscordRPC.Party
+  parent: DiscordRPC
+  name: Party
+  nameWithType: Party
+  fullName: DiscordRPC.Party
+- uid: DiscordRPC.RichPresence.Secrets*
+  commentId: Overload:DiscordRPC.RichPresence.Secrets
+  name: Secrets
+  nameWithType: RichPresence.Secrets
+  fullName: DiscordRPC.RichPresence.Secrets
+- uid: DiscordRPC.Secrets
+  commentId: T:DiscordRPC.Secrets
+  parent: DiscordRPC
+  name: Secrets
+  nameWithType: Secrets
+  fullName: DiscordRPC.Secrets
+- uid: DiscordRPC.RichPresence.Clone*
+  commentId: Overload:DiscordRPC.RichPresence.Clone
+  name: Clone
+  nameWithType: RichPresence.Clone
+  fullName: DiscordRPC.RichPresence.Clone
+- uid: DiscordRPC.RichPresence
+  commentId: T:DiscordRPC.RichPresence
+  parent: DiscordRPC
+  name: RichPresence
+  nameWithType: RichPresence
+  fullName: DiscordRPC.RichPresence
+- uid: DiscordRPC.RichPresence.HasTimestamps*
+  commentId: Overload:DiscordRPC.RichPresence.HasTimestamps
+  name: HasTimestamps
+  nameWithType: RichPresence.HasTimestamps
+  fullName: DiscordRPC.RichPresence.HasTimestamps
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DiscordRPC.RichPresence.HasAssets*
+  commentId: Overload:DiscordRPC.RichPresence.HasAssets
+  name: HasAssets
+  nameWithType: RichPresence.HasAssets
+  fullName: DiscordRPC.RichPresence.HasAssets
+- uid: DiscordRPC.RichPresence.HasParty*
+  commentId: Overload:DiscordRPC.RichPresence.HasParty
+  name: HasParty
+  nameWithType: RichPresence.HasParty
+  fullName: DiscordRPC.RichPresence.HasParty
+- uid: DiscordRPC.RichPresence.HasSecrets*
+  commentId: Overload:DiscordRPC.RichPresence.HasSecrets
+  name: HasSecrets
+  nameWithType: RichPresence.HasSecrets
+  fullName: DiscordRPC.RichPresence.HasSecrets
+- uid: DiscordRPC.RichPresence.State
+  commentId: P:DiscordRPC.RichPresence.State
+  isExternal: true
+- uid: DiscordRPC.RichPresence.WithState*
+  commentId: Overload:DiscordRPC.RichPresence.WithState
+  name: WithState
+  nameWithType: RichPresence.WithState
+  fullName: DiscordRPC.RichPresence.WithState
+- uid: DiscordRPC.RichPresence.Details
+  commentId: P:DiscordRPC.RichPresence.Details
+  isExternal: true
+- uid: DiscordRPC.RichPresence.WithDetails*
+  commentId: Overload:DiscordRPC.RichPresence.WithDetails
+  name: WithDetails
+  nameWithType: RichPresence.WithDetails
+  fullName: DiscordRPC.RichPresence.WithDetails
+- uid: DiscordRPC.RichPresence.Timestamps
+  commentId: P:DiscordRPC.RichPresence.Timestamps
+  isExternal: true
+- uid: DiscordRPC.RichPresence.WithTimestamps*
+  commentId: Overload:DiscordRPC.RichPresence.WithTimestamps
+  name: WithTimestamps
+  nameWithType: RichPresence.WithTimestamps
+  fullName: DiscordRPC.RichPresence.WithTimestamps
+- uid: DiscordRPC.RichPresence.Assets
+  commentId: P:DiscordRPC.RichPresence.Assets
+  isExternal: true
+- uid: DiscordRPC.RichPresence.WithAssets*
+  commentId: Overload:DiscordRPC.RichPresence.WithAssets
+  name: WithAssets
+  nameWithType: RichPresence.WithAssets
+  fullName: DiscordRPC.RichPresence.WithAssets
+- uid: DiscordRPC.RichPresence.WithParty*
+  commentId: Overload:DiscordRPC.RichPresence.WithParty
+  name: WithParty
+  nameWithType: RichPresence.WithParty
+  fullName: DiscordRPC.RichPresence.WithParty
+- uid: DiscordRPC.RichPresence.Secrets
+  commentId: P:DiscordRPC.RichPresence.Secrets
+  isExternal: true
+- uid: DiscordRPC.RichPresence.WithSecrets*
+  commentId: Overload:DiscordRPC.RichPresence.WithSecrets
+  name: WithSecrets
+  nameWithType: RichPresence.WithSecrets
+  fullName: DiscordRPC.RichPresence.WithSecrets
+- uid: DiscordRPC.RichPresence.op_Implicit*
+  commentId: Overload:DiscordRPC.RichPresence.op_Implicit
+  name: Implicit
+  nameWithType: RichPresence.Implicit
+  fullName: DiscordRPC.RichPresence.Implicit
+  nameWithType.vb: RichPresence.Widening
+  fullName.vb: DiscordRPC.RichPresence.Widening
+  name.vb: Widening

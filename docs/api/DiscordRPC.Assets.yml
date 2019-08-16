@@ -1,0 +1,680 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Assets
+  commentId: T:DiscordRPC.Assets
+  id: Assets
+  parent: DiscordRPC
+  children:
+  - DiscordRPC.Assets.LargeImageID
+  - DiscordRPC.Assets.LargeImageKey
+  - DiscordRPC.Assets.LargeImageText
+  - DiscordRPC.Assets.SmallImageID
+  - DiscordRPC.Assets.SmallImageKey
+  - DiscordRPC.Assets.SmallImageText
+  langs:
+  - csharp
+  - vb
+  name: Assets
+  nameWithType: Assets
+  fullName: DiscordRPC.Assets
+  type: Class
+  source:
+    id: Assets
+    path: ''
+    startLine: 1582
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nInformation about the pictures used in the Rich Presence.\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Assets
+    content.vb: >-
+      <Serializable>
+
+      Public Class Assets
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DiscordRPC.Assets.LargeImageKey
+  commentId: P:DiscordRPC.Assets.LargeImageKey
+  id: LargeImageKey
+  parent: DiscordRPC.Assets
+  langs:
+  - csharp
+  - vb
+  name: LargeImageKey
+  nameWithType: Assets.LargeImageKey
+  fullName: DiscordRPC.Assets.LargeImageKey
+  type: Property
+  source:
+    id: LargeImageKey
+    path: ''
+    startLine: 1589
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nName of the uploaded image for the large profile artwork.\n<p>Max 32 Bytes.</p>\n"
+  example: []
+  syntax:
+    content: public string LargeImageKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LargeImageKey As String
+  overload: DiscordRPC.Assets.LargeImageKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Assets.LargeImageText
+  commentId: P:DiscordRPC.Assets.LargeImageText
+  id: LargeImageText
+  parent: DiscordRPC.Assets
+  langs:
+  - csharp
+  - vb
+  name: LargeImageText
+  nameWithType: Assets.LargeImageText
+  fullName: DiscordRPC.Assets.LargeImageText
+  type: Property
+  source:
+    id: LargeImageText
+    path: ''
+    startLine: 1608
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe tooltip for the large square image. For example, &quot;Summoners Rift&quot; or &quot;Horizon Lunar Colony&quot;.\n<p>Max 128 Bytes.</p>\n"
+  example: []
+  syntax:
+    content: public string LargeImageText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LargeImageText As String
+  overload: DiscordRPC.Assets.LargeImageText*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Assets.SmallImageKey
+  commentId: P:DiscordRPC.Assets.SmallImageKey
+  id: SmallImageKey
+  parent: DiscordRPC.Assets
+  langs:
+  - csharp
+  - vb
+  name: SmallImageKey
+  nameWithType: Assets.SmallImageKey
+  fullName: DiscordRPC.Assets.SmallImageKey
+  type: Property
+  source:
+    id: SmallImageKey
+    path: ''
+    startLine: 1625
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nName of the uploaded image for the small profile artwork.\n<p>Max 32 Bytes.</p>\n"
+  example: []
+  syntax:
+    content: public string SmallImageKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SmallImageKey As String
+  overload: DiscordRPC.Assets.SmallImageKey*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Assets.SmallImageText
+  commentId: P:DiscordRPC.Assets.SmallImageText
+  id: SmallImageText
+  parent: DiscordRPC.Assets
+  langs:
+  - csharp
+  - vb
+  name: SmallImageText
+  nameWithType: Assets.SmallImageText
+  fullName: DiscordRPC.Assets.SmallImageText
+  type: Property
+  source:
+    id: SmallImageText
+    path: ''
+    startLine: 1644
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe tooltip for the small circle image. For example, &quot;LvL 6&quot; or &quot;Ultimate 85%&quot;.\n<p>Max 128 Bytes.</p>\n"
+  example: []
+  syntax:
+    content: public string SmallImageText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SmallImageText As String
+  overload: DiscordRPC.Assets.SmallImageText*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Assets.LargeImageID
+  commentId: P:DiscordRPC.Assets.LargeImageID
+  id: LargeImageID
+  parent: DiscordRPC.Assets
+  langs:
+  - csharp
+  - vb
+  name: LargeImageID
+  nameWithType: Assets.LargeImageID
+  fullName: DiscordRPC.Assets.LargeImageID
+  type: Property
+  source:
+    id: LargeImageID
+    path: ''
+    startLine: 1659
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe ID of the large image. This is only set after Update Presence and will automatically become null when <xref href=\"DiscordRPC.Assets.LargeImageKey\" data-throw-if-not-resolved=\"false\"></xref> is changed.\n"
+  example: []
+  syntax:
+    content: public ulong? LargeImageID { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.UInt64}
+    content.vb: Public ReadOnly Property LargeImageID As ULong?
+  overload: DiscordRPC.Assets.LargeImageID*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.Assets.SmallImageID
+  commentId: P:DiscordRPC.Assets.SmallImageID
+  id: SmallImageID
+  parent: DiscordRPC.Assets
+  langs:
+  - csharp
+  - vb
+  name: SmallImageID
+  nameWithType: Assets.SmallImageID
+  fullName: DiscordRPC.Assets.SmallImageID
+  type: Property
+  source:
+    id: SmallImageID
+    path: ''
+    startLine: 1666
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe ID of the small image. This is only set after Update Presence and will automatically become null when <xref href=\"DiscordRPC.Assets.SmallImageKey\" data-throw-if-not-resolved=\"false\"></xref> is changed.\n"
+  example: []
+  syntax:
+    content: public ulong? SmallImageID { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.UInt64}
+    content.vb: Public ReadOnly Property SmallImageID As ULong?
+  overload: DiscordRPC.Assets.SmallImageID*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.Assets.LargeImageKey*
+  commentId: Overload:DiscordRPC.Assets.LargeImageKey
+  name: LargeImageKey
+  nameWithType: Assets.LargeImageKey
+  fullName: DiscordRPC.Assets.LargeImageKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DiscordRPC.Assets.LargeImageText*
+  commentId: Overload:DiscordRPC.Assets.LargeImageText
+  name: LargeImageText
+  nameWithType: Assets.LargeImageText
+  fullName: DiscordRPC.Assets.LargeImageText
+- uid: DiscordRPC.Assets.SmallImageKey*
+  commentId: Overload:DiscordRPC.Assets.SmallImageKey
+  name: SmallImageKey
+  nameWithType: Assets.SmallImageKey
+  fullName: DiscordRPC.Assets.SmallImageKey
+- uid: DiscordRPC.Assets.SmallImageText*
+  commentId: Overload:DiscordRPC.Assets.SmallImageText
+  name: SmallImageText
+  nameWithType: Assets.SmallImageText
+  fullName: DiscordRPC.Assets.SmallImageText
+- uid: DiscordRPC.Assets.LargeImageKey
+  commentId: P:DiscordRPC.Assets.LargeImageKey
+  isExternal: true
+- uid: DiscordRPC.Assets.LargeImageID*
+  commentId: Overload:DiscordRPC.Assets.LargeImageID
+  name: LargeImageID
+  nameWithType: Assets.LargeImageID
+  fullName: DiscordRPC.Assets.LargeImageID
+- uid: System.Nullable{System.UInt64}
+  commentId: T:System.Nullable{System.UInt64}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<UInt64>
+  nameWithType: Nullable<UInt64>
+  fullName: System.Nullable<System.UInt64>
+  nameWithType.vb: Nullable(Of UInt64)
+  fullName.vb: System.Nullable(Of System.UInt64)
+  name.vb: Nullable(Of UInt64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.UInt64
+    name: UInt64
+    nameWithType: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.UInt64
+    name: UInt64
+    nameWithType: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.Assets.SmallImageKey
+  commentId: P:DiscordRPC.Assets.SmallImageKey
+  isExternal: true
+- uid: DiscordRPC.Assets.SmallImageID*
+  commentId: Overload:DiscordRPC.Assets.SmallImageID
+  name: SmallImageID
+  nameWithType: Assets.SmallImageID
+  fullName: DiscordRPC.Assets.SmallImageID

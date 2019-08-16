@@ -1,0 +1,989 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Logging.FileLogger
+  commentId: T:DiscordRPC.Logging.FileLogger
+  id: FileLogger
+  parent: DiscordRPC.Logging
+  children:
+  - DiscordRPC.Logging.FileLogger.#ctor(System.String)
+  - DiscordRPC.Logging.FileLogger.#ctor(System.String,DiscordRPC.Logging.LogLevel)
+  - DiscordRPC.Logging.FileLogger.Error(System.String,System.Object[])
+  - DiscordRPC.Logging.FileLogger.File
+  - DiscordRPC.Logging.FileLogger.Info(System.String,System.Object[])
+  - DiscordRPC.Logging.FileLogger.Level
+  - DiscordRPC.Logging.FileLogger.Trace(System.String,System.Object[])
+  - DiscordRPC.Logging.FileLogger.Warning(System.String,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: FileLogger
+  nameWithType: FileLogger
+  fullName: DiscordRPC.Logging.FileLogger
+  type: Class
+  source:
+    id: FileLogger
+    path: ''
+    startLine: 3461
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nLogs the outputs to a file\n"
+  example: []
+  syntax:
+    content: 'public class FileLogger : ILogger'
+    content.vb: >-
+      Public Class FileLogger
+          Implements ILogger
+  inheritance:
+  - System.Object
+  implements:
+  - DiscordRPC.Logging.ILogger
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DiscordRPC.Logging.FileLogger.Level
+  commentId: P:DiscordRPC.Logging.FileLogger.Level
+  id: Level
+  parent: DiscordRPC.Logging.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: FileLogger.Level
+  fullName: DiscordRPC.Logging.FileLogger.Level
+  type: Property
+  source:
+    id: Level
+    path: ''
+    startLine: 3466
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nThe level of logging to apply to this logger.\n"
+  example: []
+  syntax:
+    content: public LogLevel Level { get; set; }
+    parameters: []
+    return:
+      type: DiscordRPC.Logging.LogLevel
+    content.vb: Public Property Level As LogLevel
+  overload: DiscordRPC.Logging.FileLogger.Level*
+  implements:
+  - DiscordRPC.Logging.ILogger.Level
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Logging.FileLogger.File
+  commentId: P:DiscordRPC.Logging.FileLogger.File
+  id: File
+  parent: DiscordRPC.Logging.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: File
+  nameWithType: FileLogger.File
+  fullName: DiscordRPC.Logging.FileLogger.File
+  type: Property
+  source:
+    id: File
+    path: ''
+    startLine: 3471
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nShould the output be coloured?\n"
+  example: []
+  syntax:
+    content: public string File { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property File As String
+  overload: DiscordRPC.Logging.FileLogger.File*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Logging.FileLogger.#ctor(System.String)
+  commentId: M:DiscordRPC.Logging.FileLogger.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: DiscordRPC.Logging.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: FileLogger(String)
+  nameWithType: FileLogger.FileLogger(String)
+  fullName: DiscordRPC.Logging.FileLogger.FileLogger(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3479
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nCreates a new instance of the file logger\n"
+  example: []
+  syntax:
+    content: public FileLogger(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path of the log file.
+    content.vb: Public Sub New(path As String)
+  overload: DiscordRPC.Logging.FileLogger.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Logging.FileLogger.#ctor(System.String,DiscordRPC.Logging.LogLevel)
+  commentId: M:DiscordRPC.Logging.FileLogger.#ctor(System.String,DiscordRPC.Logging.LogLevel)
+  id: '#ctor(System.String,DiscordRPC.Logging.LogLevel)'
+  parent: DiscordRPC.Logging.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: FileLogger(String, LogLevel)
+  nameWithType: FileLogger.FileLogger(String, LogLevel)
+  fullName: DiscordRPC.Logging.FileLogger.FileLogger(System.String, DiscordRPC.Logging.LogLevel)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3487
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nCreates a new instance of the file logger\n"
+  example: []
+  syntax:
+    content: public FileLogger(string path, LogLevel level)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path of the log file.
+    - id: level
+      type: DiscordRPC.Logging.LogLevel
+      description: The level to assign to the logger.
+    content.vb: Public Sub New(path As String, level As LogLevel)
+  overload: DiscordRPC.Logging.FileLogger.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Logging.FileLogger.Trace(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.FileLogger.Trace(System.String,System.Object[])
+  id: Trace(System.String,System.Object[])
+  parent: DiscordRPC.Logging.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: Trace(String, Object[])
+  nameWithType: FileLogger.Trace(String, Object[])
+  fullName: DiscordRPC.Logging.FileLogger.Trace(System.String, System.Object[])
+  type: Method
+  source:
+    id: Trace
+    path: ''
+    startLine: 3500
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nInformative log messages\n"
+  example: []
+  syntax:
+    content: public void Trace(string message, params object[] args)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Public Sub Trace(message As String, ParamArray args As Object())
+  overload: DiscordRPC.Logging.FileLogger.Trace*
+  implements:
+  - DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+  nameWithType.vb: FileLogger.Trace(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DiscordRPC.Logging.FileLogger.Trace(System.String, System.Object())
+  name.vb: Trace(String, Object())
+- uid: DiscordRPC.Logging.FileLogger.Info(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.FileLogger.Info(System.String,System.Object[])
+  id: Info(System.String,System.Object[])
+  parent: DiscordRPC.Logging.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: Info(String, Object[])
+  nameWithType: FileLogger.Info(String, Object[])
+  fullName: DiscordRPC.Logging.FileLogger.Info(System.String, System.Object[])
+  type: Method
+  source:
+    id: Info
+    path: ''
+    startLine: 3511
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nInformative log messages\n"
+  example: []
+  syntax:
+    content: public void Info(string message, params object[] args)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Public Sub Info(message As String, ParamArray args As Object())
+  overload: DiscordRPC.Logging.FileLogger.Info*
+  implements:
+  - DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+  nameWithType.vb: FileLogger.Info(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DiscordRPC.Logging.FileLogger.Info(System.String, System.Object())
+  name.vb: Info(String, Object())
+- uid: DiscordRPC.Logging.FileLogger.Warning(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.FileLogger.Warning(System.String,System.Object[])
+  id: Warning(System.String,System.Object[])
+  parent: DiscordRPC.Logging.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: Warning(String, Object[])
+  nameWithType: FileLogger.Warning(String, Object[])
+  fullName: DiscordRPC.Logging.FileLogger.Warning(System.String, System.Object[])
+  type: Method
+  source:
+    id: Warning
+    path: ''
+    startLine: 3522
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nWarning log messages\n"
+  example: []
+  syntax:
+    content: public void Warning(string message, params object[] args)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Public Sub Warning(message As String, ParamArray args As Object())
+  overload: DiscordRPC.Logging.FileLogger.Warning*
+  implements:
+  - DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+  nameWithType.vb: FileLogger.Warning(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DiscordRPC.Logging.FileLogger.Warning(System.String, System.Object())
+  name.vb: Warning(String, Object())
+- uid: DiscordRPC.Logging.FileLogger.Error(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.FileLogger.Error(System.String,System.Object[])
+  id: Error(System.String,System.Object[])
+  parent: DiscordRPC.Logging.FileLogger
+  langs:
+  - csharp
+  - vb
+  name: Error(String, Object[])
+  nameWithType: FileLogger.Error(String, Object[])
+  fullName: DiscordRPC.Logging.FileLogger.Error(System.String, System.Object[])
+  type: Method
+  source:
+    id: Error
+    path: ''
+    startLine: 3534
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Logging
+  summary: "\nError log messsages\n"
+  example: []
+  syntax:
+    content: public void Error(string message, params object[] args)
+    parameters:
+    - id: message
+      type: System.String
+      description: ''
+    - id: args
+      type: System.Object[]
+      description: ''
+    content.vb: Public Sub Error(message As String, ParamArray args As Object())
+  overload: DiscordRPC.Logging.FileLogger.Error*
+  implements:
+  - DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+  nameWithType.vb: FileLogger.Error(String, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DiscordRPC.Logging.FileLogger.Error(System.String, System.Object())
+  name.vb: Error(String, Object())
+references:
+- uid: DiscordRPC.Logging
+  commentId: N:DiscordRPC.Logging
+  name: DiscordRPC.Logging
+  nameWithType: DiscordRPC.Logging
+  fullName: DiscordRPC.Logging
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: DiscordRPC.Logging.ILogger
+  commentId: T:DiscordRPC.Logging.ILogger
+  parent: DiscordRPC.Logging
+  name: ILogger
+  nameWithType: ILogger
+  fullName: DiscordRPC.Logging.ILogger
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.Logging.FileLogger.Level*
+  commentId: Overload:DiscordRPC.Logging.FileLogger.Level
+  name: Level
+  nameWithType: FileLogger.Level
+  fullName: DiscordRPC.Logging.FileLogger.Level
+- uid: DiscordRPC.Logging.ILogger.Level
+  commentId: P:DiscordRPC.Logging.ILogger.Level
+  parent: DiscordRPC.Logging.ILogger
+  name: Level
+  nameWithType: ILogger.Level
+  fullName: DiscordRPC.Logging.ILogger.Level
+- uid: DiscordRPC.Logging.LogLevel
+  commentId: T:DiscordRPC.Logging.LogLevel
+  parent: DiscordRPC.Logging
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: DiscordRPC.Logging.LogLevel
+- uid: DiscordRPC.Logging.FileLogger.File*
+  commentId: Overload:DiscordRPC.Logging.FileLogger.File
+  name: File
+  nameWithType: FileLogger.File
+  fullName: DiscordRPC.Logging.FileLogger.File
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DiscordRPC.Logging.FileLogger.#ctor*
+  commentId: Overload:DiscordRPC.Logging.FileLogger.#ctor
+  name: FileLogger
+  nameWithType: FileLogger.FileLogger
+  fullName: DiscordRPC.Logging.FileLogger.FileLogger
+- uid: DiscordRPC.Logging.FileLogger.Trace*
+  commentId: Overload:DiscordRPC.Logging.FileLogger.Trace
+  name: Trace
+  nameWithType: FileLogger.Trace
+  fullName: DiscordRPC.Logging.FileLogger.Trace
+- uid: DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+  parent: DiscordRPC.Logging.ILogger
+  isExternal: true
+  name: Trace(String, Object[])
+  nameWithType: ILogger.Trace(String, Object[])
+  fullName: DiscordRPC.Logging.ILogger.Trace(System.String, System.Object[])
+  nameWithType.vb: ILogger.Trace(String, Object())
+  fullName.vb: DiscordRPC.Logging.ILogger.Trace(System.String, System.Object())
+  name.vb: Trace(String, Object())
+  spec.csharp:
+  - uid: DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+    name: Trace
+    nameWithType: ILogger.Trace
+    fullName: DiscordRPC.Logging.ILogger.Trace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DiscordRPC.Logging.ILogger.Trace(System.String,System.Object[])
+    name: Trace
+    nameWithType: ILogger.Trace
+    fullName: DiscordRPC.Logging.ILogger.Trace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DiscordRPC.Logging.FileLogger.Info*
+  commentId: Overload:DiscordRPC.Logging.FileLogger.Info
+  name: Info
+  nameWithType: FileLogger.Info
+  fullName: DiscordRPC.Logging.FileLogger.Info
+- uid: DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+  parent: DiscordRPC.Logging.ILogger
+  isExternal: true
+  name: Info(String, Object[])
+  nameWithType: ILogger.Info(String, Object[])
+  fullName: DiscordRPC.Logging.ILogger.Info(System.String, System.Object[])
+  nameWithType.vb: ILogger.Info(String, Object())
+  fullName.vb: DiscordRPC.Logging.ILogger.Info(System.String, System.Object())
+  name.vb: Info(String, Object())
+  spec.csharp:
+  - uid: DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+    name: Info
+    nameWithType: ILogger.Info
+    fullName: DiscordRPC.Logging.ILogger.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DiscordRPC.Logging.ILogger.Info(System.String,System.Object[])
+    name: Info
+    nameWithType: ILogger.Info
+    fullName: DiscordRPC.Logging.ILogger.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.Logging.FileLogger.Warning*
+  commentId: Overload:DiscordRPC.Logging.FileLogger.Warning
+  name: Warning
+  nameWithType: FileLogger.Warning
+  fullName: DiscordRPC.Logging.FileLogger.Warning
+- uid: DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+  parent: DiscordRPC.Logging.ILogger
+  isExternal: true
+  name: Warning(String, Object[])
+  nameWithType: ILogger.Warning(String, Object[])
+  fullName: DiscordRPC.Logging.ILogger.Warning(System.String, System.Object[])
+  nameWithType.vb: ILogger.Warning(String, Object())
+  fullName.vb: DiscordRPC.Logging.ILogger.Warning(System.String, System.Object())
+  name.vb: Warning(String, Object())
+  spec.csharp:
+  - uid: DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+    name: Warning
+    nameWithType: ILogger.Warning
+    fullName: DiscordRPC.Logging.ILogger.Warning
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DiscordRPC.Logging.ILogger.Warning(System.String,System.Object[])
+    name: Warning
+    nameWithType: ILogger.Warning
+    fullName: DiscordRPC.Logging.ILogger.Warning
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.Logging.FileLogger.Error*
+  commentId: Overload:DiscordRPC.Logging.FileLogger.Error
+  name: Error
+  nameWithType: FileLogger.Error
+  fullName: DiscordRPC.Logging.FileLogger.Error
+- uid: DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+  commentId: M:DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+  parent: DiscordRPC.Logging.ILogger
+  isExternal: true
+  name: Error(String, Object[])
+  nameWithType: ILogger.Error(String, Object[])
+  fullName: DiscordRPC.Logging.ILogger.Error(System.String, System.Object[])
+  nameWithType.vb: ILogger.Error(String, Object())
+  fullName.vb: DiscordRPC.Logging.ILogger.Error(System.String, System.Object())
+  name.vb: Error(String, Object())
+  spec.csharp:
+  - uid: DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+    name: Error
+    nameWithType: ILogger.Error
+    fullName: DiscordRPC.Logging.ILogger.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: DiscordRPC.Logging.ILogger.Error(System.String,System.Object[])
+    name: Error
+    nameWithType: ILogger.Error
+    fullName: DiscordRPC.Logging.ILogger.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Exceptions
+  commentId: N:DiscordRPC.Exceptions
+  id: DiscordRPC.Exceptions
+  children:
+  - DiscordRPC.Exceptions.BadPresenceException
+  - DiscordRPC.Exceptions.InvalidConfigurationException
+  - DiscordRPC.Exceptions.InvalidPipeException
+  - DiscordRPC.Exceptions.StringOutOfRangeException
+  - DiscordRPC.Exceptions.UninitializedException
+  langs:
+  - csharp
+  - vb
+  name: DiscordRPC.Exceptions
+  nameWithType: DiscordRPC.Exceptions
+  fullName: DiscordRPC.Exceptions
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: DiscordRPC.Exceptions.BadPresenceException
+  commentId: T:DiscordRPC.Exceptions.BadPresenceException
+  name: BadPresenceException
+  nameWithType: BadPresenceException
+  fullName: DiscordRPC.Exceptions.BadPresenceException
+- uid: DiscordRPC.Exceptions.InvalidConfigurationException
+  commentId: T:DiscordRPC.Exceptions.InvalidConfigurationException
+  name: InvalidConfigurationException
+  nameWithType: InvalidConfigurationException
+  fullName: DiscordRPC.Exceptions.InvalidConfigurationException
+- uid: DiscordRPC.Exceptions.InvalidPipeException
+  commentId: T:DiscordRPC.Exceptions.InvalidPipeException
+  name: InvalidPipeException
+  nameWithType: InvalidPipeException
+  fullName: DiscordRPC.Exceptions.InvalidPipeException
+- uid: DiscordRPC.Exceptions.StringOutOfRangeException
+  commentId: T:DiscordRPC.Exceptions.StringOutOfRangeException
+  name: StringOutOfRangeException
+  nameWithType: StringOutOfRangeException
+  fullName: DiscordRPC.Exceptions.StringOutOfRangeException
+- uid: DiscordRPC.Exceptions.UninitializedException
+  commentId: T:DiscordRPC.Exceptions.UninitializedException
+  name: UninitializedException
+  nameWithType: UninitializedException
+  fullName: DiscordRPC.Exceptions.UninitializedException

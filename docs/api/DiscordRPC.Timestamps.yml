@@ -1,0 +1,954 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Timestamps
+  commentId: T:DiscordRPC.Timestamps
+  id: Timestamps
+  parent: DiscordRPC
+  children:
+  - DiscordRPC.Timestamps.#ctor
+  - DiscordRPC.Timestamps.#ctor(System.DateTime,System.Nullable{System.DateTime})
+  - DiscordRPC.Timestamps.End
+  - DiscordRPC.Timestamps.EndUnixMilliseconds
+  - DiscordRPC.Timestamps.FromTimeSpan(System.Double)
+  - DiscordRPC.Timestamps.FromTimeSpan(System.TimeSpan)
+  - DiscordRPC.Timestamps.FromUnixMilliseconds(System.UInt64)
+  - DiscordRPC.Timestamps.Now
+  - DiscordRPC.Timestamps.Start
+  - DiscordRPC.Timestamps.StartUnixMilliseconds
+  - DiscordRPC.Timestamps.ToUnixMilliseconds(System.DateTime)
+  langs:
+  - csharp
+  - vb
+  name: Timestamps
+  nameWithType: Timestamps
+  fullName: DiscordRPC.Timestamps
+  type: Class
+  source:
+    id: Timestamps
+    path: ''
+    startLine: 1709
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nStructure representing the start and endtimes of a match.\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Timestamps
+    content.vb: >-
+      <Serializable>
+
+      Public Class Timestamps
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DiscordRPC.Timestamps.Now
+  commentId: P:DiscordRPC.Timestamps.Now
+  id: Now
+  parent: DiscordRPC.Timestamps
+  langs:
+  - csharp
+  - vb
+  name: Now
+  nameWithType: Timestamps.Now
+  fullName: DiscordRPC.Timestamps.Now
+  type: Property
+  source:
+    id: Now
+    path: ''
+    startLine: 1713
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: A new timestamp that starts from the current time.
+  example: []
+  syntax:
+    content: public static Timestamps Now { get; }
+    parameters: []
+    return:
+      type: DiscordRPC.Timestamps
+    content.vb: Public Shared ReadOnly Property Now As Timestamps
+  overload: DiscordRPC.Timestamps.Now*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: DiscordRPC.Timestamps.FromTimeSpan(System.Double)
+  commentId: M:DiscordRPC.Timestamps.FromTimeSpan(System.Double)
+  id: FromTimeSpan(System.Double)
+  parent: DiscordRPC.Timestamps
+  langs:
+  - csharp
+  - vb
+  name: FromTimeSpan(Double)
+  nameWithType: Timestamps.FromTimeSpan(Double)
+  fullName: DiscordRPC.Timestamps.FromTimeSpan(System.Double)
+  type: Method
+  source:
+    id: FromTimeSpan
+    path: ''
+    startLine: 1720
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCreates a new timestamp starting at the current time and ending in the supplied timespan\n"
+  example: []
+  syntax:
+    content: public static Timestamps FromTimeSpan(double seconds)
+    parameters:
+    - id: seconds
+      type: System.Double
+      description: How long the Timestamp will last for in seconds.
+    return:
+      type: DiscordRPC.Timestamps
+      description: Returns a new timestamp with given duration.
+    content.vb: Public Shared Function FromTimeSpan(seconds As Double) As Timestamps
+  overload: DiscordRPC.Timestamps.FromTimeSpan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DiscordRPC.Timestamps.FromTimeSpan(System.TimeSpan)
+  commentId: M:DiscordRPC.Timestamps.FromTimeSpan(System.TimeSpan)
+  id: FromTimeSpan(System.TimeSpan)
+  parent: DiscordRPC.Timestamps
+  langs:
+  - csharp
+  - vb
+  name: FromTimeSpan(TimeSpan)
+  nameWithType: Timestamps.FromTimeSpan(TimeSpan)
+  fullName: DiscordRPC.Timestamps.FromTimeSpan(System.TimeSpan)
+  type: Method
+  source:
+    id: FromTimeSpan
+    path: ''
+    startLine: 1727
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCreates a new timestamp starting at current time and ending in the supplied timespan\n"
+  example: []
+  syntax:
+    content: public static Timestamps FromTimeSpan(TimeSpan timespan)
+    parameters:
+    - id: timespan
+      type: System.TimeSpan
+      description: How long the Timestamp will last for.
+    return:
+      type: DiscordRPC.Timestamps
+      description: Returns a new timestamp with given duration.
+    content.vb: Public Shared Function FromTimeSpan(timespan As TimeSpan) As Timestamps
+  overload: DiscordRPC.Timestamps.FromTimeSpan*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DiscordRPC.Timestamps.Start
+  commentId: P:DiscordRPC.Timestamps.Start
+  id: Start
+  parent: DiscordRPC.Timestamps
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: Timestamps.Start
+  fullName: DiscordRPC.Timestamps.Start
+  type: Property
+  source:
+    id: Start
+    path: ''
+    startLine: 1739
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe time that match started. When included (not-null), the time in the rich presence will be shown as &quot;00:01 elapsed&quot;.\n"
+  example: []
+  syntax:
+    content: public DateTime? Start { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property Start As Date?
+  overload: DiscordRPC.Timestamps.Start*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Timestamps.End
+  commentId: P:DiscordRPC.Timestamps.End
+  id: End
+  parent: DiscordRPC.Timestamps
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: Timestamps.End
+  fullName: DiscordRPC.Timestamps.End
+  type: Property
+  source:
+    id: End
+    path: ''
+    startLine: 1745
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe time the match will end. When included (not-null), the time in the rich presence will be shown as &quot;00:01 remaining&quot;. This will override the &quot;elapsed&quot; to &quot;remaining&quot;.\n"
+  example: []
+  syntax:
+    content: public DateTime? End { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property End As Date?
+  overload: DiscordRPC.Timestamps.End*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Timestamps.#ctor
+  commentId: M:DiscordRPC.Timestamps.#ctor
+  id: '#ctor'
+  parent: DiscordRPC.Timestamps
+  langs:
+  - csharp
+  - vb
+  name: Timestamps()
+  nameWithType: Timestamps.Timestamps()
+  fullName: DiscordRPC.Timestamps.Timestamps()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1751
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCreates a empty timestamp object\n"
+  example: []
+  syntax:
+    content: public Timestamps()
+    content.vb: Public Sub New
+  overload: DiscordRPC.Timestamps.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Timestamps.#ctor(System.DateTime,System.Nullable{System.DateTime})
+  commentId: M:DiscordRPC.Timestamps.#ctor(System.DateTime,System.Nullable{System.DateTime})
+  id: '#ctor(System.DateTime,System.Nullable{System.DateTime})'
+  parent: DiscordRPC.Timestamps
+  langs:
+  - csharp
+  - vb
+  name: Timestamps(DateTime, Nullable<DateTime>)
+  nameWithType: Timestamps.Timestamps(DateTime, Nullable<DateTime>)
+  fullName: DiscordRPC.Timestamps.Timestamps(System.DateTime, System.Nullable<System.DateTime>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1762
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCreates a timestamp with the set start or end time.\n"
+  example: []
+  syntax:
+    content: public Timestamps(DateTime start, DateTime? end = default(DateTime? ))
+    parameters:
+    - id: start
+      type: System.DateTime
+      description: The start time
+    - id: end
+      type: System.Nullable{System.DateTime}
+      description: The end time
+    content.vb: Public Sub New(start As Date, end As Date? = Nothing)
+  overload: DiscordRPC.Timestamps.#ctor*
+  nameWithType.vb: Timestamps.Timestamps(DateTime, Nullable(Of DateTime))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: DiscordRPC.Timestamps.Timestamps(System.DateTime, System.Nullable(Of System.DateTime))
+  name.vb: Timestamps(DateTime, Nullable(Of DateTime))
+- uid: DiscordRPC.Timestamps.StartUnixMilliseconds
+  commentId: P:DiscordRPC.Timestamps.StartUnixMilliseconds
+  id: StartUnixMilliseconds
+  parent: DiscordRPC.Timestamps
+  langs:
+  - csharp
+  - vb
+  name: StartUnixMilliseconds
+  nameWithType: Timestamps.StartUnixMilliseconds
+  fullName: DiscordRPC.Timestamps.StartUnixMilliseconds
+  type: Property
+  source:
+    id: StartUnixMilliseconds
+    path: ''
+    startLine: 1771
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nConverts between DateTime and Milliseconds to give the Unix Epoch Time for the <xref href=\"DiscordRPC.Timestamps.Start\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public ulong? StartUnixMilliseconds { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.UInt64}
+    content.vb: Public Property StartUnixMilliseconds As ULong?
+  overload: DiscordRPC.Timestamps.StartUnixMilliseconds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Timestamps.EndUnixMilliseconds
+  commentId: P:DiscordRPC.Timestamps.EndUnixMilliseconds
+  id: EndUnixMilliseconds
+  parent: DiscordRPC.Timestamps
+  langs:
+  - csharp
+  - vb
+  name: EndUnixMilliseconds
+  nameWithType: Timestamps.EndUnixMilliseconds
+  fullName: DiscordRPC.Timestamps.EndUnixMilliseconds
+  type: Property
+  source:
+    id: EndUnixMilliseconds
+    path: ''
+    startLine: 1790
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nConverts between DateTime and Milliseconds to give the Unix Epoch Time  for the <xref href=\"DiscordRPC.Timestamps.End\" data-throw-if-not-resolved=\"false\"></xref>.\n<xref href=\"DiscordRPC.Timestamps.End\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public ulong? EndUnixMilliseconds { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.UInt64}
+    content.vb: Public Property EndUnixMilliseconds As ULong?
+  overload: DiscordRPC.Timestamps.EndUnixMilliseconds*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.Timestamps.FromUnixMilliseconds(System.UInt64)
+  commentId: M:DiscordRPC.Timestamps.FromUnixMilliseconds(System.UInt64)
+  id: FromUnixMilliseconds(System.UInt64)
+  parent: DiscordRPC.Timestamps
+  langs:
+  - csharp
+  - vb
+  name: FromUnixMilliseconds(UInt64)
+  nameWithType: Timestamps.FromUnixMilliseconds(UInt64)
+  fullName: DiscordRPC.Timestamps.FromUnixMilliseconds(System.UInt64)
+  type: Method
+  source:
+    id: FromUnixMilliseconds
+    path: ''
+    startLine: 1809
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nConverts a Unix Epoch time into a <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static DateTime FromUnixMilliseconds(ulong unixTime)
+    parameters:
+    - id: unixTime
+      type: System.UInt64
+      description: The time in milliseconds since 1970 / 01 / 01
+    return:
+      type: System.DateTime
+      description: ''
+    content.vb: Public Shared Function FromUnixMilliseconds(unixTime As ULong) As Date
+  overload: DiscordRPC.Timestamps.FromUnixMilliseconds*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DiscordRPC.Timestamps.ToUnixMilliseconds(System.DateTime)
+  commentId: M:DiscordRPC.Timestamps.ToUnixMilliseconds(System.DateTime)
+  id: ToUnixMilliseconds(System.DateTime)
+  parent: DiscordRPC.Timestamps
+  langs:
+  - csharp
+  - vb
+  name: ToUnixMilliseconds(DateTime)
+  nameWithType: Timestamps.ToUnixMilliseconds(DateTime)
+  fullName: DiscordRPC.Timestamps.ToUnixMilliseconds(System.DateTime)
+  type: Method
+  source:
+    id: ToUnixMilliseconds
+    path: ''
+    startLine: 1820
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nConverts a <xref href=\"System.DateTime\" data-throw-if-not-resolved=\"false\"></xref> into a Unix Epoch time (in milliseconds).\n"
+  example: []
+  syntax:
+    content: public static ulong ToUnixMilliseconds(DateTime date)
+    parameters:
+    - id: date
+      type: System.DateTime
+      description: The datetime to convert
+    return:
+      type: System.UInt64
+      description: ''
+    content.vb: Public Shared Function ToUnixMilliseconds(date As Date) As ULong
+  overload: DiscordRPC.Timestamps.ToUnixMilliseconds*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.Timestamps.Now*
+  commentId: Overload:DiscordRPC.Timestamps.Now
+  name: Now
+  nameWithType: Timestamps.Now
+  fullName: DiscordRPC.Timestamps.Now
+- uid: DiscordRPC.Timestamps
+  commentId: T:DiscordRPC.Timestamps
+  parent: DiscordRPC
+  name: Timestamps
+  nameWithType: Timestamps
+  fullName: DiscordRPC.Timestamps
+- uid: DiscordRPC.Timestamps.FromTimeSpan*
+  commentId: Overload:DiscordRPC.Timestamps.FromTimeSpan
+  name: FromTimeSpan
+  nameWithType: Timestamps.FromTimeSpan
+  fullName: DiscordRPC.Timestamps.FromTimeSpan
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: DiscordRPC.Timestamps.Start*
+  commentId: Overload:DiscordRPC.Timestamps.Start
+  name: Start
+  nameWithType: Timestamps.Start
+  fullName: DiscordRPC.Timestamps.Start
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<System.DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of System.DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.Timestamps.End*
+  commentId: Overload:DiscordRPC.Timestamps.End
+  name: End
+  nameWithType: Timestamps.End
+  fullName: DiscordRPC.Timestamps.End
+- uid: DiscordRPC.Timestamps.#ctor*
+  commentId: Overload:DiscordRPC.Timestamps.#ctor
+  name: Timestamps
+  nameWithType: Timestamps.Timestamps
+  fullName: DiscordRPC.Timestamps.Timestamps
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: DiscordRPC.Timestamps.Start
+  commentId: P:DiscordRPC.Timestamps.Start
+  isExternal: true
+- uid: DiscordRPC.Timestamps.StartUnixMilliseconds*
+  commentId: Overload:DiscordRPC.Timestamps.StartUnixMilliseconds
+  name: StartUnixMilliseconds
+  nameWithType: Timestamps.StartUnixMilliseconds
+  fullName: DiscordRPC.Timestamps.StartUnixMilliseconds
+- uid: System.Nullable{System.UInt64}
+  commentId: T:System.Nullable{System.UInt64}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<UInt64>
+  nameWithType: Nullable<UInt64>
+  fullName: System.Nullable<System.UInt64>
+  nameWithType.vb: Nullable(Of UInt64)
+  fullName.vb: System.Nullable(Of System.UInt64)
+  name.vb: Nullable(Of UInt64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.UInt64
+    name: UInt64
+    nameWithType: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.UInt64
+    name: UInt64
+    nameWithType: UInt64
+    fullName: System.UInt64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.Timestamps.End
+  commentId: P:DiscordRPC.Timestamps.End
+  isExternal: true
+- uid: DiscordRPC.Timestamps.EndUnixMilliseconds*
+  commentId: Overload:DiscordRPC.Timestamps.EndUnixMilliseconds
+  name: EndUnixMilliseconds
+  nameWithType: Timestamps.EndUnixMilliseconds
+  fullName: DiscordRPC.Timestamps.EndUnixMilliseconds
+- uid: DiscordRPC.Timestamps.FromUnixMilliseconds*
+  commentId: Overload:DiscordRPC.Timestamps.FromUnixMilliseconds
+  name: FromUnixMilliseconds
+  nameWithType: Timestamps.FromUnixMilliseconds
+  fullName: DiscordRPC.Timestamps.FromUnixMilliseconds
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
+- uid: DiscordRPC.Timestamps.ToUnixMilliseconds*
+  commentId: Overload:DiscordRPC.Timestamps.ToUnixMilliseconds
+  name: ToUnixMilliseconds
+  nameWithType: Timestamps.ToUnixMilliseconds
+  fullName: DiscordRPC.Timestamps.ToUnixMilliseconds

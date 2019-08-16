@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Events.OnPresenceUpdateEvent
+  commentId: T:DiscordRPC.Events.OnPresenceUpdateEvent
+  id: OnPresenceUpdateEvent
+  parent: DiscordRPC.Events
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnPresenceUpdateEvent
+  nameWithType: OnPresenceUpdateEvent
+  fullName: DiscordRPC.Events.OnPresenceUpdateEvent
+  type: Delegate
+  source:
+    id: OnPresenceUpdateEvent
+    path: ''
+    startLine: 969
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Events
+  summary: "\nCalled when the Discord Client has updated the presence.\n"
+  example: []
+  syntax:
+    content: public delegate void OnPresenceUpdateEvent(object sender, PresenceMessage args);
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The Discord client handler that sent this event
+    - id: args
+      type: PresenceMessage
+      description: The arguments supplied with the event
+    content.vb: Public Delegate Sub OnPresenceUpdateEvent(sender As Object, args As PresenceMessage)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: DiscordRPC.Events
+  commentId: N:DiscordRPC.Events
+  name: DiscordRPC.Events
+  nameWithType: DiscordRPC.Events
+  fullName: DiscordRPC.Events
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: PresenceMessage
+  commentId: '!:PresenceMessage'
+  isExternal: true
+  name: PresenceMessage
+  nameWithType: PresenceMessage
+  fullName: PresenceMessage
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

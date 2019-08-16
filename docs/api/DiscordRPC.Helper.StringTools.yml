@@ -1,0 +1,614 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Helper.StringTools
+  commentId: T:DiscordRPC.Helper.StringTools
+  id: StringTools
+  parent: DiscordRPC.Helper
+  children:
+  - DiscordRPC.Helper.StringTools.GetNullOrString(System.String)
+  - DiscordRPC.Helper.StringTools.ToCamelCase(System.String)
+  - DiscordRPC.Helper.StringTools.ToSnakeCase(System.String)
+  - DiscordRPC.Helper.StringTools.WithinLength(System.String,System.Int32)
+  - DiscordRPC.Helper.StringTools.WithinLength(System.String,System.Int32,System.Text.Encoding)
+  langs:
+  - csharp
+  - vb
+  name: StringTools
+  nameWithType: StringTools
+  fullName: DiscordRPC.Helper.StringTools
+  type: Class
+  source:
+    id: StringTools
+    path: ''
+    startLine: 2454
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Helper
+  summary: "\nCollectin of helpful string extensions\n"
+  example: []
+  syntax:
+    content: public static class StringTools
+    content.vb: Public Module StringTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: DiscordRPC.Helper.StringTools.GetNullOrString(System.String)
+  commentId: M:DiscordRPC.Helper.StringTools.GetNullOrString(System.String)
+  id: GetNullOrString(System.String)
+  isExtensionMethod: true
+  parent: DiscordRPC.Helper.StringTools
+  langs:
+  - csharp
+  - vb
+  name: GetNullOrString(String)
+  nameWithType: StringTools.GetNullOrString(String)
+  fullName: DiscordRPC.Helper.StringTools.GetNullOrString(System.String)
+  type: Method
+  source:
+    id: GetNullOrString
+    path: ''
+    startLine: 2461
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Helper
+  summary: "\nWill return null if the string is whitespace, otherwise it will return the string. \n"
+  example: []
+  syntax:
+    content: public static string GetNullOrString(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to check
+    return:
+      type: System.String
+      description: Null if the string is empty, otherwise the string
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetNullOrString(str As String) As String
+  overload: DiscordRPC.Helper.StringTools.GetNullOrString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DiscordRPC.Helper.StringTools.WithinLength(System.String,System.Int32)
+  commentId: M:DiscordRPC.Helper.StringTools.WithinLength(System.String,System.Int32)
+  id: WithinLength(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: DiscordRPC.Helper.StringTools
+  langs:
+  - csharp
+  - vb
+  name: WithinLength(String, Int32)
+  nameWithType: StringTools.WithinLength(String, Int32)
+  fullName: DiscordRPC.Helper.StringTools.WithinLength(System.String, System.Int32)
+  type: Method
+  source:
+    id: WithinLength
+    path: ''
+    startLine: 2472
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Helper
+  summary: "\nDoes the string fit within the given amount of bytes? Uses UTF8 encoding.\n"
+  example: []
+  syntax:
+    content: public static bool WithinLength(this string str, int bytes)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to check
+    - id: bytes
+      type: System.Int32
+      description: The maximum number of bytes the string can take up
+    return:
+      type: System.Boolean
+      description: True if the string fits within the number of bytes
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WithinLength(str As String, bytes As Integer) As Boolean
+  overload: DiscordRPC.Helper.StringTools.WithinLength*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DiscordRPC.Helper.StringTools.WithinLength(System.String,System.Int32,System.Text.Encoding)
+  commentId: M:DiscordRPC.Helper.StringTools.WithinLength(System.String,System.Int32,System.Text.Encoding)
+  id: WithinLength(System.String,System.Int32,System.Text.Encoding)
+  isExtensionMethod: true
+  parent: DiscordRPC.Helper.StringTools
+  langs:
+  - csharp
+  - vb
+  name: WithinLength(String, Int32, Encoding)
+  nameWithType: StringTools.WithinLength(String, Int32, Encoding)
+  fullName: DiscordRPC.Helper.StringTools.WithinLength(System.String, System.Int32, System.Text.Encoding)
+  type: Method
+  source:
+    id: WithinLength
+    path: ''
+    startLine: 2484
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Helper
+  summary: "\nDoes the string fit within the given amount of bytes?\n"
+  example: []
+  syntax:
+    content: public static bool WithinLength(this string str, int bytes, Encoding encoding)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to check
+    - id: bytes
+      type: System.Int32
+      description: The maximum number of bytes the string can take up
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding to count the bytes with
+    return:
+      type: System.Boolean
+      description: True if the string fits within the number of bytes
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WithinLength(str As String, bytes As Integer, encoding As Encoding) As Boolean
+  overload: DiscordRPC.Helper.StringTools.WithinLength*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DiscordRPC.Helper.StringTools.ToCamelCase(System.String)
+  commentId: M:DiscordRPC.Helper.StringTools.ToCamelCase(System.String)
+  id: ToCamelCase(System.String)
+  isExtensionMethod: true
+  parent: DiscordRPC.Helper.StringTools
+  langs:
+  - csharp
+  - vb
+  name: ToCamelCase(String)
+  nameWithType: StringTools.ToCamelCase(String)
+  fullName: DiscordRPC.Helper.StringTools.ToCamelCase(System.String)
+  type: Method
+  source:
+    id: ToCamelCase
+    path: ''
+    startLine: 2495
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Helper
+  summary: "\nConverts the string into UpperCamelCase (Pascal Case).\n"
+  example: []
+  syntax:
+    content: public static string ToCamelCase(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to convert
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToCamelCase(str As String) As String
+  overload: DiscordRPC.Helper.StringTools.ToCamelCase*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: DiscordRPC.Helper.StringTools.ToSnakeCase(System.String)
+  commentId: M:DiscordRPC.Helper.StringTools.ToSnakeCase(System.String)
+  id: ToSnakeCase(System.String)
+  isExtensionMethod: true
+  parent: DiscordRPC.Helper.StringTools
+  langs:
+  - csharp
+  - vb
+  name: ToSnakeCase(String)
+  nameWithType: StringTools.ToSnakeCase(String)
+  fullName: DiscordRPC.Helper.StringTools.ToSnakeCase(System.String)
+  type: Method
+  source:
+    id: ToSnakeCase
+    path: ''
+    startLine: 2510
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Helper
+  summary: "\nConverts the string into UPPER_SNAKE_CASE\n"
+  example: []
+  syntax:
+    content: public static string ToSnakeCase(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to convert
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToSnakeCase(str As String) As String
+  overload: DiscordRPC.Helper.StringTools.ToSnakeCase*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: DiscordRPC.Helper
+  commentId: N:DiscordRPC.Helper
+  name: DiscordRPC.Helper
+  nameWithType: DiscordRPC.Helper
+  fullName: DiscordRPC.Helper
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.Helper.StringTools.GetNullOrString*
+  commentId: Overload:DiscordRPC.Helper.StringTools.GetNullOrString
+  name: GetNullOrString
+  nameWithType: StringTools.GetNullOrString
+  fullName: DiscordRPC.Helper.StringTools.GetNullOrString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DiscordRPC.Helper.StringTools.WithinLength*
+  commentId: Overload:DiscordRPC.Helper.StringTools.WithinLength
+  name: WithinLength
+  nameWithType: StringTools.WithinLength
+  fullName: DiscordRPC.Helper.StringTools.WithinLength
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: DiscordRPC.Helper.StringTools.ToCamelCase*
+  commentId: Overload:DiscordRPC.Helper.StringTools.ToCamelCase
+  name: ToCamelCase
+  nameWithType: StringTools.ToCamelCase
+  fullName: DiscordRPC.Helper.StringTools.ToCamelCase
+- uid: DiscordRPC.Helper.StringTools.ToSnakeCase*
+  commentId: Overload:DiscordRPC.Helper.StringTools.ToSnakeCase
+  name: ToSnakeCase
+  nameWithType: StringTools.ToSnakeCase
+  fullName: DiscordRPC.Helper.StringTools.ToSnakeCase

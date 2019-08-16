@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Helper
+  commentId: N:DiscordRPC.Helper
+  id: DiscordRPC.Helper
+  children:
+  - DiscordRPC.Helper.StringTools
+  langs:
+  - csharp
+  - vb
+  name: DiscordRPC.Helper
+  nameWithType: DiscordRPC.Helper
+  fullName: DiscordRPC.Helper
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: DiscordRPC.Helper.StringTools
+  commentId: T:DiscordRPC.Helper.StringTools
+  name: StringTools
+  nameWithType: StringTools
+  fullName: DiscordRPC.Helper.StringTools

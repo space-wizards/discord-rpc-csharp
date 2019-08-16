@@ -1,0 +1,2699 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.DiscordRpcClient
+  commentId: T:DiscordRPC.DiscordRpcClient
+  id: DiscordRpcClient
+  parent: DiscordRPC
+  children:
+  - DiscordRPC.DiscordRpcClient.#ctor(System.String)
+  - DiscordRPC.DiscordRpcClient.#ctor(System.String,System.Int32,ILogger,System.Boolean,INamedPipeClient)
+  - DiscordRPC.DiscordRpcClient.ApplicationID
+  - DiscordRPC.DiscordRpcClient.AutoEvents
+  - DiscordRPC.DiscordRpcClient.ClearPresence
+  - DiscordRPC.DiscordRpcClient.Configuration
+  - DiscordRPC.DiscordRpcClient.CurrentPresence
+  - DiscordRPC.DiscordRpcClient.CurrentUser
+  - DiscordRPC.DiscordRpcClient.Deinitialize
+  - DiscordRPC.DiscordRpcClient.Dispose
+  - DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme
+  - DiscordRPC.DiscordRpcClient.Initialize
+  - DiscordRPC.DiscordRpcClient.Invoke
+  - DiscordRPC.DiscordRpcClient.IsDisposed
+  - DiscordRPC.DiscordRpcClient.IsInitialized
+  - DiscordRPC.DiscordRpcClient.Logger
+  - DiscordRPC.DiscordRpcClient.MaxQueueSize
+  - DiscordRPC.DiscordRpcClient.OnClose
+  - DiscordRPC.DiscordRpcClient.OnConnectionEstablished
+  - DiscordRPC.DiscordRpcClient.OnConnectionFailed
+  - DiscordRPC.DiscordRpcClient.OnError
+  - DiscordRPC.DiscordRpcClient.OnJoin
+  - DiscordRPC.DiscordRpcClient.OnJoinRequested
+  - DiscordRPC.DiscordRpcClient.OnPresenceUpdate
+  - DiscordRPC.DiscordRpcClient.OnReady
+  - DiscordRPC.DiscordRpcClient.OnRpcMessage
+  - DiscordRPC.DiscordRpcClient.OnSpectate
+  - DiscordRPC.DiscordRpcClient.OnSubscribe
+  - DiscordRPC.DiscordRpcClient.OnUnsubscribe
+  - DiscordRPC.DiscordRpcClient.ProcessID
+  - DiscordRPC.DiscordRpcClient.RegisterUriScheme(System.String,System.String)
+  - DiscordRPC.DiscordRpcClient.Respond(JoinRequestMessage,System.Boolean)
+  - DiscordRPC.DiscordRpcClient.SetPresence(DiscordRPC.RichPresence)
+  - DiscordRPC.DiscordRpcClient.SetSubscription(DiscordRPC.EventType)
+  - DiscordRPC.DiscordRpcClient.ShutdownOnly
+  - DiscordRPC.DiscordRpcClient.SkipIdenticalPresence
+  - DiscordRPC.DiscordRpcClient.SteamID
+  - DiscordRPC.DiscordRpcClient.Subscribe(DiscordRPC.EventType)
+  - DiscordRPC.DiscordRpcClient.Subscription
+  - DiscordRPC.DiscordRpcClient.SynchronizeState
+  - DiscordRPC.DiscordRpcClient.TargetPipe
+  - DiscordRPC.DiscordRpcClient.Unsubscribe(DiscordRPC.EventType)
+  - DiscordRPC.DiscordRpcClient.Unubscribe(DiscordRPC.EventType)
+  - DiscordRPC.DiscordRpcClient.UpdateClearTime
+  - DiscordRPC.DiscordRpcClient.UpdateDetails(System.String)
+  - DiscordRPC.DiscordRpcClient.UpdateEndTime
+  - DiscordRPC.DiscordRpcClient.UpdateEndTime(System.DateTime)
+  - DiscordRPC.DiscordRpcClient.UpdateLargeAsset(System.String,System.String)
+  - DiscordRPC.DiscordRpcClient.UpdateParty(DiscordRPC.Party)
+  - DiscordRPC.DiscordRpcClient.UpdatePartySize(System.Int32)
+  - DiscordRPC.DiscordRpcClient.UpdatePartySize(System.Int32,System.Int32)
+  - DiscordRPC.DiscordRpcClient.UpdateSecrets(DiscordRPC.Secrets)
+  - DiscordRPC.DiscordRpcClient.UpdateSmallAsset(System.String,System.String)
+  - DiscordRPC.DiscordRpcClient.UpdateStartTime
+  - DiscordRPC.DiscordRpcClient.UpdateStartTime(System.DateTime)
+  - DiscordRPC.DiscordRpcClient.UpdateState(System.String)
+  langs:
+  - csharp
+  - vb
+  name: DiscordRpcClient
+  nameWithType: DiscordRpcClient
+  fullName: DiscordRPC.DiscordRpcClient
+  type: Class
+  source:
+    id: DiscordRpcClient
+    path: ''
+    startLine: 49
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nA Discord RPC Client which is used to send Rich Presence updates and receive Join / Spectate events.\n"
+  example: []
+  syntax:
+    content: 'public sealed class DiscordRpcClient : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class DiscordRpcClient
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme
+  commentId: P:DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme
+  id: HasRegisteredUriScheme
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: HasRegisteredUriScheme
+  nameWithType: DiscordRpcClient.HasRegisteredUriScheme
+  fullName: DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme
+  type: Property
+  source:
+    id: HasRegisteredUriScheme
+    path: ''
+    startLine: 58
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nGets a value indicating if the client has registered a URI Scheme. If this is false, Join / Spectate events will fail.\n<p>To register a URI Scheme, call <xref href=\"DiscordRPC.DiscordRpcClient.RegisterUriScheme(System.String%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+  example: []
+  syntax:
+    content: public bool HasRegisteredUriScheme { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasRegisteredUriScheme As Boolean
+  overload: DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.ApplicationID
+  commentId: P:DiscordRPC.DiscordRpcClient.ApplicationID
+  id: ApplicationID
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: ApplicationID
+  nameWithType: DiscordRpcClient.ApplicationID
+  fullName: DiscordRPC.DiscordRpcClient.ApplicationID
+  type: Property
+  source:
+    id: ApplicationID
+    path: ''
+    startLine: 63
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nGets the Application ID of the RPC Client.\n"
+  example: []
+  syntax:
+    content: public string ApplicationID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ApplicationID As String
+  overload: DiscordRPC.DiscordRpcClient.ApplicationID*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.SteamID
+  commentId: P:DiscordRPC.DiscordRpcClient.SteamID
+  id: SteamID
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: SteamID
+  nameWithType: DiscordRpcClient.SteamID
+  fullName: DiscordRPC.DiscordRpcClient.SteamID
+  type: Property
+  source:
+    id: SteamID
+    path: ''
+    startLine: 68
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nGets the Steam ID of the RPC Client. This value can be null if none was supplied.\n"
+  example: []
+  syntax:
+    content: public string SteamID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property SteamID As String
+  overload: DiscordRPC.DiscordRpcClient.SteamID*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.ProcessID
+  commentId: P:DiscordRPC.DiscordRpcClient.ProcessID
+  id: ProcessID
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: ProcessID
+  nameWithType: DiscordRpcClient.ProcessID
+  fullName: DiscordRPC.DiscordRpcClient.ProcessID
+  type: Property
+  source:
+    id: ProcessID
+    path: ''
+    startLine: 73
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nGets the ID of the process used to run the RPC Client. Discord tracks this process ID and waits for its termination. Defaults to the current application process ID.\n"
+  example: []
+  syntax:
+    content: public int ProcessID { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ProcessID As Integer
+  overload: DiscordRPC.DiscordRpcClient.ProcessID*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.MaxQueueSize
+  commentId: P:DiscordRPC.DiscordRpcClient.MaxQueueSize
+  id: MaxQueueSize
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: MaxQueueSize
+  nameWithType: DiscordRpcClient.MaxQueueSize
+  fullName: DiscordRPC.DiscordRpcClient.MaxQueueSize
+  type: Property
+  source:
+    id: MaxQueueSize
+    path: ''
+    startLine: 78
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe maximum size of the message queue received from Discord. \n"
+  example: []
+  syntax:
+    content: public int MaxQueueSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaxQueueSize As Integer
+  overload: DiscordRPC.DiscordRpcClient.MaxQueueSize*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.IsDisposed
+  commentId: P:DiscordRPC.DiscordRpcClient.IsDisposed
+  id: IsDisposed
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: IsDisposed
+  nameWithType: DiscordRpcClient.IsDisposed
+  fullName: DiscordRPC.DiscordRpcClient.IsDisposed
+  type: Property
+  source:
+    id: IsDisposed
+    path: ''
+    startLine: 83
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe dispose state of the client object.\n"
+  example: []
+  syntax:
+    content: public bool IsDisposed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDisposed As Boolean
+  overload: DiscordRPC.DiscordRpcClient.IsDisposed*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.Logger
+  commentId: P:DiscordRPC.DiscordRpcClient.Logger
+  id: Logger
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: DiscordRpcClient.Logger
+  fullName: DiscordRPC.DiscordRpcClient.Logger
+  type: Property
+  source:
+    id: Logger
+    path: ''
+    startLine: 88
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe logger used this client and its associated components. <see cref=\"!:ILogger\"></see> are not called safely and can come from any thread. It is upto the <see cref=\"!:ILogger\"></see> to account for this and apply appropriate thread safe methods.\n"
+  example: []
+  syntax:
+    content: public ILogger Logger { get; set; }
+    parameters: []
+    return:
+      type: ILogger
+    content.vb: Public Property Logger As ILogger
+  overload: DiscordRPC.DiscordRpcClient.Logger*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.AutoEvents
+  commentId: P:DiscordRPC.DiscordRpcClient.AutoEvents
+  id: AutoEvents
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: AutoEvents
+  nameWithType: DiscordRpcClient.AutoEvents
+  fullName: DiscordRPC.DiscordRpcClient.AutoEvents
+  type: Property
+  source:
+    id: AutoEvents
+    path: ''
+    startLine: 102
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nIndicates if the client will automatically invoke the events without <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> having to be called. \n"
+  example: []
+  syntax:
+    content: public bool AutoEvents { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property AutoEvents As Boolean
+  overload: DiscordRPC.DiscordRpcClient.AutoEvents*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.SkipIdenticalPresence
+  commentId: P:DiscordRPC.DiscordRpcClient.SkipIdenticalPresence
+  id: SkipIdenticalPresence
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: SkipIdenticalPresence
+  nameWithType: DiscordRpcClient.SkipIdenticalPresence
+  fullName: DiscordRPC.DiscordRpcClient.SkipIdenticalPresence
+  type: Property
+  source:
+    id: SkipIdenticalPresence
+    path: ''
+    startLine: 107
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSkips sending presences that are identical to the current one.\n"
+  example: []
+  syntax:
+    content: public bool SkipIdenticalPresence { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property SkipIdenticalPresence As Boolean
+  overload: DiscordRPC.DiscordRpcClient.SkipIdenticalPresence*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.TargetPipe
+  commentId: P:DiscordRPC.DiscordRpcClient.TargetPipe
+  id: TargetPipe
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: TargetPipe
+  nameWithType: DiscordRpcClient.TargetPipe
+  fullName: DiscordRPC.DiscordRpcClient.TargetPipe
+  type: Property
+  source:
+    id: TargetPipe
+    path: ''
+    startLine: 114
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe pipe the discord client is on, ranging from 0 to 9. Use -1 to scan through all pipes.\n<p>This property can be used for testing multiple clients. For example, if a Discord Client was on pipe 0, the Discord Canary is most likely on pipe 1.</p>\n"
+  example: []
+  syntax:
+    content: public int TargetPipe { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property TargetPipe As Integer
+  overload: DiscordRPC.DiscordRpcClient.TargetPipe*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.CurrentPresence
+  commentId: P:DiscordRPC.DiscordRpcClient.CurrentPresence
+  id: CurrentPresence
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: CurrentPresence
+  nameWithType: DiscordRpcClient.CurrentPresence
+  fullName: DiscordRPC.DiscordRpcClient.CurrentPresence
+  type: Property
+  source:
+    id: CurrentPresence
+    path: ''
+    startLine: 121
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe current presence that the client has. Gets set with <xref href=\"DiscordRPC.DiscordRpcClient.SetPresence(DiscordRPC.RichPresence)\" data-throw-if-not-resolved=\"false\"></xref> and updated on <xref href=\"DiscordRPC.DiscordRpcClient.OnPresenceUpdate\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public RichPresence CurrentPresence { get; }
+    parameters: []
+    return:
+      type: DiscordRPC.RichPresence
+    content.vb: Public ReadOnly Property CurrentPresence As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.CurrentPresence*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.Subscription
+  commentId: P:DiscordRPC.DiscordRpcClient.Subscription
+  id: Subscription
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: Subscription
+  nameWithType: DiscordRpcClient.Subscription
+  fullName: DiscordRPC.DiscordRpcClient.Subscription
+  type: Property
+  source:
+    id: Subscription
+    path: ''
+    startLine: 126
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCurrent subscription to events. Gets set with <xref href=\"DiscordRPC.DiscordRpcClient.Subscribe(DiscordRPC.EventType)\" data-throw-if-not-resolved=\"false\"></xref>, <see cref=\"!:UnsubscribeMessage\"></see> and updated on <xref href=\"DiscordRPC.DiscordRpcClient.OnSubscribe\" data-throw-if-not-resolved=\"false\"></xref>, <xref href=\"DiscordRPC.DiscordRpcClient.OnUnsubscribe\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public EventType Subscription { get; }
+    parameters: []
+    return:
+      type: DiscordRPC.EventType
+    content.vb: Public ReadOnly Property Subscription As EventType
+  overload: DiscordRPC.DiscordRpcClient.Subscription*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.CurrentUser
+  commentId: P:DiscordRPC.DiscordRpcClient.CurrentUser
+  id: CurrentUser
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: CurrentUser
+  nameWithType: DiscordRpcClient.CurrentUser
+  fullName: DiscordRPC.DiscordRpcClient.CurrentUser
+  type: Property
+  source:
+    id: CurrentUser
+    path: ''
+    startLine: 131
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe current discord user. This is updated with the ready event and will be null until the event is fired from the connection.\n"
+  example: []
+  syntax:
+    content: public User CurrentUser { get; }
+    parameters: []
+    return:
+      type: DiscordRPC.User
+    content.vb: Public ReadOnly Property CurrentUser As User
+  overload: DiscordRPC.DiscordRpcClient.CurrentUser*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.Configuration
+  commentId: P:DiscordRPC.DiscordRpcClient.Configuration
+  id: Configuration
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: Configuration
+  nameWithType: DiscordRpcClient.Configuration
+  fullName: DiscordRPC.DiscordRpcClient.Configuration
+  type: Property
+  source:
+    id: Configuration
+    path: ''
+    startLine: 136
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe current configuration the connection is using. Only becomes available after a ready event.\n"
+  example: []
+  syntax:
+    content: public Configuration Configuration { get; }
+    parameters: []
+    return:
+      type: DiscordRPC.Configuration
+    content.vb: Public ReadOnly Property Configuration As Configuration
+  overload: DiscordRPC.DiscordRpcClient.Configuration*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.IsInitialized
+  commentId: P:DiscordRPC.DiscordRpcClient.IsInitialized
+  id: IsInitialized
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: IsInitialized
+  nameWithType: DiscordRpcClient.IsInitialized
+  fullName: DiscordRPC.DiscordRpcClient.IsInitialized
+  type: Property
+  source:
+    id: IsInitialized
+    path: ''
+    startLine: 141
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nRepresents if the client has been <xref href=\"DiscordRPC.DiscordRpcClient.Initialize\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public bool IsInitialized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsInitialized As Boolean
+  overload: DiscordRPC.DiscordRpcClient.IsInitialized*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.DiscordRpcClient.ShutdownOnly
+  commentId: P:DiscordRPC.DiscordRpcClient.ShutdownOnly
+  id: ShutdownOnly
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: ShutdownOnly
+  nameWithType: DiscordRpcClient.ShutdownOnly
+  fullName: DiscordRPC.DiscordRpcClient.ShutdownOnly
+  type: Property
+  source:
+    id: ShutdownOnly
+    path: ''
+    startLine: 147
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nForces the connection to shutdown gracefully instead of just aborting the connection.\n<p>This option helps prevents ghosting in applications where the Process ID is a host and the game is executed within the host (ie: the Unity3D editor). This will tell Discord that we have no presence and we are closing the connection manually, instead of waiting for the process to terminate.</p>\n"
+  example: []
+  syntax:
+    content: public bool ShutdownOnly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ShutdownOnly As Boolean
+  overload: DiscordRPC.DiscordRpcClient.ShutdownOnly*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.OnReady
+  commentId: E:DiscordRPC.DiscordRpcClient.OnReady
+  id: OnReady
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: OnReady
+  nameWithType: DiscordRpcClient.OnReady
+  fullName: DiscordRPC.DiscordRpcClient.OnReady
+  type: Event
+  source:
+    id: OnReady
+    path: ''
+    startLine: 165
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCalled when the discord client is ready to send and receive messages.\n<p>If <xref href=\"DiscordRPC.DiscordRpcClient.AutoEvents\" data-throw-if-not-resolved=\"false\"></xref> is true then this event will execute on a different thread. If it is not true however, then this event is not invoked untill <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> and will be on the calling thread.</p>\n"
+  example: []
+  syntax:
+    content: public event OnReadyEvent OnReady
+    return:
+      type: OnReadyEvent
+    content.vb: Public Event OnReady As OnReadyEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.OnClose
+  commentId: E:DiscordRPC.DiscordRpcClient.OnClose
+  id: OnClose
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: OnClose
+  nameWithType: DiscordRpcClient.OnClose
+  fullName: DiscordRPC.DiscordRpcClient.OnClose
+  type: Event
+  source:
+    id: OnClose
+    path: ''
+    startLine: 171
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCalled when connection to the Discord Client is lost. The connection will remain close and unready to accept messages until the Ready event is called again.\n<p>If <xref href=\"DiscordRPC.DiscordRpcClient.AutoEvents\" data-throw-if-not-resolved=\"false\"></xref> is true then this event will execute on a different thread. If it is not true however, then this event is not invoked untill <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> and will be on the calling thread.</p>\n"
+  example: []
+  syntax:
+    content: public event OnCloseEvent OnClose
+    return:
+      type: OnCloseEvent
+    content.vb: Public Event OnClose As OnCloseEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.OnError
+  commentId: E:DiscordRPC.DiscordRpcClient.OnError
+  id: OnError
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: OnError
+  nameWithType: DiscordRpcClient.OnError
+  fullName: DiscordRPC.DiscordRpcClient.OnError
+  type: Event
+  source:
+    id: OnError
+    path: ''
+    startLine: 177
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCalled when a error has occured during the transmission of a message. For example, if a bad Rich Presence payload is sent, this event will be called explaining what went wrong.\n<p>If <xref href=\"DiscordRPC.DiscordRpcClient.AutoEvents\" data-throw-if-not-resolved=\"false\"></xref> is true then this event will execute on a different thread. If it is not true however, then this event is not invoked untill <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> and will be on the calling thread.</p>\n"
+  example: []
+  syntax:
+    content: public event OnErrorEvent OnError
+    return:
+      type: OnErrorEvent
+    content.vb: Public Event OnError As OnErrorEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.OnPresenceUpdate
+  commentId: E:DiscordRPC.DiscordRpcClient.OnPresenceUpdate
+  id: OnPresenceUpdate
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: OnPresenceUpdate
+  nameWithType: DiscordRpcClient.OnPresenceUpdate
+  fullName: DiscordRPC.DiscordRpcClient.OnPresenceUpdate
+  type: Event
+  source:
+    id: OnPresenceUpdate
+    path: ''
+    startLine: 183
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCalled when the Discord Client has updated the presence.\n<p>If <xref href=\"DiscordRPC.DiscordRpcClient.AutoEvents\" data-throw-if-not-resolved=\"false\"></xref> is true then this event will execute on a different thread. If it is not true however, then this event is not invoked untill <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> and will be on the calling thread.</p>\n"
+  example: []
+  syntax:
+    content: public event OnPresenceUpdateEvent OnPresenceUpdate
+    return:
+      type: OnPresenceUpdateEvent
+    content.vb: Public Event OnPresenceUpdate As OnPresenceUpdateEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.OnSubscribe
+  commentId: E:DiscordRPC.DiscordRpcClient.OnSubscribe
+  id: OnSubscribe
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: OnSubscribe
+  nameWithType: DiscordRpcClient.OnSubscribe
+  fullName: DiscordRPC.DiscordRpcClient.OnSubscribe
+  type: Event
+  source:
+    id: OnSubscribe
+    path: ''
+    startLine: 189
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCalled when the Discord Client has subscribed to an event.\n<p>If <xref href=\"DiscordRPC.DiscordRpcClient.AutoEvents\" data-throw-if-not-resolved=\"false\"></xref> is true then this event will execute on a different thread. If it is not true however, then this event is not invoked untill <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> and will be on the calling thread.</p>\n"
+  example: []
+  syntax:
+    content: public event OnSubscribeEvent OnSubscribe
+    return:
+      type: OnSubscribeEvent
+    content.vb: Public Event OnSubscribe As OnSubscribeEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.OnUnsubscribe
+  commentId: E:DiscordRPC.DiscordRpcClient.OnUnsubscribe
+  id: OnUnsubscribe
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: OnUnsubscribe
+  nameWithType: DiscordRpcClient.OnUnsubscribe
+  fullName: DiscordRPC.DiscordRpcClient.OnUnsubscribe
+  type: Event
+  source:
+    id: OnUnsubscribe
+    path: ''
+    startLine: 195
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCalled when the Discord Client has unsubscribed from an event.\n<p>If <xref href=\"DiscordRPC.DiscordRpcClient.AutoEvents\" data-throw-if-not-resolved=\"false\"></xref> is true then this event will execute on a different thread. If it is not true however, then this event is not invoked untill <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> and will be on the calling thread.</p>\n"
+  example: []
+  syntax:
+    content: public event OnUnsubscribeEvent OnUnsubscribe
+    return:
+      type: OnUnsubscribeEvent
+    content.vb: Public Event OnUnsubscribe As OnUnsubscribeEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.OnJoin
+  commentId: E:DiscordRPC.DiscordRpcClient.OnJoin
+  id: OnJoin
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: OnJoin
+  nameWithType: DiscordRpcClient.OnJoin
+  fullName: DiscordRPC.DiscordRpcClient.OnJoin
+  type: Event
+  source:
+    id: OnJoin
+    path: ''
+    startLine: 201
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCalled when the Discord Client wishes for this process to join a game.\n<p>If <xref href=\"DiscordRPC.DiscordRpcClient.AutoEvents\" data-throw-if-not-resolved=\"false\"></xref> is true then this event will execute on a different thread. If it is not true however, then this event is not invoked untill <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> and will be on the calling thread.</p>\n"
+  example: []
+  syntax:
+    content: public event OnJoinEvent OnJoin
+    return:
+      type: OnJoinEvent
+    content.vb: Public Event OnJoin As OnJoinEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.OnSpectate
+  commentId: E:DiscordRPC.DiscordRpcClient.OnSpectate
+  id: OnSpectate
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: OnSpectate
+  nameWithType: DiscordRpcClient.OnSpectate
+  fullName: DiscordRPC.DiscordRpcClient.OnSpectate
+  type: Event
+  source:
+    id: OnSpectate
+    path: ''
+    startLine: 207
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCalled when the Discord Client wishes for this process to spectate a game.\n<p>If <xref href=\"DiscordRPC.DiscordRpcClient.AutoEvents\" data-throw-if-not-resolved=\"false\"></xref> is true then this event will execute on a different thread. If it is not true however, then this event is not invoked untill <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> and will be on the calling thread.</p>\n"
+  example: []
+  syntax:
+    content: public event OnSpectateEvent OnSpectate
+    return:
+      type: OnSpectateEvent
+    content.vb: Public Event OnSpectate As OnSpectateEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.OnJoinRequested
+  commentId: E:DiscordRPC.DiscordRpcClient.OnJoinRequested
+  id: OnJoinRequested
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: OnJoinRequested
+  nameWithType: DiscordRpcClient.OnJoinRequested
+  fullName: DiscordRPC.DiscordRpcClient.OnJoinRequested
+  type: Event
+  source:
+    id: OnJoinRequested
+    path: ''
+    startLine: 213
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCalled when another discord user requests permission to join this game.\n<p>This event is not invoked untill <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> is executed.</p>\n"
+  example: []
+  syntax:
+    content: public event OnJoinRequestedEvent OnJoinRequested
+    return:
+      type: OnJoinRequestedEvent
+    content.vb: Public Event OnJoinRequested As OnJoinRequestedEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.OnConnectionEstablished
+  commentId: E:DiscordRPC.DiscordRpcClient.OnConnectionEstablished
+  id: OnConnectionEstablished
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: OnConnectionEstablished
+  nameWithType: DiscordRpcClient.OnConnectionEstablished
+  fullName: DiscordRPC.DiscordRpcClient.OnConnectionEstablished
+  type: Event
+  source:
+    id: OnConnectionEstablished
+    path: ''
+    startLine: 219
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe connection to the discord client was succesfull. This is called before <see cref=\"!:MessageType.Ready\"></see>.\n<p>If <xref href=\"DiscordRPC.DiscordRpcClient.AutoEvents\" data-throw-if-not-resolved=\"false\"></xref> is true then this event will execute on a different thread. If it is not true however, then this event is not invoked untill <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> and will be on the calling thread.</p>\n"
+  example: []
+  syntax:
+    content: public event OnConnectionEstablishedEvent OnConnectionEstablished
+    return:
+      type: OnConnectionEstablishedEvent
+    content.vb: Public Event OnConnectionEstablished As OnConnectionEstablishedEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.OnConnectionFailed
+  commentId: E:DiscordRPC.DiscordRpcClient.OnConnectionFailed
+  id: OnConnectionFailed
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: OnConnectionFailed
+  nameWithType: DiscordRpcClient.OnConnectionFailed
+  fullName: DiscordRPC.DiscordRpcClient.OnConnectionFailed
+  type: Event
+  source:
+    id: OnConnectionFailed
+    path: ''
+    startLine: 225
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nFailed to establish any connection with discord. Discord is potentially not running?\n<p>If <xref href=\"DiscordRPC.DiscordRpcClient.AutoEvents\" data-throw-if-not-resolved=\"false\"></xref> is true then this event will execute on a different thread. If it is not true however, then this event is not invoked untill <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> and will be on the calling thread.</p>\n"
+  example: []
+  syntax:
+    content: public event OnConnectionFailedEvent OnConnectionFailed
+    return:
+      type: OnConnectionFailedEvent
+    content.vb: Public Event OnConnectionFailed As OnConnectionFailedEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.OnRpcMessage
+  commentId: E:DiscordRPC.DiscordRpcClient.OnRpcMessage
+  id: OnRpcMessage
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: OnRpcMessage
+  nameWithType: DiscordRpcClient.OnRpcMessage
+  fullName: DiscordRPC.DiscordRpcClient.OnRpcMessage
+  type: Event
+  source:
+    id: OnRpcMessage
+    path: ''
+    startLine: 230
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe RPC Connection has sent a message. Called before any other event and executed from the RPC Thread.\n"
+  example: []
+  syntax:
+    content: public event OnRpcMessageEvent OnRpcMessage
+    return:
+      type: OnRpcMessageEvent
+    content.vb: Public Event OnRpcMessage As OnRpcMessageEvent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.#ctor(System.String)
+  commentId: M:DiscordRPC.DiscordRpcClient.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: DiscordRpcClient(String)
+  nameWithType: DiscordRpcClient.DiscordRpcClient(String)
+  fullName: DiscordRPC.DiscordRpcClient.DiscordRpcClient(System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 239
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCreates a new Discord RPC Client which can be used to send Rich Presence and receive Join / Spectate events.\n"
+  example: []
+  syntax:
+    content: public DiscordRpcClient(string applicationID)
+    parameters:
+    - id: applicationID
+      type: System.String
+      description: The ID of the application created at discord&apos;s developers portal.
+    content.vb: Public Sub New(applicationID As String)
+  overload: DiscordRPC.DiscordRpcClient.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.#ctor(System.String,System.Int32,ILogger,System.Boolean,INamedPipeClient)
+  commentId: M:DiscordRPC.DiscordRpcClient.#ctor(System.String,System.Int32,ILogger,System.Boolean,INamedPipeClient)
+  id: '#ctor(System.String,System.Int32,ILogger,System.Boolean,INamedPipeClient)'
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: DiscordRpcClient(String, Int32, ILogger, Boolean, INamedPipeClient)
+  nameWithType: DiscordRpcClient.DiscordRpcClient(String, Int32, ILogger, Boolean, INamedPipeClient)
+  fullName: DiscordRPC.DiscordRpcClient.DiscordRpcClient(System.String, System.Int32, ILogger, System.Boolean, INamedPipeClient)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 249
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCreates a new Discord RPC Client which can be used to send Rich Presence and receive Join / Spectate events. This constructor exposes more advance features such as custom NamedPipeClients and Loggers.\n"
+  example: []
+  syntax:
+    content: public DiscordRpcClient(string applicationID, int pipe = -1, ILogger logger = null, bool autoEvents = true, INamedPipeClient client = null)
+    parameters:
+    - id: applicationID
+      type: System.String
+      description: The ID of the application created at discord&apos;s developers portal.
+    - id: pipe
+      type: System.Int32
+      description: The pipe to connect too. If -1, then the client will scan for the first available instance of Discord.
+    - id: logger
+      type: ILogger
+      description: The logger used to report messages. If null, then a <see cref="!:NullLogger"></see> will be created and logs will be ignored.
+    - id: autoEvents
+      type: System.Boolean
+      description: Should events be automatically invoked from the RPC Thread as they arrive from discord?
+    - id: client
+      type: INamedPipeClient
+      description: The pipe client to use and communicate to discord through. If null, the default <see cref="!:ManagedNamedPipeClient"></see> will be used.
+    content.vb: Public Sub New(applicationID As String, pipe As Integer = -1, logger As ILogger = Nothing, autoEvents As Boolean = True, client As INamedPipeClient = Nothing)
+  overload: DiscordRPC.DiscordRpcClient.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.Invoke
+  commentId: M:DiscordRPC.DiscordRpcClient.Invoke
+  id: Invoke
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: Invoke()
+  nameWithType: DiscordRpcClient.Invoke()
+  fullName: DiscordRPC.DiscordRpcClient.Invoke()
+  type: Method
+  source:
+    id: Invoke
+    path: ''
+    startLine: 296
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nDequeues all the messages from Discord, processes them and then invoke appropriate event handlers. This will process the message and update the internal state before invoking the events. Returns the messages that were invoked in the order they were invoked.\n<p>This method cannot be used if <xref href=\"DiscordRPC.DiscordRpcClient.AutoEvents\" data-throw-if-not-resolved=\"false\"></xref> is enabled.</p>\n"
+  example: []
+  syntax:
+    content: public IMessage[] Invoke()
+    return:
+      type: IMessage[]
+      description: Returns the messages that were invoked and in the order they were invoked.
+    content.vb: Public Function Invoke As IMessage()
+  overload: DiscordRPC.DiscordRpcClient.Invoke*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.Respond(JoinRequestMessage,System.Boolean)
+  commentId: M:DiscordRPC.DiscordRpcClient.Respond(JoinRequestMessage,System.Boolean)
+  id: Respond(JoinRequestMessage,System.Boolean)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: Respond(JoinRequestMessage, Boolean)
+  nameWithType: DiscordRpcClient.Respond(JoinRequestMessage, Boolean)
+  fullName: DiscordRPC.DiscordRpcClient.Respond(JoinRequestMessage, System.Boolean)
+  type: Method
+  source:
+    id: Respond
+    path: ''
+    startLine: 463
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nRespond to a Join Request. All requests will timeout after 30 seconds.\n<p>Because of the 30 second timeout, it is recommended to call <xref href=\"DiscordRPC.DiscordRpcClient.Invoke\" data-throw-if-not-resolved=\"false\"></xref> faster than every 15 seconds to give your users adequate time to respond to the request.</p>\n"
+  example: []
+  syntax:
+    content: public void Respond(JoinRequestMessage request, bool acceptRequest)
+    parameters:
+    - id: request
+      type: JoinRequestMessage
+      description: The request that is being responded too.
+    - id: acceptRequest
+      type: System.Boolean
+      description: Accept the join request.
+    content.vb: Public Sub Respond(request As JoinRequestMessage, acceptRequest As Boolean)
+  overload: DiscordRPC.DiscordRpcClient.Respond*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.SetPresence(DiscordRPC.RichPresence)
+  commentId: M:DiscordRPC.DiscordRpcClient.SetPresence(DiscordRPC.RichPresence)
+  id: SetPresence(DiscordRPC.RichPresence)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: SetPresence(RichPresence)
+  nameWithType: DiscordRpcClient.SetPresence(RichPresence)
+  fullName: DiscordRPC.DiscordRpcClient.SetPresence(DiscordRPC.RichPresence)
+  type: Method
+  source:
+    id: SetPresence
+    path: ''
+    startLine: 481
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the Rich Presence.\n"
+  example: []
+  syntax:
+    content: public void SetPresence(RichPresence presence)
+    parameters:
+    - id: presence
+      type: DiscordRPC.RichPresence
+      description: The Rich Presence to set on the current Discord user.
+    content.vb: Public Sub SetPresence(presence As RichPresence)
+  overload: DiscordRPC.DiscordRpcClient.SetPresence*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdateDetails(System.String)
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdateDetails(System.String)
+  id: UpdateDetails(System.String)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateDetails(String)
+  nameWithType: DiscordRpcClient.UpdateDetails(String)
+  fullName: DiscordRPC.DiscordRpcClient.UpdateDetails(System.String)
+  type: Method
+  source:
+    id: UpdateDetails
+    path: ''
+    startLine: 527
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nUpdates only the <xref href=\"DiscordRPC.RichPresence.Details\" data-throw-if-not-resolved=\"false\"></xref> of the <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> and sends the updated presence to Discord. Returns the newly edited Rich Presence.\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdateDetails(string details)
+    parameters:
+    - id: details
+      type: System.String
+      description: The details of the Rich Presence
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdateDetails(details As String) As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdateDetails*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdateState(System.String)
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdateState(System.String)
+  id: UpdateState(System.String)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateState(String)
+  nameWithType: DiscordRpcClient.UpdateState(String)
+  fullName: DiscordRPC.DiscordRpcClient.UpdateState(System.String)
+  type: Method
+  source:
+    id: UpdateState
+    path: ''
+    startLine: 545
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nUpdates only the <xref href=\"DiscordRPC.RichPresence.State\" data-throw-if-not-resolved=\"false\"></xref> of the <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> and sends the updated presence to Discord. Returns the newly edited Rich Presence.\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdateState(string state)
+    parameters:
+    - id: state
+      type: System.String
+      description: The state of the Rich Presence
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdateState(state As String) As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdateState*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdateParty(DiscordRPC.Party)
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdateParty(DiscordRPC.Party)
+  id: UpdateParty(DiscordRPC.Party)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateParty(Party)
+  nameWithType: DiscordRpcClient.UpdateParty(Party)
+  fullName: DiscordRPC.DiscordRpcClient.UpdateParty(DiscordRPC.Party)
+  type: Method
+  source:
+    id: UpdateParty
+    path: ''
+    startLine: 563
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nUpdates only the <xref href=\"DiscordRPC.RichPresence.Party\" data-throw-if-not-resolved=\"false\"></xref> of the <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> and sends the updated presence to Discord. Returns the newly edited Rich Presence.\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdateParty(Party party)
+    parameters:
+    - id: party
+      type: DiscordRPC.Party
+      description: The party of the Rich Presence
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdateParty(party As Party) As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdateParty*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdatePartySize(System.Int32)
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdatePartySize(System.Int32)
+  id: UpdatePartySize(System.Int32)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdatePartySize(Int32)
+  nameWithType: DiscordRpcClient.UpdatePartySize(Int32)
+  fullName: DiscordRPC.DiscordRpcClient.UpdatePartySize(System.Int32)
+  type: Method
+  source:
+    id: UpdatePartySize
+    path: ''
+    startLine: 583
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nUpdates the <xref href=\"DiscordRPC.Party.Size\" data-throw-if-not-resolved=\"false\"></xref> of the <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> and sends the update presence to Discord. Returns the newly edited Rich Presence.\n<p>Will return null if no presence exists and will throw a new <xref href=\"System.NullReferenceException\" data-throw-if-not-resolved=\"false\"></xref> if the Party does not exist.</p>\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdatePartySize(int size)
+    parameters:
+    - id: size
+      type: System.Int32
+      description: The new size of the party. It cannot be greater than <xref href="DiscordRPC.Party.Max" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdatePartySize(size As Integer) As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdatePartySize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdatePartySize(System.Int32,System.Int32)
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdatePartySize(System.Int32,System.Int32)
+  id: UpdatePartySize(System.Int32,System.Int32)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdatePartySize(Int32, Int32)
+  nameWithType: DiscordRpcClient.UpdatePartySize(Int32, Int32)
+  fullName: DiscordRPC.DiscordRpcClient.UpdatePartySize(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: UpdatePartySize
+    path: ''
+    startLine: 602
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nUpdates the <xref href=\"DiscordRPC.Party.Size\" data-throw-if-not-resolved=\"false\"></xref> of the <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> and sends the update presence to Discord. Returns the newly edited Rich Presence.\n<p>Will return null if no presence exists and will throw a new <xref href=\"System.NullReferenceException\" data-throw-if-not-resolved=\"false\"></xref> if the Party does not exist.</p>\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdatePartySize(int size, int max)
+    parameters:
+    - id: size
+      type: System.Int32
+      description: The new size of the party. It cannot be greater than <xref href="DiscordRPC.Party.Max" data-throw-if-not-resolved="false"></xref>
+    - id: max
+      type: System.Int32
+      description: The new size of the party. It cannot be smaller than <xref href="DiscordRPC.Party.Size" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdatePartySize(size As Integer, max As Integer) As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdatePartySize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdateLargeAsset(System.String,System.String)
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdateLargeAsset(System.String,System.String)
+  id: UpdateLargeAsset(System.String,System.String)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateLargeAsset(String, String)
+  nameWithType: DiscordRpcClient.UpdateLargeAsset(String, String)
+  fullName: DiscordRPC.DiscordRpcClient.UpdateLargeAsset(System.String, System.String)
+  type: Method
+  source:
+    id: UpdateLargeAsset
+    path: ''
+    startLine: 627
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nUpdates the large <xref href=\"DiscordRPC.Assets\" data-throw-if-not-resolved=\"false\"></xref> of the <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> and sends the updated presence to Discord. Both <code data-dev-comment-type=\"paramref\" class=\"paramref\">key</code> and <code data-dev-comment-type=\"paramref\" class=\"paramref\">tooltip</code> are optional and will be ignored it null.\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdateLargeAsset(string key = null, string tooltip = null)
+    parameters:
+    - id: key
+      type: System.String
+      description: 'Optional: The new key to set the asset too'
+    - id: tooltip
+      type: System.String
+      description: 'Optional: The new tooltip to display on the asset'
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdateLargeAsset(key As String = Nothing, tooltip As String = Nothing) As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdateLargeAsset*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdateSmallAsset(System.String,System.String)
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdateSmallAsset(System.String,System.String)
+  id: UpdateSmallAsset(System.String,System.String)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateSmallAsset(String, String)
+  nameWithType: DiscordRpcClient.UpdateSmallAsset(String, String)
+  fullName: DiscordRPC.DiscordRpcClient.UpdateSmallAsset(System.String, System.String)
+  type: Method
+  source:
+    id: UpdateSmallAsset
+    path: ''
+    startLine: 650
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nUpdates the small <xref href=\"DiscordRPC.Assets\" data-throw-if-not-resolved=\"false\"></xref> of the <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> and sends the updated presence to Discord. Both <code data-dev-comment-type=\"paramref\" class=\"paramref\">key</code> and <code data-dev-comment-type=\"paramref\" class=\"paramref\">tooltip</code> are optional and will be ignored it null.\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdateSmallAsset(string key = null, string tooltip = null)
+    parameters:
+    - id: key
+      type: System.String
+      description: 'Optional: The new key to set the asset too'
+    - id: tooltip
+      type: System.String
+      description: 'Optional: The new tooltip to display on the asset'
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdateSmallAsset(key As String = Nothing, tooltip As String = Nothing) As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdateSmallAsset*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdateSecrets(DiscordRPC.Secrets)
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdateSecrets(DiscordRPC.Secrets)
+  id: UpdateSecrets(DiscordRPC.Secrets)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateSecrets(Secrets)
+  nameWithType: DiscordRpcClient.UpdateSecrets(Secrets)
+  fullName: DiscordRPC.DiscordRpcClient.UpdateSecrets(DiscordRPC.Secrets)
+  type: Method
+  source:
+    id: UpdateSecrets
+    path: ''
+    startLine: 672
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nUpdates the <xref href=\"DiscordRPC.Secrets\" data-throw-if-not-resolved=\"false\"></xref> of the <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> and sends the updated presence to Discord. Will override previous secret entirely.\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdateSecrets(Secrets secrets)
+    parameters:
+    - id: secrets
+      type: DiscordRPC.Secrets
+      description: The new secret to send to discord.
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdateSecrets(secrets As Secrets) As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdateSecrets*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdateStartTime
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdateStartTime
+  id: UpdateStartTime
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateStartTime()
+  nameWithType: DiscordRpcClient.UpdateStartTime()
+  fullName: DiscordRPC.DiscordRpcClient.UpdateStartTime()
+  type: Method
+  source:
+    id: UpdateStartTime
+    path: ''
+    startLine: 691
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the start time of the <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> to now and sends the updated presence to Discord.\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdateStartTime()
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdateStartTime As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdateStartTime*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdateStartTime(System.DateTime)
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdateStartTime(System.DateTime)
+  id: UpdateStartTime(System.DateTime)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateStartTime(DateTime)
+  nameWithType: DiscordRpcClient.UpdateStartTime(DateTime)
+  fullName: DiscordRPC.DiscordRpcClient.UpdateStartTime(System.DateTime)
+  type: Method
+  source:
+    id: UpdateStartTime
+    path: ''
+    startLine: 698
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the start time of the <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> and sends the updated presence to Discord.\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdateStartTime(DateTime time)
+    parameters:
+    - id: time
+      type: System.DateTime
+      description: The new time for the start
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdateStartTime(time As Date) As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdateStartTime*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdateEndTime
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdateEndTime
+  id: UpdateEndTime
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateEndTime()
+  nameWithType: DiscordRpcClient.UpdateEndTime()
+  fullName: DiscordRPC.DiscordRpcClient.UpdateEndTime()
+  type: Method
+  source:
+    id: UpdateEndTime
+    path: ''
+    startLine: 718
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the end time of the <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> to now and sends the updated presence to Discord.\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdateEndTime()
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdateEndTime As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdateEndTime*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdateEndTime(System.DateTime)
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdateEndTime(System.DateTime)
+  id: UpdateEndTime(System.DateTime)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateEndTime(DateTime)
+  nameWithType: DiscordRpcClient.UpdateEndTime(DateTime)
+  fullName: DiscordRPC.DiscordRpcClient.UpdateEndTime(System.DateTime)
+  type: Method
+  source:
+    id: UpdateEndTime
+    path: ''
+    startLine: 725
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the end time of the <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> and sends the updated presence to Discord.\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdateEndTime(DateTime time)
+    parameters:
+    - id: time
+      type: System.DateTime
+      description: The new time for the end
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdateEndTime(time As Date) As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdateEndTime*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.UpdateClearTime
+  commentId: M:DiscordRPC.DiscordRpcClient.UpdateClearTime
+  id: UpdateClearTime
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: UpdateClearTime()
+  nameWithType: DiscordRpcClient.UpdateClearTime()
+  fullName: DiscordRPC.DiscordRpcClient.UpdateClearTime()
+  type: Method
+  source:
+    id: UpdateClearTime
+    path: ''
+    startLine: 745
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the start and end time of <xref href=\"DiscordRPC.DiscordRpcClient.CurrentPresence\" data-throw-if-not-resolved=\"false\"></xref> to null and sends it to Discord.\n"
+  example: []
+  syntax:
+    content: public RichPresence UpdateClearTime()
+    return:
+      type: DiscordRPC.RichPresence
+      description: Updated Rich Presence
+    content.vb: Public Function UpdateClearTime As RichPresence
+  overload: DiscordRPC.DiscordRpcClient.UpdateClearTime*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.ClearPresence
+  commentId: M:DiscordRPC.DiscordRpcClient.ClearPresence
+  id: ClearPresence
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: ClearPresence()
+  nameWithType: DiscordRpcClient.ClearPresence()
+  fullName: DiscordRPC.DiscordRpcClient.ClearPresence()
+  type: Method
+  source:
+    id: ClearPresence
+    path: ''
+    startLine: 764
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nClears the Rich Presence. Use this just before disposal to prevent ghosting.\n"
+  example: []
+  syntax:
+    content: public void ClearPresence()
+    content.vb: Public Sub ClearPresence
+  overload: DiscordRPC.DiscordRpcClient.ClearPresence*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.RegisterUriScheme(System.String,System.String)
+  commentId: M:DiscordRPC.DiscordRpcClient.RegisterUriScheme(System.String,System.String)
+  id: RegisterUriScheme(System.String,System.String)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: RegisterUriScheme(String, String)
+  nameWithType: DiscordRpcClient.RegisterUriScheme(String, String)
+  fullName: DiscordRPC.DiscordRpcClient.RegisterUriScheme(System.String, System.String)
+  type: Method
+  source:
+    id: RegisterUriScheme
+    path: ''
+    startLine: 788
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nRegisters the application executable to a custom URI Scheme.\n<p>This is required for the Join and Spectate features. Discord will run this custom URI Scheme to launch your application when a user presses either of the buttons.</p>\n"
+  example: []
+  syntax:
+    content: public bool RegisterUriScheme(string steamAppID = null, string executable = null)
+    parameters:
+    - id: steamAppID
+      type: System.String
+      description: Optional Steam ID. If supplied, Discord will launch the game through steam instead of directly calling it.
+    - id: executable
+      type: System.String
+      description: The path to the executable. If null, the path to the current executable will be used instead.
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function RegisterUriScheme(steamAppID As String = Nothing, executable As String = Nothing) As Boolean
+  overload: DiscordRPC.DiscordRpcClient.RegisterUriScheme*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.Subscribe(DiscordRPC.EventType)
+  commentId: M:DiscordRPC.DiscordRpcClient.Subscribe(DiscordRPC.EventType)
+  id: Subscribe(DiscordRPC.EventType)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: Subscribe(EventType)
+  nameWithType: DiscordRpcClient.Subscribe(EventType)
+  fullName: DiscordRPC.DiscordRpcClient.Subscribe(DiscordRPC.EventType)
+  type: Method
+  source:
+    id: Subscribe
+    path: ''
+    startLine: 799
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSubscribes to an event sent from discord. Used for Join / Spectate feature.\n<p>Requires the UriScheme to be registered.</p>\n"
+  example: []
+  syntax:
+    content: public void Subscribe(EventType type)
+    parameters:
+    - id: type
+      type: DiscordRPC.EventType
+      description: The event type to subscribe to
+    content.vb: Public Sub Subscribe(type As EventType)
+  overload: DiscordRPC.DiscordRpcClient.Subscribe*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.Unubscribe(DiscordRPC.EventType)
+  commentId: M:DiscordRPC.DiscordRpcClient.Unubscribe(DiscordRPC.EventType)
+  id: Unubscribe(DiscordRPC.EventType)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: Unubscribe(EventType)
+  nameWithType: DiscordRpcClient.Unubscribe(EventType)
+  fullName: DiscordRPC.DiscordRpcClient.Unubscribe(DiscordRPC.EventType)
+  type: Method
+  source:
+    id: Unubscribe
+    path: ''
+    startLine: 805
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Replaced with Unsubscribe", true)]
+
+      public void Unubscribe(EventType type)
+    parameters:
+    - id: type
+      type: DiscordRPC.EventType
+      description: ''
+    content.vb: >-
+      <Obsolete("Replaced with Unsubscribe", True)>
+
+      Public Sub Unubscribe(type As EventType)
+  overload: DiscordRPC.DiscordRpcClient.Unubscribe*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: Replaced with Unsubscribe
+    - type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.Unsubscribe(DiscordRPC.EventType)
+  commentId: M:DiscordRPC.DiscordRpcClient.Unsubscribe(DiscordRPC.EventType)
+  id: Unsubscribe(DiscordRPC.EventType)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: Unsubscribe(EventType)
+  nameWithType: DiscordRpcClient.Unsubscribe(EventType)
+  fullName: DiscordRPC.DiscordRpcClient.Unsubscribe(DiscordRPC.EventType)
+  type: Method
+  source:
+    id: Unsubscribe
+    path: ''
+    startLine: 813
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nUnsubscribe from the event sent by discord. Used for Join / Spectate feature.\n<p>Requires the UriScheme to be registered.</p>\n"
+  example: []
+  syntax:
+    content: public void Unsubscribe(EventType type)
+    parameters:
+    - id: type
+      type: DiscordRPC.EventType
+      description: The event type to unsubscribe from
+    content.vb: Public Sub Unsubscribe(type As EventType)
+  overload: DiscordRPC.DiscordRpcClient.Unsubscribe*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.SetSubscription(DiscordRPC.EventType)
+  commentId: M:DiscordRPC.DiscordRpcClient.SetSubscription(DiscordRPC.EventType)
+  id: SetSubscription(DiscordRPC.EventType)
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: SetSubscription(EventType)
+  nameWithType: DiscordRpcClient.SetSubscription(EventType)
+  fullName: DiscordRPC.DiscordRpcClient.SetSubscription(DiscordRPC.EventType)
+  type: Method
+  source:
+    id: SetSubscription
+    path: ''
+    startLine: 820
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nSets the subscription to the events sent from Discord.\n<p>Requires the UriScheme to be registered.</p>\n"
+  example: []
+  syntax:
+    content: public void SetSubscription(EventType type)
+    parameters:
+    - id: type
+      type: DiscordRPC.EventType
+      description: The new subscription as a flag. Events selected in the flag will be subscribed too and the other events will be unsubscribed.
+    content.vb: Public Sub SetSubscription(type As EventType)
+  overload: DiscordRPC.DiscordRpcClient.SetSubscription*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.SynchronizeState
+  commentId: M:DiscordRPC.DiscordRpcClient.SynchronizeState
+  id: SynchronizeState
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: SynchronizeState()
+  nameWithType: DiscordRpcClient.SynchronizeState()
+  fullName: DiscordRPC.DiscordRpcClient.SynchronizeState()
+  type: Method
+  source:
+    id: SynchronizeState
+    path: ''
+    startLine: 880
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nResends the current presence and subscription. This is used when Ready is called to keep the current state within discord.\n"
+  example: []
+  syntax:
+    content: public void SynchronizeState()
+    content.vb: Public Sub SynchronizeState
+  overload: DiscordRPC.DiscordRpcClient.SynchronizeState*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.Initialize
+  commentId: M:DiscordRPC.DiscordRpcClient.Initialize
+  id: Initialize
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: DiscordRpcClient.Initialize()
+  fullName: DiscordRPC.DiscordRpcClient.Initialize()
+  type: Method
+  source:
+    id: Initialize
+    path: ''
+    startLine: 896
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nAttempts to initalize a connection to the Discord IPC.\n"
+  example: []
+  syntax:
+    content: public bool Initialize()
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function Initialize As Boolean
+  overload: DiscordRPC.DiscordRpcClient.Initialize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.Deinitialize
+  commentId: M:DiscordRPC.DiscordRpcClient.Deinitialize
+  id: Deinitialize
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: Deinitialize()
+  nameWithType: DiscordRpcClient.Deinitialize()
+  fullName: DiscordRPC.DiscordRpcClient.Deinitialize()
+  type: Method
+  source:
+    id: Deinitialize
+    path: ''
+    startLine: 913
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nAttempts to disconnect and deinitialize the IPC connection while retaining the settings.\n"
+  example: []
+  syntax:
+    content: public void Deinitialize()
+    content.vb: Public Sub Deinitialize
+  overload: DiscordRPC.DiscordRpcClient.Deinitialize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.DiscordRpcClient.Dispose
+  commentId: M:DiscordRPC.DiscordRpcClient.Dispose
+  id: Dispose
+  parent: DiscordRPC.DiscordRpcClient
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DiscordRpcClient.Dispose()
+  fullName: DiscordRPC.DiscordRpcClient.Dispose()
+  type: Method
+  source:
+    id: Dispose
+    path: ''
+    startLine: 925
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nTerminates the connection to Discord and disposes of the object.\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: DiscordRPC.DiscordRpcClient.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.DiscordRpcClient.RegisterUriScheme(System.String,System.String)
+  commentId: M:DiscordRPC.DiscordRpcClient.RegisterUriScheme(System.String,System.String)
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme
+  name: HasRegisteredUriScheme
+  nameWithType: DiscordRpcClient.HasRegisteredUriScheme
+  fullName: DiscordRPC.DiscordRpcClient.HasRegisteredUriScheme
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: DiscordRPC.DiscordRpcClient.ApplicationID*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.ApplicationID
+  name: ApplicationID
+  nameWithType: DiscordRpcClient.ApplicationID
+  fullName: DiscordRPC.DiscordRpcClient.ApplicationID
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DiscordRPC.DiscordRpcClient.SteamID*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.SteamID
+  name: SteamID
+  nameWithType: DiscordRpcClient.SteamID
+  fullName: DiscordRPC.DiscordRpcClient.SteamID
+- uid: DiscordRPC.DiscordRpcClient.ProcessID*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.ProcessID
+  name: ProcessID
+  nameWithType: DiscordRpcClient.ProcessID
+  fullName: DiscordRPC.DiscordRpcClient.ProcessID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DiscordRPC.DiscordRpcClient.MaxQueueSize*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.MaxQueueSize
+  name: MaxQueueSize
+  nameWithType: DiscordRpcClient.MaxQueueSize
+  fullName: DiscordRPC.DiscordRpcClient.MaxQueueSize
+- uid: DiscordRPC.DiscordRpcClient.IsDisposed*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.IsDisposed
+  name: IsDisposed
+  nameWithType: DiscordRpcClient.IsDisposed
+  fullName: DiscordRPC.DiscordRpcClient.IsDisposed
+- uid: DiscordRPC.DiscordRpcClient.Logger*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Logger
+  name: Logger
+  nameWithType: DiscordRpcClient.Logger
+  fullName: DiscordRPC.DiscordRpcClient.Logger
+- uid: ILogger
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ILogger
+- uid: DiscordRPC.DiscordRpcClient.Invoke
+  commentId: M:DiscordRPC.DiscordRpcClient.Invoke
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.AutoEvents*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.AutoEvents
+  name: AutoEvents
+  nameWithType: DiscordRpcClient.AutoEvents
+  fullName: DiscordRPC.DiscordRpcClient.AutoEvents
+- uid: DiscordRPC.DiscordRpcClient.SkipIdenticalPresence*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.SkipIdenticalPresence
+  name: SkipIdenticalPresence
+  nameWithType: DiscordRpcClient.SkipIdenticalPresence
+  fullName: DiscordRPC.DiscordRpcClient.SkipIdenticalPresence
+- uid: DiscordRPC.DiscordRpcClient.TargetPipe*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.TargetPipe
+  name: TargetPipe
+  nameWithType: DiscordRpcClient.TargetPipe
+  fullName: DiscordRPC.DiscordRpcClient.TargetPipe
+- uid: DiscordRPC.DiscordRpcClient.SetPresence(DiscordRPC.RichPresence)
+  commentId: M:DiscordRPC.DiscordRpcClient.SetPresence(DiscordRPC.RichPresence)
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.OnPresenceUpdate
+  commentId: E:DiscordRPC.DiscordRpcClient.OnPresenceUpdate
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.CurrentPresence*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.CurrentPresence
+  name: CurrentPresence
+  nameWithType: DiscordRpcClient.CurrentPresence
+  fullName: DiscordRPC.DiscordRpcClient.CurrentPresence
+- uid: DiscordRPC.RichPresence
+  commentId: T:DiscordRPC.RichPresence
+  parent: DiscordRPC
+  name: RichPresence
+  nameWithType: RichPresence
+  fullName: DiscordRPC.RichPresence
+- uid: DiscordRPC.DiscordRpcClient.Subscribe(DiscordRPC.EventType)
+  commentId: M:DiscordRPC.DiscordRpcClient.Subscribe(DiscordRPC.EventType)
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.OnSubscribe
+  commentId: E:DiscordRPC.DiscordRpcClient.OnSubscribe
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.OnUnsubscribe
+  commentId: E:DiscordRPC.DiscordRpcClient.OnUnsubscribe
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.Subscription*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Subscription
+  name: Subscription
+  nameWithType: DiscordRpcClient.Subscription
+  fullName: DiscordRPC.DiscordRpcClient.Subscription
+- uid: DiscordRPC.EventType
+  commentId: T:DiscordRPC.EventType
+  parent: DiscordRPC
+  name: EventType
+  nameWithType: EventType
+  fullName: DiscordRPC.EventType
+- uid: DiscordRPC.DiscordRpcClient.CurrentUser*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.CurrentUser
+  name: CurrentUser
+  nameWithType: DiscordRpcClient.CurrentUser
+  fullName: DiscordRPC.DiscordRpcClient.CurrentUser
+- uid: DiscordRPC.User
+  commentId: T:DiscordRPC.User
+  parent: DiscordRPC
+  name: User
+  nameWithType: User
+  fullName: DiscordRPC.User
+- uid: DiscordRPC.DiscordRpcClient.Configuration*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Configuration
+  name: Configuration
+  nameWithType: DiscordRpcClient.Configuration
+  fullName: DiscordRPC.DiscordRpcClient.Configuration
+- uid: DiscordRPC.Configuration
+  commentId: T:DiscordRPC.Configuration
+  parent: DiscordRPC
+  name: Configuration
+  nameWithType: Configuration
+  fullName: DiscordRPC.Configuration
+- uid: DiscordRPC.DiscordRpcClient.Initialize
+  commentId: M:DiscordRPC.DiscordRpcClient.Initialize
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.IsInitialized*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.IsInitialized
+  name: IsInitialized
+  nameWithType: DiscordRpcClient.IsInitialized
+  fullName: DiscordRPC.DiscordRpcClient.IsInitialized
+- uid: DiscordRPC.DiscordRpcClient.ShutdownOnly*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.ShutdownOnly
+  name: ShutdownOnly
+  nameWithType: DiscordRpcClient.ShutdownOnly
+  fullName: DiscordRPC.DiscordRpcClient.ShutdownOnly
+- uid: DiscordRPC.DiscordRpcClient.AutoEvents
+  commentId: P:DiscordRPC.DiscordRpcClient.AutoEvents
+  isExternal: true
+- uid: OnReadyEvent
+  commentId: '!:OnReadyEvent'
+  isExternal: true
+  name: OnReadyEvent
+  nameWithType: OnReadyEvent
+  fullName: OnReadyEvent
+- uid: OnCloseEvent
+  commentId: '!:OnCloseEvent'
+  isExternal: true
+  name: OnCloseEvent
+  nameWithType: OnCloseEvent
+  fullName: OnCloseEvent
+- uid: OnErrorEvent
+  commentId: '!:OnErrorEvent'
+  isExternal: true
+  name: OnErrorEvent
+  nameWithType: OnErrorEvent
+  fullName: OnErrorEvent
+- uid: OnPresenceUpdateEvent
+  commentId: '!:OnPresenceUpdateEvent'
+  isExternal: true
+  name: OnPresenceUpdateEvent
+  nameWithType: OnPresenceUpdateEvent
+  fullName: OnPresenceUpdateEvent
+- uid: OnSubscribeEvent
+  commentId: '!:OnSubscribeEvent'
+  isExternal: true
+  name: OnSubscribeEvent
+  nameWithType: OnSubscribeEvent
+  fullName: OnSubscribeEvent
+- uid: OnUnsubscribeEvent
+  commentId: '!:OnUnsubscribeEvent'
+  isExternal: true
+  name: OnUnsubscribeEvent
+  nameWithType: OnUnsubscribeEvent
+  fullName: OnUnsubscribeEvent
+- uid: OnJoinEvent
+  commentId: '!:OnJoinEvent'
+  isExternal: true
+  name: OnJoinEvent
+  nameWithType: OnJoinEvent
+  fullName: OnJoinEvent
+- uid: OnSpectateEvent
+  commentId: '!:OnSpectateEvent'
+  isExternal: true
+  name: OnSpectateEvent
+  nameWithType: OnSpectateEvent
+  fullName: OnSpectateEvent
+- uid: OnJoinRequestedEvent
+  commentId: '!:OnJoinRequestedEvent'
+  isExternal: true
+  name: OnJoinRequestedEvent
+  nameWithType: OnJoinRequestedEvent
+  fullName: OnJoinRequestedEvent
+- uid: OnConnectionEstablishedEvent
+  commentId: '!:OnConnectionEstablishedEvent'
+  isExternal: true
+  name: OnConnectionEstablishedEvent
+  nameWithType: OnConnectionEstablishedEvent
+  fullName: OnConnectionEstablishedEvent
+- uid: OnConnectionFailedEvent
+  commentId: '!:OnConnectionFailedEvent'
+  isExternal: true
+  name: OnConnectionFailedEvent
+  nameWithType: OnConnectionFailedEvent
+  fullName: OnConnectionFailedEvent
+- uid: OnRpcMessageEvent
+  commentId: '!:OnRpcMessageEvent'
+  isExternal: true
+  name: OnRpcMessageEvent
+  nameWithType: OnRpcMessageEvent
+  fullName: OnRpcMessageEvent
+- uid: DiscordRPC.DiscordRpcClient.#ctor*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.#ctor
+  name: DiscordRpcClient
+  nameWithType: DiscordRpcClient.DiscordRpcClient
+  fullName: DiscordRPC.DiscordRpcClient.DiscordRpcClient
+- uid: INamedPipeClient
+  commentId: '!:INamedPipeClient'
+  isExternal: true
+  name: INamedPipeClient
+  nameWithType: INamedPipeClient
+  fullName: INamedPipeClient
+- uid: DiscordRPC.DiscordRpcClient.Invoke*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Invoke
+  name: Invoke
+  nameWithType: DiscordRpcClient.Invoke
+  fullName: DiscordRPC.DiscordRpcClient.Invoke
+- uid: IMessage[]
+  isExternal: true
+  name: IMessage[]
+  nameWithType: IMessage[]
+  fullName: IMessage[]
+  nameWithType.vb: IMessage()
+  fullName.vb: IMessage()
+  name.vb: IMessage()
+  spec.csharp:
+  - uid: IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: IMessage
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: IMessage
+    name: IMessage
+    nameWithType: IMessage
+    fullName: IMessage
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: DiscordRPC.DiscordRpcClient.Respond*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Respond
+  name: Respond
+  nameWithType: DiscordRpcClient.Respond
+  fullName: DiscordRPC.DiscordRpcClient.Respond
+- uid: JoinRequestMessage
+  isExternal: true
+  name: JoinRequestMessage
+  nameWithType: JoinRequestMessage
+  fullName: JoinRequestMessage
+- uid: DiscordRPC.DiscordRpcClient.SetPresence*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.SetPresence
+  name: SetPresence
+  nameWithType: DiscordRpcClient.SetPresence
+  fullName: DiscordRPC.DiscordRpcClient.SetPresence
+- uid: DiscordRPC.RichPresence.Details
+  commentId: P:DiscordRPC.RichPresence.Details
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.CurrentPresence
+  commentId: P:DiscordRPC.DiscordRpcClient.CurrentPresence
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.UpdateDetails*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.UpdateDetails
+  name: UpdateDetails
+  nameWithType: DiscordRpcClient.UpdateDetails
+  fullName: DiscordRPC.DiscordRpcClient.UpdateDetails
+- uid: DiscordRPC.RichPresence.State
+  commentId: P:DiscordRPC.RichPresence.State
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.UpdateState*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.UpdateState
+  name: UpdateState
+  nameWithType: DiscordRpcClient.UpdateState
+  fullName: DiscordRPC.DiscordRpcClient.UpdateState
+- uid: DiscordRPC.RichPresence.Party
+  commentId: P:DiscordRPC.RichPresence.Party
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.UpdateParty*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.UpdateParty
+  name: UpdateParty
+  nameWithType: DiscordRpcClient.UpdateParty
+  fullName: DiscordRPC.DiscordRpcClient.UpdateParty
+- uid: DiscordRPC.Party
+  commentId: T:DiscordRPC.Party
+  parent: DiscordRPC
+  name: Party
+  nameWithType: Party
+  fullName: DiscordRPC.Party
+- uid: DiscordRPC.Party.Size
+  commentId: P:DiscordRPC.Party.Size
+  isExternal: true
+- uid: System.NullReferenceException
+  commentId: T:System.NullReferenceException
+  isExternal: true
+- uid: DiscordRPC.Party.Max
+  commentId: P:DiscordRPC.Party.Max
+  isExternal: true
+- uid: DiscordRPC.DiscordRpcClient.UpdatePartySize*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.UpdatePartySize
+  name: UpdatePartySize
+  nameWithType: DiscordRpcClient.UpdatePartySize
+  fullName: DiscordRPC.DiscordRpcClient.UpdatePartySize
+- uid: DiscordRPC.Assets
+  commentId: T:DiscordRPC.Assets
+  parent: DiscordRPC
+  name: Assets
+  nameWithType: Assets
+  fullName: DiscordRPC.Assets
+- uid: DiscordRPC.DiscordRpcClient.UpdateLargeAsset*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.UpdateLargeAsset
+  name: UpdateLargeAsset
+  nameWithType: DiscordRpcClient.UpdateLargeAsset
+  fullName: DiscordRPC.DiscordRpcClient.UpdateLargeAsset
+- uid: DiscordRPC.DiscordRpcClient.UpdateSmallAsset*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.UpdateSmallAsset
+  name: UpdateSmallAsset
+  nameWithType: DiscordRpcClient.UpdateSmallAsset
+  fullName: DiscordRPC.DiscordRpcClient.UpdateSmallAsset
+- uid: DiscordRPC.Secrets
+  commentId: T:DiscordRPC.Secrets
+  parent: DiscordRPC
+  name: Secrets
+  nameWithType: Secrets
+  fullName: DiscordRPC.Secrets
+- uid: DiscordRPC.DiscordRpcClient.UpdateSecrets*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.UpdateSecrets
+  name: UpdateSecrets
+  nameWithType: DiscordRpcClient.UpdateSecrets
+  fullName: DiscordRPC.DiscordRpcClient.UpdateSecrets
+- uid: DiscordRPC.DiscordRpcClient.UpdateStartTime*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.UpdateStartTime
+  name: UpdateStartTime
+  nameWithType: DiscordRpcClient.UpdateStartTime
+  fullName: DiscordRPC.DiscordRpcClient.UpdateStartTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: DiscordRPC.DiscordRpcClient.UpdateEndTime*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.UpdateEndTime
+  name: UpdateEndTime
+  nameWithType: DiscordRpcClient.UpdateEndTime
+  fullName: DiscordRPC.DiscordRpcClient.UpdateEndTime
+- uid: DiscordRPC.DiscordRpcClient.UpdateClearTime*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.UpdateClearTime
+  name: UpdateClearTime
+  nameWithType: DiscordRpcClient.UpdateClearTime
+  fullName: DiscordRPC.DiscordRpcClient.UpdateClearTime
+- uid: DiscordRPC.DiscordRpcClient.ClearPresence*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.ClearPresence
+  name: ClearPresence
+  nameWithType: DiscordRpcClient.ClearPresence
+  fullName: DiscordRPC.DiscordRpcClient.ClearPresence
+- uid: DiscordRPC.DiscordRpcClient.RegisterUriScheme*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.RegisterUriScheme
+  name: RegisterUriScheme
+  nameWithType: DiscordRpcClient.RegisterUriScheme
+  fullName: DiscordRPC.DiscordRpcClient.RegisterUriScheme
+- uid: DiscordRPC.DiscordRpcClient.Subscribe*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Subscribe
+  name: Subscribe
+  nameWithType: DiscordRpcClient.Subscribe
+  fullName: DiscordRPC.DiscordRpcClient.Subscribe
+- uid: DiscordRPC.DiscordRpcClient.Unubscribe*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Unubscribe
+  name: Unubscribe
+  nameWithType: DiscordRpcClient.Unubscribe
+  fullName: DiscordRPC.DiscordRpcClient.Unubscribe
+- uid: DiscordRPC.DiscordRpcClient.Unsubscribe*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Unsubscribe
+  name: Unsubscribe
+  nameWithType: DiscordRpcClient.Unsubscribe
+  fullName: DiscordRPC.DiscordRpcClient.Unsubscribe
+- uid: DiscordRPC.DiscordRpcClient.SetSubscription*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.SetSubscription
+  name: SetSubscription
+  nameWithType: DiscordRpcClient.SetSubscription
+  fullName: DiscordRPC.DiscordRpcClient.SetSubscription
+- uid: DiscordRPC.DiscordRpcClient.SynchronizeState*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.SynchronizeState
+  name: SynchronizeState
+  nameWithType: DiscordRpcClient.SynchronizeState
+  fullName: DiscordRPC.DiscordRpcClient.SynchronizeState
+- uid: DiscordRPC.DiscordRpcClient.Initialize*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Initialize
+  name: Initialize
+  nameWithType: DiscordRpcClient.Initialize
+  fullName: DiscordRPC.DiscordRpcClient.Initialize
+- uid: DiscordRPC.DiscordRpcClient.Deinitialize*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Deinitialize
+  name: Deinitialize
+  nameWithType: DiscordRpcClient.Deinitialize
+  fullName: DiscordRPC.DiscordRpcClient.Deinitialize
+- uid: DiscordRPC.DiscordRpcClient.Dispose*
+  commentId: Overload:DiscordRPC.DiscordRpcClient.Dispose
+  name: Dispose
+  nameWithType: DiscordRpcClient.Dispose
+  fullName: DiscordRPC.DiscordRpcClient.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

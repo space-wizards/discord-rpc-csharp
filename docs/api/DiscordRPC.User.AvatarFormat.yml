@@ -1,0 +1,168 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.User.AvatarFormat
+  commentId: T:DiscordRPC.User.AvatarFormat
+  id: User.AvatarFormat
+  parent: DiscordRPC
+  children:
+  - DiscordRPC.User.AvatarFormat.GIF
+  - DiscordRPC.User.AvatarFormat.JPEG
+  - DiscordRPC.User.AvatarFormat.PNG
+  - DiscordRPC.User.AvatarFormat.WebP
+  langs:
+  - csharp
+  - vb
+  name: User.AvatarFormat
+  nameWithType: User.AvatarFormat
+  fullName: DiscordRPC.User.AvatarFormat
+  type: Enum
+  source:
+    id: AvatarFormat
+    path: ''
+    startLine: 1918
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nPossible formats for avatars\n"
+  example: []
+  syntax:
+    content: public enum AvatarFormat
+    content.vb: Public Enum AvatarFormat
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DiscordRPC.User.AvatarFormat.PNG
+  commentId: F:DiscordRPC.User.AvatarFormat.PNG
+  id: PNG
+  parent: DiscordRPC.User.AvatarFormat
+  langs:
+  - csharp
+  - vb
+  name: PNG
+  nameWithType: User.AvatarFormat.PNG
+  fullName: DiscordRPC.User.AvatarFormat.PNG
+  type: Field
+  source:
+    id: PNG
+    path: ''
+    startLine: 1924
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nPortable Network Graphics format (.png)\n<p>Losses format that supports transparent avatars. Most recommended for stationary formats with wide support from many libraries.</p>\n"
+  example: []
+  syntax:
+    content: PNG = 0
+    return:
+      type: DiscordRPC.User.AvatarFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.AvatarFormat.JPEG
+  commentId: F:DiscordRPC.User.AvatarFormat.JPEG
+  id: JPEG
+  parent: DiscordRPC.User.AvatarFormat
+  langs:
+  - csharp
+  - vb
+  name: JPEG
+  nameWithType: User.AvatarFormat.JPEG
+  fullName: DiscordRPC.User.AvatarFormat.JPEG
+  type: Field
+  source:
+    id: JPEG
+    path: ''
+    startLine: 1930
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nJoint Photographic Experts Group format (.jpeg)\n<p>The format most cameras use. Lossy and does not support transparent avatars.</p>\n"
+  example: []
+  syntax:
+    content: JPEG = 1
+    return:
+      type: DiscordRPC.User.AvatarFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.AvatarFormat.WebP
+  commentId: F:DiscordRPC.User.AvatarFormat.WebP
+  id: WebP
+  parent: DiscordRPC.User.AvatarFormat
+  langs:
+  - csharp
+  - vb
+  name: WebP
+  nameWithType: User.AvatarFormat.WebP
+  fullName: DiscordRPC.User.AvatarFormat.WebP
+  type: Field
+  source:
+    id: WebP
+    path: ''
+    startLine: 1936
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nWebP format (.webp)\n<p>Picture only version of WebM. Pronounced &quot;weeb p&quot;.</p>\n"
+  example: []
+  syntax:
+    content: WebP = 2
+    return:
+      type: DiscordRPC.User.AvatarFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.AvatarFormat.GIF
+  commentId: F:DiscordRPC.User.AvatarFormat.GIF
+  id: GIF
+  parent: DiscordRPC.User.AvatarFormat
+  langs:
+  - csharp
+  - vb
+  name: GIF
+  nameWithType: User.AvatarFormat.GIF
+  fullName: DiscordRPC.User.AvatarFormat.GIF
+  type: Field
+  source:
+    id: GIF
+    path: ''
+    startLine: 1942
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nGraphics Interchange Format (.gif)\n<p>Animated avatars that Discord Nitro users are able to use. If the user doesn&apos;t have an animated avatar, then it will just be a single frame gif.</p>\n"
+  example: []
+  syntax:
+    content: GIF = 3
+    return:
+      type: DiscordRPC.User.AvatarFormat
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC
+- uid: DiscordRPC.User.AvatarFormat
+  commentId: T:DiscordRPC.User.AvatarFormat
+  parent: DiscordRPC
+  name: User.AvatarFormat
+  nameWithType: User.AvatarFormat
+  fullName: DiscordRPC.User.AvatarFormat

@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Logging
+  commentId: N:DiscordRPC.Logging
+  id: DiscordRPC.Logging
+  children:
+  - DiscordRPC.Logging.ConsoleLogger
+  - DiscordRPC.Logging.FileLogger
+  - DiscordRPC.Logging.ILogger
+  - DiscordRPC.Logging.LogLevel
+  - DiscordRPC.Logging.NullLogger
+  langs:
+  - csharp
+  - vb
+  name: DiscordRPC.Logging
+  nameWithType: DiscordRPC.Logging
+  fullName: DiscordRPC.Logging
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: DiscordRPC.Logging.ConsoleLogger
+  commentId: T:DiscordRPC.Logging.ConsoleLogger
+  name: ConsoleLogger
+  nameWithType: ConsoleLogger
+  fullName: DiscordRPC.Logging.ConsoleLogger
+- uid: DiscordRPC.Logging.FileLogger
+  commentId: T:DiscordRPC.Logging.FileLogger
+  name: FileLogger
+  nameWithType: FileLogger
+  fullName: DiscordRPC.Logging.FileLogger
+- uid: DiscordRPC.Logging.ILogger
+  commentId: T:DiscordRPC.Logging.ILogger
+  parent: DiscordRPC.Logging
+  name: ILogger
+  nameWithType: ILogger
+  fullName: DiscordRPC.Logging.ILogger
+- uid: DiscordRPC.Logging.LogLevel
+  commentId: T:DiscordRPC.Logging.LogLevel
+  parent: DiscordRPC.Logging
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: DiscordRPC.Logging.LogLevel
+- uid: DiscordRPC.Logging.NullLogger
+  commentId: T:DiscordRPC.Logging.NullLogger
+  name: NullLogger
+  nameWithType: NullLogger
+  fullName: DiscordRPC.Logging.NullLogger
+- uid: DiscordRPC.Logging
+  commentId: N:DiscordRPC.Logging
+  name: DiscordRPC.Logging
+  nameWithType: DiscordRPC.Logging
+  fullName: DiscordRPC.Logging

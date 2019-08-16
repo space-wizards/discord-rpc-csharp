@@ -1,0 +1,292 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.User.AvatarSize
+  commentId: T:DiscordRPC.User.AvatarSize
+  id: User.AvatarSize
+  parent: DiscordRPC
+  children:
+  - DiscordRPC.User.AvatarSize.x1024
+  - DiscordRPC.User.AvatarSize.x128
+  - DiscordRPC.User.AvatarSize.x16
+  - DiscordRPC.User.AvatarSize.x2048
+  - DiscordRPC.User.AvatarSize.x256
+  - DiscordRPC.User.AvatarSize.x32
+  - DiscordRPC.User.AvatarSize.x512
+  - DiscordRPC.User.AvatarSize.x64
+  langs:
+  - csharp
+  - vb
+  name: User.AvatarSize
+  nameWithType: User.AvatarSize
+  fullName: DiscordRPC.User.AvatarSize
+  type: Enum
+  source:
+    id: AvatarSize
+    path: ''
+    startLine: 1948
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nPossible square sizes of avatars.\n"
+  example: []
+  syntax:
+    content: public enum AvatarSize
+    content.vb: Public Enum AvatarSize
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DiscordRPC.User.AvatarSize.x16
+  commentId: F:DiscordRPC.User.AvatarSize.x16
+  id: x16
+  parent: DiscordRPC.User.AvatarSize
+  langs:
+  - csharp
+  - vb
+  name: x16
+  nameWithType: User.AvatarSize.x16
+  fullName: DiscordRPC.User.AvatarSize.x16
+  type: Field
+  source:
+    id: x16
+    path: ''
+    startLine: 1951
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: 16 x 16 pixels.
+  example: []
+  syntax:
+    content: x16 = 16
+    return:
+      type: DiscordRPC.User.AvatarSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.AvatarSize.x32
+  commentId: F:DiscordRPC.User.AvatarSize.x32
+  id: x32
+  parent: DiscordRPC.User.AvatarSize
+  langs:
+  - csharp
+  - vb
+  name: x32
+  nameWithType: User.AvatarSize.x32
+  fullName: DiscordRPC.User.AvatarSize.x32
+  type: Field
+  source:
+    id: x32
+    path: ''
+    startLine: 1953
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: 32 x 32 pixels.
+  example: []
+  syntax:
+    content: x32 = 32
+    return:
+      type: DiscordRPC.User.AvatarSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.AvatarSize.x64
+  commentId: F:DiscordRPC.User.AvatarSize.x64
+  id: x64
+  parent: DiscordRPC.User.AvatarSize
+  langs:
+  - csharp
+  - vb
+  name: x64
+  nameWithType: User.AvatarSize.x64
+  fullName: DiscordRPC.User.AvatarSize.x64
+  type: Field
+  source:
+    id: x64
+    path: ''
+    startLine: 1955
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: 64 x 64 pixels.
+  example: []
+  syntax:
+    content: x64 = 64
+    return:
+      type: DiscordRPC.User.AvatarSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.AvatarSize.x128
+  commentId: F:DiscordRPC.User.AvatarSize.x128
+  id: x128
+  parent: DiscordRPC.User.AvatarSize
+  langs:
+  - csharp
+  - vb
+  name: x128
+  nameWithType: User.AvatarSize.x128
+  fullName: DiscordRPC.User.AvatarSize.x128
+  type: Field
+  source:
+    id: x128
+    path: ''
+    startLine: 1957
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: 128 x 128 pixels.
+  example: []
+  syntax:
+    content: x128 = 128
+    return:
+      type: DiscordRPC.User.AvatarSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.AvatarSize.x256
+  commentId: F:DiscordRPC.User.AvatarSize.x256
+  id: x256
+  parent: DiscordRPC.User.AvatarSize
+  langs:
+  - csharp
+  - vb
+  name: x256
+  nameWithType: User.AvatarSize.x256
+  fullName: DiscordRPC.User.AvatarSize.x256
+  type: Field
+  source:
+    id: x256
+    path: ''
+    startLine: 1959
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: 256 x 256 pixels.
+  example: []
+  syntax:
+    content: x256 = 256
+    return:
+      type: DiscordRPC.User.AvatarSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.AvatarSize.x512
+  commentId: F:DiscordRPC.User.AvatarSize.x512
+  id: x512
+  parent: DiscordRPC.User.AvatarSize
+  langs:
+  - csharp
+  - vb
+  name: x512
+  nameWithType: User.AvatarSize.x512
+  fullName: DiscordRPC.User.AvatarSize.x512
+  type: Field
+  source:
+    id: x512
+    path: ''
+    startLine: 1961
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: 512 x 512 pixels.
+  example: []
+  syntax:
+    content: x512 = 512
+    return:
+      type: DiscordRPC.User.AvatarSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.AvatarSize.x1024
+  commentId: F:DiscordRPC.User.AvatarSize.x1024
+  id: x1024
+  parent: DiscordRPC.User.AvatarSize
+  langs:
+  - csharp
+  - vb
+  name: x1024
+  nameWithType: User.AvatarSize.x1024
+  fullName: DiscordRPC.User.AvatarSize.x1024
+  type: Field
+  source:
+    id: x1024
+    path: ''
+    startLine: 1963
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: 1024 x 1024 pixels.
+  example: []
+  syntax:
+    content: x1024 = 1024
+    return:
+      type: DiscordRPC.User.AvatarSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.AvatarSize.x2048
+  commentId: F:DiscordRPC.User.AvatarSize.x2048
+  id: x2048
+  parent: DiscordRPC.User.AvatarSize
+  langs:
+  - csharp
+  - vb
+  name: x2048
+  nameWithType: User.AvatarSize.x2048
+  fullName: DiscordRPC.User.AvatarSize.x2048
+  type: Field
+  source:
+    id: x2048
+    path: ''
+    startLine: 1965
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: 2048 x 2048 pixels.
+  example: []
+  syntax:
+    content: x2048 = 2048
+    return:
+      type: DiscordRPC.User.AvatarSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC
+- uid: DiscordRPC.User.AvatarSize
+  commentId: T:DiscordRPC.User.AvatarSize
+  parent: DiscordRPC
+  name: User.AvatarSize
+  nameWithType: User.AvatarSize
+  fullName: DiscordRPC.User.AvatarSize

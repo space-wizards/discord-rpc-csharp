@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.EventType
+  commentId: T:DiscordRPC.EventType
+  id: EventType
+  parent: DiscordRPC
+  children:
+  - DiscordRPC.EventType.Join
+  - DiscordRPC.EventType.JoinRequest
+  - DiscordRPC.EventType.None
+  - DiscordRPC.EventType.Spectate
+  langs:
+  - csharp
+  - vb
+  name: EventType
+  nameWithType: EventType
+  fullName: DiscordRPC.EventType
+  type: Enum
+  source:
+    id: EventType
+    path: ''
+    startLine: 1040
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe type of event receieved by the RPC. A flag type that can be combined.\n"
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum EventType
+    content.vb: >-
+      <Flags>
+
+      Public Enum EventType
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DiscordRPC.EventType.None
+  commentId: F:DiscordRPC.EventType.None
+  id: None
+  parent: DiscordRPC.EventType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: EventType.None
+  fullName: DiscordRPC.EventType.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 1046
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nNo event\n"
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: DiscordRPC.EventType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.EventType.Spectate
+  commentId: F:DiscordRPC.EventType.Spectate
+  id: Spectate
+  parent: DiscordRPC.EventType
+  langs:
+  - csharp
+  - vb
+  name: Spectate
+  nameWithType: EventType.Spectate
+  fullName: DiscordRPC.EventType.Spectate
+  type: Field
+  source:
+    id: Spectate
+    path: ''
+    startLine: 1051
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCalled when the Discord Client wishes to enter a game to spectate\n"
+  example: []
+  syntax:
+    content: Spectate = 1
+    return:
+      type: DiscordRPC.EventType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.EventType.Join
+  commentId: F:DiscordRPC.EventType.Join
+  id: Join
+  parent: DiscordRPC.EventType
+  langs:
+  - csharp
+  - vb
+  name: Join
+  nameWithType: EventType.Join
+  fullName: DiscordRPC.EventType.Join
+  type: Field
+  source:
+    id: Join
+    path: ''
+    startLine: 1056
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCalled when the Discord Client wishes to enter a game to play.\n"
+  example: []
+  syntax:
+    content: Join = 2
+    return:
+      type: DiscordRPC.EventType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.EventType.JoinRequest
+  commentId: F:DiscordRPC.EventType.JoinRequest
+  id: JoinRequest
+  parent: DiscordRPC.EventType
+  langs:
+  - csharp
+  - vb
+  name: JoinRequest
+  nameWithType: EventType.JoinRequest
+  fullName: DiscordRPC.EventType.JoinRequest
+  type: Field
+  source:
+    id: JoinRequest
+    path: ''
+    startLine: 1061
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nCalled when another Discord Client has requested permission to join this game.\n"
+  example: []
+  syntax:
+    content: JoinRequest = 4
+    return:
+      type: DiscordRPC.EventType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC
+- uid: DiscordRPC.EventType
+  commentId: T:DiscordRPC.EventType
+  parent: DiscordRPC
+  name: EventType
+  nameWithType: EventType
+  fullName: DiscordRPC.EventType

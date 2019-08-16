@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Events.OnConnectionEstablishedEvent
+  commentId: T:DiscordRPC.Events.OnConnectionEstablishedEvent
+  id: OnConnectionEstablishedEvent
+  parent: DiscordRPC.Events
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: OnConnectionEstablishedEvent
+  nameWithType: OnConnectionEstablishedEvent
+  fullName: DiscordRPC.Events.OnConnectionEstablishedEvent
+  type: Delegate
+  source:
+    id: OnConnectionEstablishedEvent
+    path: ''
+    startLine: 1012
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Events
+  summary: "\nThe connection to the discord client was succesfull. This is called before <xref href=\"DiscordRPC.Events.OnReadyEvent\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public delegate void OnConnectionEstablishedEvent(object sender, ConnectionEstablishedMessage args);
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The Discord client handler that sent this event
+    - id: args
+      type: ConnectionEstablishedMessage
+      description: The arguments supplied with the event
+    content.vb: Public Delegate Sub OnConnectionEstablishedEvent(sender As Object, args As ConnectionEstablishedMessage)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: DiscordRPC.Events.OnReadyEvent
+  commentId: T:DiscordRPC.Events.OnReadyEvent
+  name: OnReadyEvent
+  nameWithType: OnReadyEvent
+  fullName: DiscordRPC.Events.OnReadyEvent
+- uid: DiscordRPC.Events
+  commentId: N:DiscordRPC.Events
+  name: DiscordRPC.Events
+  nameWithType: DiscordRPC.Events
+  fullName: DiscordRPC.Events
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: ConnectionEstablishedMessage
+  commentId: '!:ConnectionEstablishedMessage'
+  isExternal: true
+  name: ConnectionEstablishedMessage
+  nameWithType: ConnectionEstablishedMessage
+  fullName: ConnectionEstablishedMessage
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

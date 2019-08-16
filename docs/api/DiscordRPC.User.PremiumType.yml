@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.User.PremiumType
+  commentId: T:DiscordRPC.User.PremiumType
+  id: User.PremiumType
+  parent: DiscordRPC
+  children:
+  - DiscordRPC.User.PremiumType.Nitro
+  - DiscordRPC.User.PremiumType.NitroClassic
+  - DiscordRPC.User.PremiumType.None
+  langs:
+  - csharp
+  - vb
+  name: User.PremiumType
+  nameWithType: User.PremiumType
+  fullName: DiscordRPC.User.PremiumType
+  type: Enum
+  source:
+    id: PremiumType
+    path: ''
+    startLine: 2050
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nType of premium\n"
+  example: []
+  syntax:
+    content: public enum PremiumType
+    content.vb: Public Enum PremiumType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DiscordRPC.User.PremiumType.None
+  commentId: F:DiscordRPC.User.PremiumType.None
+  id: None
+  parent: DiscordRPC.User.PremiumType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: User.PremiumType.None
+  fullName: DiscordRPC.User.PremiumType.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 2053
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: No subscription to any forms of Nitro.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: DiscordRPC.User.PremiumType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.PremiumType.NitroClassic
+  commentId: F:DiscordRPC.User.PremiumType.NitroClassic
+  id: NitroClassic
+  parent: DiscordRPC.User.PremiumType
+  langs:
+  - csharp
+  - vb
+  name: NitroClassic
+  nameWithType: User.PremiumType.NitroClassic
+  fullName: DiscordRPC.User.PremiumType.NitroClassic
+  type: Field
+  source:
+    id: NitroClassic
+    path: ''
+    startLine: 2056
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: Nitro Classic subscription. Has chat perks and animated avatars.
+  example: []
+  syntax:
+    content: NitroClassic = 1
+    return:
+      type: DiscordRPC.User.PremiumType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.User.PremiumType.Nitro
+  commentId: F:DiscordRPC.User.PremiumType.Nitro
+  id: Nitro
+  parent: DiscordRPC.User.PremiumType
+  langs:
+  - csharp
+  - vb
+  name: Nitro
+  nameWithType: User.PremiumType.Nitro
+  fullName: DiscordRPC.User.PremiumType.Nitro
+  type: Field
+  source:
+    id: Nitro
+    path: ''
+    startLine: 2059
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: Nitro subscription. Has chat perks, animated avatars, server boosting, and access to free Nitro Games.
+  example: []
+  syntax:
+    content: Nitro = 2
+    return:
+      type: DiscordRPC.User.PremiumType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC
+- uid: DiscordRPC.User.PremiumType
+  commentId: T:DiscordRPC.User.PremiumType
+  parent: DiscordRPC
+  name: User.PremiumType
+  nameWithType: User.PremiumType
+  fullName: DiscordRPC.User.PremiumType

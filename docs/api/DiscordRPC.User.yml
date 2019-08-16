@@ -1,0 +1,788 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.User
+  commentId: T:DiscordRPC.User
+  id: User
+  parent: DiscordRPC
+  children:
+  - DiscordRPC.User.Avatar
+  - DiscordRPC.User.CdnEndpoint
+  - DiscordRPC.User.Discriminator
+  - DiscordRPC.User.Flags
+  - DiscordRPC.User.GetAvatarExtension(DiscordRPC.User.AvatarFormat)
+  - DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat,DiscordRPC.User.AvatarSize)
+  - DiscordRPC.User.ID
+  - DiscordRPC.User.Premium
+  - DiscordRPC.User.ToString
+  - DiscordRPC.User.Username
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: User
+  fullName: DiscordRPC.User
+  type: Class
+  source:
+    id: User
+    path: ''
+    startLine: 1913
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nObject representing a Discord user. This is used for join requests.\n"
+  example: []
+  syntax:
+    content: public class User
+    content.vb: Public Class User
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: DiscordRPC.User.ID
+  commentId: P:DiscordRPC.User.ID
+  id: ID
+  parent: DiscordRPC.User
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: User.ID
+  fullName: DiscordRPC.User.ID
+  type: Property
+  source:
+    id: ID
+    path: ''
+    startLine: 1971
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe snowflake ID of the user. \n"
+  example: []
+  syntax:
+    content: public ulong ID { get; }
+    parameters: []
+    return:
+      type: System.UInt64
+    content.vb: Public ReadOnly Property ID As ULong
+  overload: DiscordRPC.User.ID*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.User.Username
+  commentId: P:DiscordRPC.User.Username
+  id: Username
+  parent: DiscordRPC.User
+  langs:
+  - csharp
+  - vb
+  name: Username
+  nameWithType: User.Username
+  fullName: DiscordRPC.User.Username
+  type: Property
+  source:
+    id: Username
+    path: ''
+    startLine: 1977
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe username of the player.\n"
+  example: []
+  syntax:
+    content: public string Username { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Username As String
+  overload: DiscordRPC.User.Username*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.User.Discriminator
+  commentId: P:DiscordRPC.User.Discriminator
+  id: Discriminator
+  parent: DiscordRPC.User
+  langs:
+  - csharp
+  - vb
+  name: Discriminator
+  nameWithType: User.Discriminator
+  fullName: DiscordRPC.User.Discriminator
+  type: Property
+  source:
+    id: Discriminator
+    path: ''
+    startLine: 1983
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe discriminator of the user.\n"
+  example: []
+  syntax:
+    content: public int Discriminator { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Discriminator As Integer
+  overload: DiscordRPC.User.Discriminator*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.User.Avatar
+  commentId: P:DiscordRPC.User.Avatar
+  id: Avatar
+  parent: DiscordRPC.User
+  langs:
+  - csharp
+  - vb
+  name: Avatar
+  nameWithType: User.Avatar
+  fullName: DiscordRPC.User.Avatar
+  type: Property
+  source:
+    id: Avatar
+    path: ''
+    startLine: 1989
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe avatar hash of the user. Too get a URL for the avatar, use the <xref href=\"DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat%2cDiscordRPC.User.AvatarSize)\" data-throw-if-not-resolved=\"false\"></xref>. This can be null if the user has no avatar. The <xref href=\"DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat%2cDiscordRPC.User.AvatarSize)\" data-throw-if-not-resolved=\"false\"></xref> will account for this and return the discord default.\n"
+  example: []
+  syntax:
+    content: public string Avatar { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Avatar As String
+  overload: DiscordRPC.User.Avatar*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.User.Flags
+  commentId: P:DiscordRPC.User.Flags
+  id: Flags
+  parent: DiscordRPC.User
+  langs:
+  - csharp
+  - vb
+  name: Flags
+  nameWithType: User.Flags
+  fullName: DiscordRPC.User.Flags
+  type: Property
+  source:
+    id: Flags
+    path: ''
+    startLine: 1995
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe flags on a users account, often represented as a badge.\n"
+  example: []
+  syntax:
+    content: public User.Flag Flags { get; }
+    parameters: []
+    return:
+      type: DiscordRPC.User.Flag
+    content.vb: Public ReadOnly Property Flags As User.Flag
+  overload: DiscordRPC.User.Flags*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.User.Premium
+  commentId: P:DiscordRPC.User.Premium
+  id: Premium
+  parent: DiscordRPC.User
+  langs:
+  - csharp
+  - vb
+  name: Premium
+  nameWithType: User.Premium
+  fullName: DiscordRPC.User.Premium
+  type: Property
+  source:
+    id: Premium
+    path: ''
+    startLine: 2044
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe premium type of the user.\n"
+  example: []
+  syntax:
+    content: public User.PremiumType Premium { get; }
+    parameters: []
+    return:
+      type: DiscordRPC.User.PremiumType
+    content.vb: Public ReadOnly Property Premium As User.PremiumType
+  overload: DiscordRPC.User.Premium*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.User.CdnEndpoint
+  commentId: P:DiscordRPC.User.CdnEndpoint
+  id: CdnEndpoint
+  parent: DiscordRPC.User
+  langs:
+  - csharp
+  - vb
+  name: CdnEndpoint
+  nameWithType: User.CdnEndpoint
+  fullName: DiscordRPC.User.CdnEndpoint
+  type: Property
+  source:
+    id: CdnEndpoint
+    path: ''
+    startLine: 2065
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nThe endpoint for the CDN. Normally cdn.discordapp.com.\n"
+  example: []
+  syntax:
+    content: public string CdnEndpoint { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property CdnEndpoint As String
+  overload: DiscordRPC.User.CdnEndpoint*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat,DiscordRPC.User.AvatarSize)
+  commentId: M:DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat,DiscordRPC.User.AvatarSize)
+  id: GetAvatarURL(DiscordRPC.User.AvatarFormat,DiscordRPC.User.AvatarSize)
+  parent: DiscordRPC.User
+  langs:
+  - csharp
+  - vb
+  name: GetAvatarURL(User.AvatarFormat, User.AvatarSize)
+  nameWithType: User.GetAvatarURL(User.AvatarFormat, User.AvatarSize)
+  fullName: DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat, DiscordRPC.User.AvatarSize)
+  type: Method
+  source:
+    id: GetAvatarURL
+    path: ''
+    startLine: 2090
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nGets a URL that can be used to download the user&apos;s avatar. If the user has not yet set their avatar, it will return the default one that discord is using. The default avatar only supports the <xref href=\"DiscordRPC.User.AvatarFormat.PNG\" data-throw-if-not-resolved=\"false\"></xref> format.\n"
+  example: []
+  syntax:
+    content: public string GetAvatarURL(User.AvatarFormat format, User.AvatarSize size = User.AvatarSize.x128)
+    parameters:
+    - id: format
+      type: DiscordRPC.User.AvatarFormat
+      description: The format of the target avatar
+    - id: size
+      type: DiscordRPC.User.AvatarSize
+      description: The optional size of the avatar you wish for. Defaults to x128.
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function GetAvatarURL(format As User.AvatarFormat, size As User.AvatarSize = User.AvatarSize.x128) As String
+  overload: DiscordRPC.User.GetAvatarURL*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.User.GetAvatarExtension(DiscordRPC.User.AvatarFormat)
+  commentId: M:DiscordRPC.User.GetAvatarExtension(DiscordRPC.User.AvatarFormat)
+  id: GetAvatarExtension(DiscordRPC.User.AvatarFormat)
+  parent: DiscordRPC.User
+  langs:
+  - csharp
+  - vb
+  name: GetAvatarExtension(User.AvatarFormat)
+  nameWithType: User.GetAvatarExtension(User.AvatarFormat)
+  fullName: DiscordRPC.User.GetAvatarExtension(DiscordRPC.User.AvatarFormat)
+  type: Method
+  source:
+    id: GetAvatarExtension
+    path: ''
+    startLine: 2116
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nReturns the file extension of the specified format.\n"
+  example: []
+  syntax:
+    content: public string GetAvatarExtension(User.AvatarFormat format)
+    parameters:
+    - id: format
+      type: DiscordRPC.User.AvatarFormat
+      description: The format to get the extention off
+    return:
+      type: System.String
+      description: Returns a period prefixed file extension.
+    content.vb: Public Function GetAvatarExtension(format As User.AvatarFormat) As String
+  overload: DiscordRPC.User.GetAvatarExtension*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: DiscordRPC.User.ToString
+  commentId: M:DiscordRPC.User.ToString
+  id: ToString
+  parent: DiscordRPC.User
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: User.ToString()
+  fullName: DiscordRPC.User.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 2125
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC
+  summary: "\nFormats the user into username#discriminator\n"
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: DiscordRPC.User.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: DiscordRPC
+  commentId: N:DiscordRPC
+  name: DiscordRPC
+  nameWithType: DiscordRPC
+  fullName: DiscordRPC
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: DiscordRPC.User.ID*
+  commentId: Overload:DiscordRPC.User.ID
+  name: ID
+  nameWithType: User.ID
+  fullName: DiscordRPC.User.ID
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  name: UInt64
+  nameWithType: UInt64
+  fullName: System.UInt64
+- uid: DiscordRPC.User.Username*
+  commentId: Overload:DiscordRPC.User.Username
+  name: Username
+  nameWithType: User.Username
+  fullName: DiscordRPC.User.Username
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: DiscordRPC.User.Discriminator*
+  commentId: Overload:DiscordRPC.User.Discriminator
+  name: Discriminator
+  nameWithType: User.Discriminator
+  fullName: DiscordRPC.User.Discriminator
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat,DiscordRPC.User.AvatarSize)
+  commentId: M:DiscordRPC.User.GetAvatarURL(DiscordRPC.User.AvatarFormat,DiscordRPC.User.AvatarSize)
+  isExternal: true
+- uid: DiscordRPC.User.Avatar*
+  commentId: Overload:DiscordRPC.User.Avatar
+  name: Avatar
+  nameWithType: User.Avatar
+  fullName: DiscordRPC.User.Avatar
+- uid: DiscordRPC.User.Flags*
+  commentId: Overload:DiscordRPC.User.Flags
+  name: Flags
+  nameWithType: User.Flags
+  fullName: DiscordRPC.User.Flags
+- uid: DiscordRPC.User.Flag
+  commentId: T:DiscordRPC.User.Flag
+  parent: DiscordRPC
+  name: User.Flag
+  nameWithType: User.Flag
+  fullName: DiscordRPC.User.Flag
+- uid: DiscordRPC.User.Premium*
+  commentId: Overload:DiscordRPC.User.Premium
+  name: Premium
+  nameWithType: User.Premium
+  fullName: DiscordRPC.User.Premium
+- uid: DiscordRPC.User.PremiumType
+  commentId: T:DiscordRPC.User.PremiumType
+  parent: DiscordRPC
+  name: User.PremiumType
+  nameWithType: User.PremiumType
+  fullName: DiscordRPC.User.PremiumType
+- uid: DiscordRPC.User.CdnEndpoint*
+  commentId: Overload:DiscordRPC.User.CdnEndpoint
+  name: CdnEndpoint
+  nameWithType: User.CdnEndpoint
+  fullName: DiscordRPC.User.CdnEndpoint
+- uid: DiscordRPC.User.AvatarFormat.PNG
+  commentId: F:DiscordRPC.User.AvatarFormat.PNG
+  isExternal: true
+- uid: DiscordRPC.User.GetAvatarURL*
+  commentId: Overload:DiscordRPC.User.GetAvatarURL
+  name: GetAvatarURL
+  nameWithType: User.GetAvatarURL
+  fullName: DiscordRPC.User.GetAvatarURL
+- uid: DiscordRPC.User.AvatarFormat
+  commentId: T:DiscordRPC.User.AvatarFormat
+  parent: DiscordRPC
+  name: User.AvatarFormat
+  nameWithType: User.AvatarFormat
+  fullName: DiscordRPC.User.AvatarFormat
+- uid: DiscordRPC.User.AvatarSize
+  commentId: T:DiscordRPC.User.AvatarSize
+  parent: DiscordRPC
+  name: User.AvatarSize
+  nameWithType: User.AvatarSize
+  fullName: DiscordRPC.User.AvatarSize
+- uid: DiscordRPC.User.GetAvatarExtension*
+  commentId: Overload:DiscordRPC.User.GetAvatarExtension
+  name: GetAvatarExtension
+  nameWithType: User.GetAvatarExtension
+  fullName: DiscordRPC.User.GetAvatarExtension
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DiscordRPC.User.ToString*
+  commentId: Overload:DiscordRPC.User.ToString
+  name: ToString
+  nameWithType: User.ToString
+  fullName: DiscordRPC.User.ToString

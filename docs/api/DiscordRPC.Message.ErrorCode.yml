@@ -1,0 +1,292 @@
+### YamlMime:ManagedReference
+items:
+- uid: DiscordRPC.Message.ErrorCode
+  commentId: T:DiscordRPC.Message.ErrorCode
+  id: ErrorCode
+  parent: DiscordRPC.Message
+  children:
+  - DiscordRPC.Message.ErrorCode.InvalidCommand
+  - DiscordRPC.Message.ErrorCode.InvalidEvent
+  - DiscordRPC.Message.ErrorCode.InvalidPayload
+  - DiscordRPC.Message.ErrorCode.NotImplemented
+  - DiscordRPC.Message.ErrorCode.PipeException
+  - DiscordRPC.Message.ErrorCode.ReadCorrupt
+  - DiscordRPC.Message.ErrorCode.Success
+  - DiscordRPC.Message.ErrorCode.UnkownError
+  langs:
+  - csharp
+  - vb
+  name: ErrorCode
+  nameWithType: ErrorCode
+  fullName: DiscordRPC.Message.ErrorCode
+  type: Enum
+  source:
+    id: ErrorCode
+    path: ''
+    startLine: 3797
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: "\nThe error message received by discord. See https://discordapp.com/developers/docs/topics/rpc#rpc-server-payloads-rpc-errors for documentation\n"
+  example: []
+  syntax:
+    content: public enum ErrorCode
+    content.vb: Public Enum ErrorCode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: DiscordRPC.Message.ErrorCode.Success
+  commentId: F:DiscordRPC.Message.ErrorCode.Success
+  id: Success
+  parent: DiscordRPC.Message.ErrorCode
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: ErrorCode.Success
+  fullName: DiscordRPC.Message.ErrorCode.Success
+  type: Field
+  source:
+    id: Success
+    path: ''
+    startLine: 3801
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: 'Pipe was Successful '
+  example: []
+  syntax:
+    content: Success = 0
+    return:
+      type: DiscordRPC.Message.ErrorCode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.ErrorCode.PipeException
+  commentId: F:DiscordRPC.Message.ErrorCode.PipeException
+  id: PipeException
+  parent: DiscordRPC.Message.ErrorCode
+  langs:
+  - csharp
+  - vb
+  name: PipeException
+  nameWithType: ErrorCode.PipeException
+  fullName: DiscordRPC.Message.ErrorCode.PipeException
+  type: Field
+  source:
+    id: PipeException
+    path: ''
+    startLine: 3804
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: The pipe had an exception
+  example: []
+  syntax:
+    content: PipeException = 1
+    return:
+      type: DiscordRPC.Message.ErrorCode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.ErrorCode.ReadCorrupt
+  commentId: F:DiscordRPC.Message.ErrorCode.ReadCorrupt
+  id: ReadCorrupt
+  parent: DiscordRPC.Message.ErrorCode
+  langs:
+  - csharp
+  - vb
+  name: ReadCorrupt
+  nameWithType: ErrorCode.ReadCorrupt
+  fullName: DiscordRPC.Message.ErrorCode.ReadCorrupt
+  type: Field
+  source:
+    id: ReadCorrupt
+    path: ''
+    startLine: 3807
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: The pipe received corrupted data
+  example: []
+  syntax:
+    content: ReadCorrupt = 2
+    return:
+      type: DiscordRPC.Message.ErrorCode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.ErrorCode.NotImplemented
+  commentId: F:DiscordRPC.Message.ErrorCode.NotImplemented
+  id: NotImplemented
+  parent: DiscordRPC.Message.ErrorCode
+  langs:
+  - csharp
+  - vb
+  name: NotImplemented
+  nameWithType: ErrorCode.NotImplemented
+  fullName: DiscordRPC.Message.ErrorCode.NotImplemented
+  type: Field
+  source:
+    id: NotImplemented
+    path: ''
+    startLine: 3811
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: The functionality was not yet implemented
+  example: []
+  syntax:
+    content: NotImplemented = 10
+    return:
+      type: DiscordRPC.Message.ErrorCode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.ErrorCode.UnkownError
+  commentId: F:DiscordRPC.Message.ErrorCode.UnkownError
+  id: UnkownError
+  parent: DiscordRPC.Message.ErrorCode
+  langs:
+  - csharp
+  - vb
+  name: UnkownError
+  nameWithType: ErrorCode.UnkownError
+  fullName: DiscordRPC.Message.ErrorCode.UnkownError
+  type: Field
+  source:
+    id: UnkownError
+    path: ''
+    startLine: 3815
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: Unkown Discord error
+  example: []
+  syntax:
+    content: UnkownError = 1000
+    return:
+      type: DiscordRPC.Message.ErrorCode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.ErrorCode.InvalidPayload
+  commentId: F:DiscordRPC.Message.ErrorCode.InvalidPayload
+  id: InvalidPayload
+  parent: DiscordRPC.Message.ErrorCode
+  langs:
+  - csharp
+  - vb
+  name: InvalidPayload
+  nameWithType: ErrorCode.InvalidPayload
+  fullName: DiscordRPC.Message.ErrorCode.InvalidPayload
+  type: Field
+  source:
+    id: InvalidPayload
+    path: ''
+    startLine: 3818
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: Invalid Payload received
+  example: []
+  syntax:
+    content: InvalidPayload = 4000
+    return:
+      type: DiscordRPC.Message.ErrorCode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.ErrorCode.InvalidCommand
+  commentId: F:DiscordRPC.Message.ErrorCode.InvalidCommand
+  id: InvalidCommand
+  parent: DiscordRPC.Message.ErrorCode
+  langs:
+  - csharp
+  - vb
+  name: InvalidCommand
+  nameWithType: ErrorCode.InvalidCommand
+  fullName: DiscordRPC.Message.ErrorCode.InvalidCommand
+  type: Field
+  source:
+    id: InvalidCommand
+    path: ''
+    startLine: 3821
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: Invalid command was sent
+  example: []
+  syntax:
+    content: InvalidCommand = 4002
+    return:
+      type: DiscordRPC.Message.ErrorCode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: DiscordRPC.Message.ErrorCode.InvalidEvent
+  commentId: F:DiscordRPC.Message.ErrorCode.InvalidEvent
+  id: InvalidEvent
+  parent: DiscordRPC.Message.ErrorCode
+  langs:
+  - csharp
+  - vb
+  name: InvalidEvent
+  nameWithType: ErrorCode.InvalidEvent
+  fullName: DiscordRPC.Message.ErrorCode.InvalidEvent
+  type: Field
+  source:
+    id: InvalidEvent
+    path: ''
+    startLine: 3824
+  assemblies:
+  - cs.temp.dll
+  namespace: DiscordRPC.Message
+  summary: 'Invalid event was sent '
+  example: []
+  syntax:
+    content: InvalidEvent = 4004
+    return:
+      type: DiscordRPC.Message.ErrorCode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: DiscordRPC.Message
+  commentId: N:DiscordRPC.Message
+  name: DiscordRPC.Message
+  nameWithType: DiscordRPC.Message
+  fullName: DiscordRPC.Message
+- uid: DiscordRPC.Message.ErrorCode
+  commentId: T:DiscordRPC.Message.ErrorCode
+  parent: DiscordRPC.Message
+  name: ErrorCode
+  nameWithType: ErrorCode
+  fullName: DiscordRPC.Message.ErrorCode
